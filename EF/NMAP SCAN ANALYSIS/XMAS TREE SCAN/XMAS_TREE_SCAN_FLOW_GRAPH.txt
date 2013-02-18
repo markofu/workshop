@@ -1,0 +1,2001 @@
+|Time     | 192.168.1.10      | 192.168.1.25      |
+|0.000    |         62347 > pptp [FIN,            |TCP: 62347 > pptp [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (1723)   |
+|0.000    |         62347 > rtsp [FIN,            |TCP: 62347 > rtsp [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (554)    |
+|0.000    |         62347 > telnet [FIN           |TCP: 62347 > telnet [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (23)     |
+|0.000    |         62347 > rap [FIN, P           |TCP: 62347 > rap [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (256)    |
+|0.000    |         62347 > http [FIN,            |TCP: 62347 > http [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (80)     |
+|0.000    |         62347 > ssh [FIN, P           |TCP: 62347 > ssh [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (22)     |
+|0.000    |         62347 > ftp [FIN, P           |TCP: 62347 > ftp [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (21)     |
+|0.000    |         62347 > ldap [FIN,            |TCP: 62347 > ldap [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (389)    |
+|0.000    |         62347 > https [FIN,           |TCP: 62347 > https [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (443)    |
+|0.000    |         62347 > ldaps [FIN,           |TCP: 62347 > ldaps [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (636)    |
+|0.001    |         pptp > 62347 [RST,            |TCP: pptp > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1723)   |
+|0.001    |         rtsp > 62347 [RST,            |TCP: rtsp > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (554)    |
+|0.001    |         telnet > 62347 [RST           |TCP: telnet > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (23)     |
+|0.001    |         rap > 62347 [RST, A           |TCP: rap > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (256)    |
+|0.001    |         http > 62347 [RST,            |TCP: http > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (80)     |
+|0.001    |         ssh > 62347 [RST, A           |TCP: ssh > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (22)     |
+|0.001    |         ftp > 62347 [RST, A           |TCP: ftp > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (21)     |
+|0.001    |         ldap > 62347 [RST,            |TCP: ldap > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (389)    |
+|0.001    |         https > 62347 [RST,           |TCP: https > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (443)    |
+|0.001    |         ldaps > 62347 [RST,           |TCP: ldaps > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (636)    |
+|0.001    |         62347 > ms-wbt-serv           |TCP: 62347 > ms-wbt-server [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (3389)   |
+|0.001    |         62347 > smtp [FIN,            |TCP: 62347 > smtp [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (25)     |
+|0.001    |         62347 > domain [FIN           |TCP: 62347 > domain [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (53)     |
+|0.001    |         62347 > ident [FIN,           |TCP: 62347 > ident [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (113)    |
+|0.001    |         ms-wbt-server > 623           |TCP: ms-wbt-server > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (3389)   |
+|0.001    |         62347 > nicelink [F           |TCP: 62347 > nicelink [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (1095)   |
+|0.001    |         62347 > afrog [FIN,           |TCP: 62347 > afrog [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (1042)   |
+|0.001    |         62347 > 3300 [FIN,            |TCP: 62347 > 3300 [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (3300)   |
+|0.002    |         62347 > bsquare-voi           |TCP: 62347 > bsquare-voip [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (1071)   |
+|0.002    |         62347 > saiscm [FIN           |TCP: 62347 > saiscm [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (1501)   |
+|0.002    |         smtp > 62347 [RST,            |TCP: smtp > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (25)     |
+|0.002    |         62347 > dossier [FI           |TCP: 62347 > dossier [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (1175)   |
+|0.002    |         62347 > 1028 [FIN,            |TCP: 62347 > 1028 [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (1028)   |
+|0.002    |         62347 > asipregistr           |TCP: 62347 > asipregistry [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (687)    |
+|0.002    |         62347 > beserver-ms           |TCP: 62347 > beserver-msg-q [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (3527)   |
+|0.002    |         domain > 62347 [RST           |TCP: domain > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (53)     |
+|0.002    |         62347 > 5802 [FIN,            |TCP: 62347 > 5802 [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (5802)   |
+|0.002    |         62347 > http-alt [F           |TCP: 62347 > http-alt [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (8080)   |
+|0.002    |         62347 > imsp [FIN,            |TCP: 62347 > imsp [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (406)    |
+|0.002    |         ident > 62347 [RST,           |TCP: ident > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (113)    |
+|0.002    |         62347 > routematch            |TCP: 62347 > routematch [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (1287)   |
+|0.002    |         62347 > appleqtc [F           |TCP: 62347 > appleqtc [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (458)    |
+|0.002    |         62347 > 27352 [FIN,           |TCP: 62347 > 27352 [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (27352)  |
+|0.002    |         nicelink > 62347 [R           |TCP: nicelink > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1095)   |
+|0.002    |         62347 > ctf [FIN, P           |TCP: 62347 > ctf [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (84)     |
+|0.002    |         62347 > brvread [FI           |TCP: 62347 > brvread [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (1054)   |
+|0.002    |         62347 > 8193 [FIN,            |TCP: 62347 > 8193 [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (8193)   |
+|0.002    |         afrog > 62347 [RST,           |TCP: afrog > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1042)   |
+|0.002    |         62347 > nsjtp-data            |TCP: 62347 > nsjtp-data [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (1688)   |
+|0.002    |         62347 > dif-port [F           |TCP: 62347 > dif-port [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (2251)   |
+|0.002    |         62347 > 1023 [FIN,            |TCP: 62347 > 1023 [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (1023)   |
+|0.002    |         62347 > avocent-ads           |TCP: 62347 > avocent-adsap [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (3871)   |
+|0.002    |         62347 > 30 [FIN, PS           |TCP: 62347 > 30 [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (30)     |
+|0.002    |         62347 > 8652 [FIN,            |TCP: 62347 > 8652 [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (8652)   |
+|0.002    |         62347 > vlsi-lm [FI           |TCP: 62347 > vlsi-lm [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (1500)   |
+|0.002    |         62347 > 34572 [FIN,           |TCP: 62347 > 34572 [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (34572)  |
+|0.002    |         3300 > 62347 [RST,            |TCP: 3300 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (3300)   |
+|0.003    |         62347 > interwise [           |TCP: 62347 > interwise [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (7778)   |
+|0.003    |         62347 > gnutella-sv           |TCP: 62347 > gnutella-svc [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (6346)   |
+|0.003    |         62347 > servexec [F           |TCP: 62347 > servexec [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (2021)   |
+|0.003    |         bsquare-voip > 6234           |TCP: bsquare-voip > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1071)   |
+|0.003    |         62347 > veritas_pbx           |TCP: 62347 > veritas_pbx [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (1556)   |
+|0.003    |         62347 > ph [FIN, PS           |TCP: 62347 > ph [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (481)    |
+|0.003    |         62347 > optima-vnet           |TCP: 62347 > optima-vnet [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (1051)   |
+|0.003    |         saiscm > 62347 [RST           |TCP: saiscm > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1501)   |
+|0.003    |         62347 > 7103 [FIN,            |TCP: 62347 > 7103 [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (7103)   |
+|0.003    |         62347 > font-servic           |TCP: 62347 > font-service [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (7100)   |
+|0.003    |         dossier > 62347 [RS           |TCP: dossier > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1175)   |
+|0.003    |         62347 > 898 [FIN, P           |TCP: 62347 > 898 [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (898)    |
+|0.003    |         1028 > 62347 [RST,            |TCP: 1028 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1028)   |
+|0.003    |         asipregistry > 6234           |TCP: asipregistry > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (687)    |
+|0.003    |         beserver-msg-q > 62           |TCP: beserver-msg-q > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (3527)   |
+|0.003    |         5802 > 62347 [RST,            |TCP: 5802 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (5802)   |
+|0.003    |         http-alt > 62347 [R           |TCP: http-alt > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (8080)   |
+|0.003    |         imsp > 62347 [RST,            |TCP: imsp > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (406)    |
+|0.003    |         routematch > 62347            |TCP: routematch > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1287)   |
+|0.003    |         appleqtc > 62347 [R           |TCP: appleqtc > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (458)    |
+|0.003    |         27352 > 62347 [RST,           |TCP: 27352 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (27352)  |
+|0.004    |         ctf > 62347 [RST, A           |TCP: ctf > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (84)     |
+|0.004    |         brvread > 62347 [RS           |TCP: brvread > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1054)   |
+|0.004    |         8193 > 62347 [RST,            |TCP: 8193 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (8193)   |
+|0.004    |         nsjtp-data > 62347            |TCP: nsjtp-data > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1688)   |
+|0.004    |         dif-port > 62347 [R           |TCP: dif-port > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (2251)   |
+|0.004    |         1023 > 62347 [RST,            |TCP: 1023 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1023)   |
+|0.004    |         avocent-adsap > 623           |TCP: avocent-adsap > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (3871)   |
+|0.004    |         30 > 62347 [RST, AC           |TCP: 30 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (30)     |
+|0.004    |         8652 > 62347 [RST,            |TCP: 8652 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (8652)   |
+|0.004    |         vlsi-lm > 62347 [RS           |TCP: vlsi-lm > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1500)   |
+|0.004    |         34572 > 62347 [RST,           |TCP: 34572 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (34572)  |
+|0.004    |         interwise > 62347 [           |TCP: interwise > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (7778)   |
+|0.004    |         gnutella-svc > 6234           |TCP: gnutella-svc > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (6346)   |
+|0.004    |         servexec > 62347 [R           |TCP: servexec > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (2021)   |
+|0.004    |         veritas_pbx > 62347           |TCP: veritas_pbx > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1556)   |
+|0.004    |         ph > 62347 [RST, AC           |TCP: ph > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (481)    |
+|0.004    |         optima-vnet > 62347           |TCP: optima-vnet > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1051)   |
+|0.005    |         7103 > 62347 [RST,            |TCP: 7103 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (7103)   |
+|0.005    |         font-service > 6234           |TCP: font-service > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (7100)   |
+|0.005    |         898 > 62347 [RST, A           |TCP: 898 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (898)    |
+|0.005    |         62347 > rlm-admin [           |TCP: 62347 > rlm-admin [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (5054)   |
+|0.005    |         62347 > tcp-id-port           |TCP: 62347 > tcp-id-port [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (1999)   |
+|0.005    |         62347 > apc-2160 [F           |TCP: 62347 > apc-2160 [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (2160)   |
+|0.005    |         62347 > tn-tl-r1 [F           |TCP: 62347 > tn-tl-r1 [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (1580)   |
+|0.005    |         62347 > dtspcd [FIN           |TCP: 62347 > dtspcd [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (6112)   |
+|0.005    |         62347 > 1011 [FIN,            |TCP: 62347 > 1011 [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (1011)   |
+|0.005    |         62347 > casp [FIN,            |TCP: 62347 > casp [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (1130)   |
+|0.005    |         62347 > printer [FI           |TCP: 62347 > printer [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (515)    |
+|0.005    |         rlm-admin > 62347 [           |TCP: rlm-admin > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (5054)   |
+|0.005    |         62347 > websm [FIN,           |TCP: 62347 > websm [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (9090)   |
+|0.005    |         62347 > 30718 [FIN,           |TCP: 62347 > 30718 [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (30718)  |
+|0.005    |         62347 > 5850 [FIN,            |TCP: 62347 > 5850 [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (5850)   |
+|0.005    |         62347 > xnm-clear-t           |TCP: 62347 > xnm-clear-text [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (3221)   |
+|0.005    |         62347 > pktcable-co           |TCP: 62347 > pktcable-cops [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (2126)   |
+|0.005    |         62347 > ipulse-ics            |TCP: 62347 > ipulse-ics [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (20222)  |
+|0.005    |         tcp-id-port > 62347           |TCP: tcp-id-port > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1999)   |
+|0.005    |         62347 > simplifymed           |TCP: 62347 > simplifymedia [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (8087)   |
+|0.005    |         62347 > 5811 [FIN,            |TCP: 62347 > 5811 [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (5811)   |
+|0.005    |         62347 > 7496 [FIN,            |TCP: 62347 > 7496 [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (7496)   |
+|0.005    |         62347 > 52673 [FIN,           |TCP: 62347 > 52673 [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (52673)  |
+|0.005    |         apc-2160 > 62347 [R           |TCP: apc-2160 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (2160)   |
+|0.005    |         62347 > groove [FIN           |TCP: 62347 > groove [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (2492)   |
+|0.006    |         62347 > avt-profile           |TCP: 62347 > avt-profile-1 [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (5004)   |
+|0.006    |         62347 > pop3 [FIN,            |TCP: 62347 > pop3 [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (110)    |
+|0.006    |         tn-tl-r1 > 62347 [R           |TCP: tn-tl-r1 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1580)   |
+|0.006    |         62347 > ms-olap1 [F           |TCP: 62347 > ms-olap1 [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (2393)   |
+|0.006    |         62347 > 64623 [FIN,           |TCP: 62347 > 64623 [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (64623)  |
+|0.006    |         62347 > krb524 [FIN           |TCP: 62347 > krb524 [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (4444)   |
+|0.006    |         dtspcd > 62347 [RST           |TCP: dtspcd > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (6112)   |
+|0.006    |         62347 > wbem-rmi [F           |TCP: 62347 > wbem-rmi [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (5987)   |
+|0.006    |         62347 > login [FIN,           |TCP: 62347 > login [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (513)    |
+|0.006    |         62347 > sip [FIN, P           |TCP: 62347 > sip [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (5060)   |
+|0.006    |         62347 > fcp-addr-sr           |TCP: 62347 > fcp-addr-srvr1 [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (5500)   |
+|0.006    |         1011 > 62347 [RST,            |TCP: 1011 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1011)   |
+|0.006    |         62347 > rwhois [FIN           |TCP: 62347 > rwhois [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (4321)   |
+|0.006    |         62347 > veracity [F           |TCP: 62347 > veracity [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (1062)   |
+|0.006    |         62347 > svrloc [FIN           |TCP: 62347 > svrloc [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (427)    |
+|0.006    |         casp > 62347 [RST,            |TCP: casp > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1130)   |
+|0.006    |         62347 > ltp-deepspa           |TCP: 62347 > ltp-deepspace [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (1113)   |
+|0.006    |         62347 > nuauth [FIN           |TCP: 62347 > nuauth [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (4129)   |
+|0.006    |         62347 > globe [FIN,           |TCP: 62347 > globe [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (2002)   |
+|0.006    |         printer > 62347 [RS           |TCP: printer > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (515)    |
+|0.006    |         62347 > 44442 [FIN,           |TCP: 62347 > 44442 [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (44442)  |
+|0.006    |         62347 > wsdapi [FIN           |TCP: 62347 > wsdapi [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (5357)   |
+|0.006    |         62347 > 6699 [FIN,            |TCP: 62347 > 6699 [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (6699)   |
+|0.006    |         websm > 62347 [RST,           |TCP: websm > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (9090)   |
+|0.006    |         62347 > filenet-cm            |TCP: 62347 > filenet-cm [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (32773)  |
+|0.006    |         62347 > 31337 [FIN,           |TCP: 62347 > 31337 [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (31337)  |
+|0.006    |         62347 > filenet-nch           |TCP: 62347 > filenet-nch [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (32770)  |
+|0.006    |         30718 > 62347 [RST,           |TCP: 30718 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (30718)  |
+|0.006    |         62347 > 8180 [FIN,            |TCP: 62347 > 8180 [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (8180)   |
+|0.006    |         62347 > 81 [FIN, PS           |TCP: 62347 > 81 [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (81)     |
+|0.007    |         62347 > ms-olap3 [F           |TCP: 62347 > ms-olap3 [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (2382)   |
+|0.007    |         62347 > caspssl [FI           |TCP: 62347 > caspssl [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (1131)   |
+|0.007    |         5850 > 62347 [RST,            |TCP: 5850 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (5850)   |
+|0.007    |         62347 > isis-bcast            |TCP: 62347 > isis-bcast [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (2043)   |
+|0.007    |         62347 > 32778 [FIN,           |TCP: 62347 > 32778 [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (32778)  |
+|0.007    |         62347 > 49160 [FIN,           |TCP: 62347 > 49160 [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (49160)  |
+|0.007    |         xnm-clear-text > 62           |TCP: xnm-clear-text > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (3221)   |
+|0.007    |         62347 > 32 [FIN, PS           |TCP: 62347 > 32 [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (32)     |
+|0.007    |         62347 > 9575 [FIN,            |TCP: 62347 > 9575 [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (9575)   |
+|0.007    |         62347 > 18040 [FIN,           |TCP: 62347 > 18040 [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (18040)  |
+|0.007    |         pktcable-cops > 623           |TCP: pktcable-cops > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (2126)   |
+|0.007    |         ipulse-ics > 62347            |TCP: ipulse-ics > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (20222)  |
+|0.007    |         simplifymedia > 623           |TCP: simplifymedia > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (8087)   |
+|0.007    |         5811 > 62347 [RST,            |TCP: 5811 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (5811)   |
+|0.007    |         7496 > 62347 [RST,            |TCP: 7496 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (7496)   |
+|0.007    |         52673 > 62347 [RST,           |TCP: 52673 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (52673)  |
+|0.007    |         groove > 62347 [RST           |TCP: groove > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (2492)   |
+|0.007    |         avt-profile-1 > 623           |TCP: avt-profile-1 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (5004)   |
+|0.007    |         pop3 > 62347 [RST,            |TCP: pop3 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (110)    |
+|0.007    |         ms-olap1 > 62347 [R           |TCP: ms-olap1 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (2393)   |
+|0.007    |         64623 > 62347 [RST,           |TCP: 64623 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (64623)  |
+|0.007    |         krb524 > 62347 [RST           |TCP: krb524 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (4444)   |
+|0.007    |         wbem-rmi > 62347 [R           |TCP: wbem-rmi > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (5987)   |
+|0.007    |         login > 62347 [RST,           |TCP: login > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (513)    |
+|0.008    |         sip > 62347 [RST, A           |TCP: sip > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (5060)   |
+|0.008    |         fcp-addr-srvr1 > 62           |TCP: fcp-addr-srvr1 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (5500)   |
+|0.008    |         rwhois > 62347 [RST           |TCP: rwhois > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (4321)   |
+|0.008    |         veracity > 62347 [R           |TCP: veracity > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1062)   |
+|0.008    |         svrloc > 62347 [RST           |TCP: svrloc > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (427)    |
+|0.008    |         ltp-deepspace > 623           |TCP: ltp-deepspace > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1113)   |
+|0.008    |         nuauth > 62347 [RST           |TCP: nuauth > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (4129)   |
+|0.008    |         globe > 62347 [RST,           |TCP: globe > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (2002)   |
+|0.008    |         44442 > 62347 [RST,           |TCP: 44442 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (44442)  |
+|0.008    |         wsdapi > 62347 [RST           |TCP: wsdapi > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (5357)   |
+|0.008    |         6699 > 62347 [RST,            |TCP: 6699 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (6699)   |
+|0.008    |         filenet-cm > 62347            |TCP: filenet-cm > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (32773)  |
+|0.008    |         31337 > 62347 [RST,           |TCP: 31337 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (31337)  |
+|0.008    |         filenet-nch > 62347           |TCP: filenet-nch > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (32770)  |
+|0.008    |         8180 > 62347 [RST,            |TCP: 8180 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (8180)   |
+|0.008    |         81 > 62347 [RST, AC           |TCP: 81 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (81)     |
+|0.008    |         ms-olap3 > 62347 [R           |TCP: ms-olap3 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (2382)   |
+|0.008    |         caspssl > 62347 [RS           |TCP: caspssl > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1131)   |
+|0.008    |         isis-bcast > 62347            |TCP: isis-bcast > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (2043)   |
+|0.008    |         32778 > 62347 [RST,           |TCP: 32778 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (32778)  |
+|0.008    |         49160 > 62347 [RST,           |TCP: 49160 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (49160)  |
+|0.008    |         32 > 62347 [RST, AC           |TCP: 32 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (32)     |
+|0.008    |         9575 > 62347 [RST,            |TCP: 9575 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (9575)   |
+|0.008    |         18040 > 62347 [RST,           |TCP: 18040 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (18040)  |
+|0.008    |         62347 > spectraport           |TCP: 62347 > spectraport [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (3851)   |
+|0.008    |         62347 > socks [FIN,           |TCP: 62347 > socks [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (1080)   |
+|0.008    |         62347 > 30000 [FIN,           |TCP: 62347 > 30000 [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (30000)  |
+|0.009    |         spectraport > 62347           |TCP: spectraport > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (3851)   |
+|0.009    |         62347 > 1001 [FIN,            |TCP: 62347 > 1001 [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (1001)   |
+|0.009    |         62347 > ideafarm-do           |TCP: 62347 > ideafarm-door [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (902)    |
+|0.009    |         socks > 62347 [RST,           |TCP: socks > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1080)   |
+|0.009    |         62347 > opsview-env           |TCP: 62347 > opsview-envoy [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (4125)   |
+|0.009    |         62347 > 5906 [FIN,            |TCP: 62347 > 5906 [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (5906)   |
+|0.009    |         62347 > scoremgr [F           |TCP: 62347 > scoremgr [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (2034)   |
+|0.009    |         30000 > 62347 [RST,           |TCP: 30000 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (30000)  |
+|0.009    |         62347 > kpasswd [FI           |TCP: 62347 > kpasswd [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (464)    |
+|0.009    |         1001 > 62347 [RST,            |TCP: 1001 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1001)   |
+|0.009    |         62347 > omginitialr           |TCP: 62347 > omginitialrefs [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (900)    |
+|0.009    |         62347 > amt-soap-ht           |TCP: 62347 > amt-soap-http [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (16992)  |
+|0.009    |         ideafarm-door > 623           |TCP: ideafarm-door > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (902)    |
+|0.009    |         62347 > isis [FIN,            |TCP: 62347 > isis [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (2042)   |
+|0.009    |         62347 > eppc [FIN,            |TCP: 62347 > eppc [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (3031)   |
+|0.009    |         62347 > gsiftp [FIN           |TCP: 62347 > gsiftp [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (2811)   |
+|0.009    |         opsview-envoy > 623           |TCP: opsview-envoy > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (4125)   |
+|0.009    |         62347 > msnp [FIN,            |TCP: 62347 > msnp [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (1863)   |
+|0.009    |         62347 > 30951 [FIN,           |TCP: 62347 > 30951 [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (30951)  |
+|0.009    |         5906 > 62347 [RST,            |TCP: 5906 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (5906)   |
+|0.009    |         62347 > qsm-gui [FI           |TCP: 62347 > qsm-gui [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (1165)   |
+|0.009    |         62347 > warmspotMgm           |TCP: 62347 > warmspotMgmt [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (1074)   |
+|0.009    |         scoremgr > 62347 [R           |TCP: scoremgr > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (2034)   |
+|0.009    |         62347 > afs3-kaserv           |TCP: 62347 > afs3-kaserver [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (7004)   |
+|0.009    |         62347 > listcrt-por           |TCP: 62347 > listcrt-port-2 [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (3914)   |
+|0.009    |         62347 > pxc-spvr-ft           |TCP: 62347 > pxc-spvr-ft [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (4002)   |
+|0.009    |         62347 > sip-tls [FI           |TCP: 62347 > sip-tls [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (5061)   |
+|0.009    |         kpasswd > 62347 [RS           |TCP: kpasswd > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (464)    |
+|0.009    |         omginitialrefs > 62           |TCP: omginitialrefs > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (900)    |
+|0.009    |         62347 > 52869 [FIN,           |TCP: 62347 > 52869 [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (52869)  |
+|0.009    |         62347 > 914c/g [FIN           |TCP: 62347 > 914c/g [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (211)    |
+|0.009    |         62347 > dandv-teste           |TCP: 62347 > dandv-tester [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (3889)   |
+|0.010    |         62347 > xmpp-client           |TCP: 62347 > xmpp-client [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (5222)   |
+|0.010    |         62347 > bacula-dir            |TCP: 62347 > bacula-dir [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (9101)   |
+|0.010    |         62347 > bnetgame [F           |TCP: 62347 > bnetgame [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (1119)   |
+|0.010    |         62347 > dab-sti-c [           |TCP: 62347 > dab-sti-c [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (1076)   |
+|0.010    |         62347 > ams [FIN, P           |TCP: 62347 > ams [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (1037)   |
+|0.010    |         amt-soap-http > 623           |TCP: amt-soap-http > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (16992)  |
+|0.010    |         isis > 62347 [RST,            |TCP: isis > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (2042)   |
+|0.010    |         62347 > dxmessageba           |TCP: 62347 > dxmessagebase2 [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (2875)   |
+|0.010    |         eppc > 62347 [RST,            |TCP: eppc > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (3031)   |
+|0.010    |         62347 > vmsvc-2 [FI           |TCP: 62347 > vmsvc-2 [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (7025)   |
+|0.010    |         gsiftp > 62347 [RST           |TCP: gsiftp > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (2811)   |
+|0.010    |         62347 > ii-admin [F           |TCP: 62347 > ii-admin [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (3006)   |
+|0.010    |         msnp > 62347 [RST,            |TCP: msnp > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1863)   |
+|0.010    |         62347 > lam [FIN, P           |TCP: 62347 > lam [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (2040)   |
+|0.010    |         62347 > csd-mgmt-po           |TCP: 62347 > csd-mgmt-port [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (3071)   |
+|0.010    |         30951 > 62347 [RST,           |TCP: 30951 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (30951)  |
+|0.010    |         62347 > acc-raid [F           |TCP: 62347 > acc-raid [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (2800)   |
+|0.010    |         62347 > ms-sql-m [F           |TCP: 62347 > ms-sql-m [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (1434)   |
+|0.010    |         qsm-gui > 62347 [RS           |TCP: qsm-gui > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1165)   |
+|0.010    |         62347 > xact-backup           |TCP: 62347 > xact-backup [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (911)    |
+|0.010    |         62347 > 3737 [FIN,            |TCP: 62347 > 3737 [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (3737)   |
+|0.010    |         62347 > 26 [FIN, PS           |TCP: 62347 > 26 [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (26)     |
+|0.010    |         warmspotMgmt > 6234           |TCP: warmspotMgmt > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1074)   |
+|0.010    |         62347 > 12265 [FIN,           |TCP: 62347 > 12265 [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (12265)  |
+|0.010    |         62347 > 49167 [FIN,           |TCP: 62347 > 49167 [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (49167)  |
+|0.010    |         62347 > 50800 [FIN,           |TCP: 62347 > 50800 [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (50800)  |
+|0.010    |         afs3-kaserver > 623           |TCP: afs3-kaserver > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (7004)   |
+|0.010    |         62347 > dc [FIN, PS           |TCP: 62347 > dc [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (2001)   |
+|0.010    |         62347 > winpoplanme           |TCP: 62347 > winpoplanmess [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (1152)   |
+|0.010    |         62347 > npp [FIN, P           |TCP: 62347 > npp [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (4045)   |
+|0.010    |         listcrt-port-2 > 62           |TCP: listcrt-port-2 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (3914)   |
+|0.010    |         62347 > cplscramble           |TCP: 62347 > cplscrambler-in [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (1087)   |
+|0.010    |         62347 > danf-ak2 [F           |TCP: 62347 > danf-ak2 [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (1041)   |
+|0.010    |         pxc-spvr-ft > 62347           |TCP: pxc-spvr-ft > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (4002)   |
+|0.011    |         62347 > 9003 [FIN,            |TCP: 62347 > 9003 [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (9003)   |
+|0.011    |         62347 > 6646 [FIN,            |TCP: 62347 > 6646 [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (6646)   |
+|0.011    |         sip-tls > 62347 [RS           |TCP: sip-tls > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (5061)   |
+|0.011    |         52869 > 62347 [RST,           |TCP: 52869 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (52869)  |
+|0.011    |         914c/g > 62347 [RST           |TCP: 914c/g > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (211)    |
+|0.011    |         dandv-tester > 6234           |TCP: dandv-tester > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (3889)   |
+|0.011    |         xmpp-client > 62347           |TCP: xmpp-client > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (5222)   |
+|0.011    |         bacula-dir > 62347            |TCP: bacula-dir > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (9101)   |
+|0.011    |         bnetgame > 62347 [R           |TCP: bnetgame > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1119)   |
+|0.011    |         dab-sti-c > 62347 [           |TCP: dab-sti-c > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1076)   |
+|0.011    |         ams > 62347 [RST, A           |TCP: ams > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1037)   |
+|0.011    |         dxmessagebase2 > 62           |TCP: dxmessagebase2 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (2875)   |
+|0.011    |         vmsvc-2 > 62347 [RS           |TCP: vmsvc-2 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (7025)   |
+|0.011    |         ii-admin > 62347 [R           |TCP: ii-admin > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (3006)   |
+|0.011    |         lam > 62347 [RST, A           |TCP: lam > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (2040)   |
+|0.011    |         csd-mgmt-port > 623           |TCP: csd-mgmt-port > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (3071)   |
+|0.011    |         acc-raid > 62347 [R           |TCP: acc-raid > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (2800)   |
+|0.011    |         ms-sql-m > 62347 [R           |TCP: ms-sql-m > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1434)   |
+|0.011    |         xact-backup > 62347           |TCP: xact-backup > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (911)    |
+|0.011    |         3737 > 62347 [RST,            |TCP: 3737 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (3737)   |
+|0.011    |         26 > 62347 [RST, AC           |TCP: 26 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (26)     |
+|0.011    |         12265 > 62347 [RST,           |TCP: 12265 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (12265)  |
+|0.011    |         49167 > 62347 [RST,           |TCP: 49167 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (49167)  |
+|0.011    |         50800 > 62347 [RST,           |TCP: 50800 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (50800)  |
+|0.012    |         dc > 62347 [RST, AC           |TCP: dc > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (2001)   |
+|0.012    |         winpoplanmess > 623           |TCP: winpoplanmess > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1152)   |
+|0.012    |         npp > 62347 [RST, A           |TCP: npp > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (4045)   |
+|0.012    |         cplscrambler-in > 6           |TCP: cplscrambler-in > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1087)   |
+|0.012    |         danf-ak2 > 62347 [R           |TCP: danf-ak2 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1041)   |
+|0.012    |         9003 > 62347 [RST,            |TCP: 9003 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (9003)   |
+|0.012    |         6646 > 62347 [RST,            |TCP: 6646 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (6646)   |
+|0.012    |         62347 > 27356 [FIN,           |TCP: 62347 > 27356 [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (27356)  |
+|0.012    |         62347 > fj-hdnet [F           |TCP: 62347 > fj-hdnet [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (1717)   |
+|0.012    |         62347 > 17988 [FIN,           |TCP: 62347 > 17988 [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (17988)  |
+|0.012    |         27356 > 62347 [RST,           |TCP: 27356 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (27356)  |
+|0.012    |         62347 > mcer-port [           |TCP: 62347 > mcer-port [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (6510)   |
+|0.012    |         62347 > webadmstart           |TCP: 62347 > webadmstart [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (1110)   |
+|0.012    |         62347 > 13456 [FIN,           |TCP: 62347 > 13456 [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (13456)  |
+|0.012    |         62347 > 720 [FIN, P           |TCP: 62347 > 720 [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (720)    |
+|0.012    |         fj-hdnet > 62347 [R           |TCP: fj-hdnet > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1717)   |
+|0.012    |         62347 > afs3-bos [F           |TCP: 62347 > afs3-bos [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (7007)   |
+|0.012    |         17988 > 62347 [RST,           |TCP: 17988 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (17988)  |
+|0.012    |         62347 > hlserver [F           |TCP: 62347 > hlserver [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (1947)   |
+|0.012    |         62347 > glogger [FI           |TCP: 62347 > glogger [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (2033)   |
+|0.012    |         62347 > kerberos-ad           |TCP: 62347 > kerberos-adm [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (749)    |
+|0.012    |         mcer-port > 62347 [           |TCP: mcer-port > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (6510)   |
+|0.012    |         62347 > exasoftport           |TCP: 62347 > exasoftport1 [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (3920)   |
+|0.012    |         62347 > 38292 [FIN,           |TCP: 62347 > 38292 [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (38292)  |
+|0.012    |         62347 > 1783 [FIN,            |TCP: 62347 > 1783 [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (1783)   |
+|0.012    |         webadmstart > 62347           |TCP: webadmstart > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1110)   |
+|0.012    |         62347 > bpcd [FIN,            |TCP: 62347 > bpcd [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (13782)  |
+|0.012    |         62347 > finger [FIN           |TCP: 62347 > finger [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (79)     |
+|0.012    |         62347 > mctp [FIN,            |TCP: 62347 > mctp [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (1100)   |
+|0.012    |         62347 > condor [FIN           |TCP: 62347 > condor [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (9618)   |
+|0.012    |         13456 > 62347 [RST,           |TCP: 13456 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (13456)  |
+|0.012    |         62347 > 6792 [FIN,            |TCP: 62347 > 6792 [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (6792)   |
+|0.013    |         62347 > 61900 [FIN,           |TCP: 62347 > 61900 [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (61900)  |
+|0.013    |         62347 > ansoft-lm-2           |TCP: 62347 > ansoft-lm-2 [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (1084)   |
+|0.013    |         62347 > xmltec-xmlm           |TCP: 62347 > xmltec-xmlmail [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (9091)   |
+|0.013    |         720 > 62347 [RST, A           |TCP: 720 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (720)    |
+|0.013    |         afs3-bos > 62347 [R           |TCP: afs3-bos > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (7007)   |
+|0.013    |         62347 > 5950 [FIN,            |TCP: 62347 > 5950 [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (5950)   |
+|0.013    |         62347 > time [FIN,            |TCP: 62347 > time [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (37)     |
+|0.013    |         62347 > 8045 [FIN,            |TCP: 62347 > 8045 [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (8045)   |
+|0.013    |         62347 > 49156 [FIN,           |TCP: 62347 > 49156 [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (49156)  |
+|0.013    |         hlserver > 62347 [R           |TCP: hlserver > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1947)   |
+|0.013    |         62347 > rrp [FIN, P           |TCP: 62347 > rrp [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (648)    |
+|0.013    |         62347 > elfiq-repl            |TCP: 62347 > elfiq-repl [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (1148)   |
+|0.013    |         62347 > iad3 [FIN,            |TCP: 62347 > iad3 [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (1032)   |
+|0.013    |         62347 > winfs [FIN,           |TCP: 62347 > winfs [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (5009)   |
+|0.013    |         glogger > 62347 [RS           |TCP: glogger > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (2033)   |
+|0.013    |         62347 > radan-http            |TCP: 62347 > radan-http [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (8088)   |
+|0.013    |         62347 > wormux [FIN           |TCP: 62347 > wormux [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (3826)   |
+|0.013    |         62347 > 49154 [FIN,           |TCP: 62347 > 49154 [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (49154)  |
+|0.013    |         kerberos-adm > 6234           |TCP: kerberos-adm > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (749)    |
+|0.013    |         62347 > bgp [FIN, P           |TCP: 62347 > bgp [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (179)    |
+|0.013    |         62347 > openwebnet            |TCP: 62347 > openwebnet [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (20005)  |
+|0.013    |         62347 > oracleas-ht           |TCP: 62347 > oracleas-https [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (7443)   |
+|0.013    |         62347 > polestar [F           |TCP: 62347 > polestar [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (1060)   |
+|0.013    |         62347 > 7938 [FIN,            |TCP: 62347 > 7938 [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (7938)   |
+|0.013    |         62347 > accessbuild           |TCP: 62347 > accessbuilder [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (888)    |
+|0.013    |         62347 > 49175 [FIN,           |TCP: 62347 > 49175 [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (49175)  |
+|0.013    |         exasoftport1 > 6234           |TCP: exasoftport1 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (3920)   |
+|0.013    |         62347 > 6881 [FIN,            |TCP: 62347 > 6881 [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (6881)   |
+|0.013    |         62347 > netview-aix           |TCP: 62347 > netview-aix-6 [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (1666)   |
+|0.013    |         62347 > mzap [FIN,            |TCP: 62347 > mzap [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (2106)   |
+|0.014    |         38292 > 62347 [RST,           |TCP: 38292 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (38292)  |
+|0.014    |         62347 > 58080 [FIN,           |TCP: 62347 > 58080 [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (58080)  |
+|0.014    |         1783 > 62347 [RST,            |TCP: 1783 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1783)   |
+|0.014    |         bpcd > 62347 [RST,            |TCP: bpcd > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (13782)  |
+|0.014    |         finger > 62347 [RST           |TCP: finger > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (79)     |
+|0.014    |         mctp > 62347 [RST,            |TCP: mctp > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1100)   |
+|0.014    |         condor > 62347 [RST           |TCP: condor > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (9618)   |
+|0.014    |         6792 > 62347 [RST,            |TCP: 6792 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (6792)   |
+|0.014    |         61900 > 62347 [RST,           |TCP: 61900 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (61900)  |
+|0.014    |         ansoft-lm-2 > 62347           |TCP: ansoft-lm-2 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1084)   |
+|0.014    |         xmltec-xmlmail > 62           |TCP: xmltec-xmlmail > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (9091)   |
+|0.014    |         5950 > 62347 [RST,            |TCP: 5950 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (5950)   |
+|0.014    |         time > 62347 [RST,            |TCP: time > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (37)     |
+|0.014    |         8045 > 62347 [RST,            |TCP: 8045 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (8045)   |
+|0.014    |         49156 > 62347 [RST,           |TCP: 49156 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (49156)  |
+|0.014    |         rrp > 62347 [RST, A           |TCP: rrp > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (648)    |
+|0.014    |         elfiq-repl > 62347            |TCP: elfiq-repl > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1148)   |
+|0.014    |         62347 > timbuktu [F           |TCP: 62347 > timbuktu [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (407)    |
+|0.014    |         iad3 > 62347 [RST,            |TCP: iad3 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1032)   |
+|0.014    |         62347 > gsigatekeep           |TCP: 62347 > gsigatekeeper [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (2119)   |
+|0.014    |         winfs > 62347 [RST,           |TCP: winfs > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (5009)   |
+|0.014    |         radan-http > 62347            |TCP: radan-http > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (8088)   |
+|0.014    |         wormux > 62347 [RST           |TCP: wormux > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (3826)   |
+|0.014    |         62347 > 1002 [FIN,            |TCP: 62347 > 1002 [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (1002)   |
+|0.014    |         49154 > 62347 [RST,           |TCP: 49154 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (49154)  |
+|0.014    |         bgp > 62347 [RST, A           |TCP: bgp > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (179)    |
+|0.014    |         62347 > cvspserver            |TCP: 62347 > cvspserver [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (2401)   |
+|0.014    |         62347 > 5904 [FIN,            |TCP: 62347 > 5904 [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (5904)   |
+|0.014    |         62347 > dnp [FIN, P           |TCP: 62347 > dnp [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (20000)  |
+|0.014    |         openwebnet > 62347            |TCP: openwebnet > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (20005)  |
+|0.015    |         oracleas-https > 62           |TCP: oracleas-https > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (7443)   |
+|0.015    |         polestar > 62347 [R           |TCP: polestar > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1060)   |
+|0.015    |         7938 > 62347 [RST,            |TCP: 7938 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (7938)   |
+|0.015    |         accessbuilder > 623           |TCP: accessbuilder > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (888)    |
+|0.015    |         49175 > 62347 [RST,           |TCP: 49175 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (49175)  |
+|0.015    |         6881 > 62347 [RST,            |TCP: 6881 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (6881)   |
+|0.015    |         netview-aix-6 > 623           |TCP: netview-aix-6 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1666)   |
+|0.015    |         mzap > 62347 [RST,            |TCP: mzap > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (2106)   |
+|0.015    |         58080 > 62347 [RST,           |TCP: 58080 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (58080)  |
+|0.015    |         timbuktu > 62347 [R           |TCP: timbuktu > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (407)    |
+|0.015    |         gsigatekeeper > 623           |TCP: gsigatekeeper > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (2119)   |
+|0.015    |         1002 > 62347 [RST,            |TCP: 1002 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1002)   |
+|0.015    |         cvspserver > 62347            |TCP: cvspserver > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (2401)   |
+|0.015    |         5904 > 62347 [RST,            |TCP: 5904 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (5904)   |
+|0.015    |         dnp > 62347 [RST, A           |TCP: dnp > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (20000)  |
+|0.015    |         62347 > onscreen [F           |TCP: 62347 > onscreen [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (5080)   |
+|0.015    |         62347 > 4 [FIN, PSH           |TCP: 62347 > 4 [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (4)      |
+|0.015    |         62347 > oms [FIN, P           |TCP: 62347 > oms [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (4662)   |
+|0.015    |         62347 > kiosk [FIN,           |TCP: 62347 > kiosk [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (1061)   |
+|0.015    |         62347 > btrieve [FI           |TCP: 62347 > btrieve [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (3351)   |
+|0.015    |         onscreen > 62347 [R           |TCP: onscreen > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (5080)   |
+|0.015    |         62347 > isoipsigpor           |TCP: 62347 > isoipsigport-2 [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (1107)   |
+|0.015    |         4 > 62347 [RST, ACK           |TCP: 4 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (4)      |
+|0.015    |         62347 > personal-ag           |TCP: 62347 > personal-agent [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (5555)   |
+|0.015    |         62347 > jtag-server           |TCP: 62347 > jtag-server [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (1309)   |
+|0.015    |         62347 > hfcs [FIN,            |TCP: 62347 > hfcs [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (4900)   |
+|0.016    |         62347 > boks_servm            |TCP: 62347 > boks_servm [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (6502)   |
+|0.016    |         62347 > radmin-port           |TCP: 62347 > radmin-port [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (4899)   |
+|0.016    |         oms > 62347 [RST, A           |TCP: oms > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (4662)   |
+|0.016    |         62347 > hermes [FIN           |TCP: 62347 > hermes [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (1248)   |
+|0.016    |         62347 > 56738 [FIN,           |TCP: 62347 > 56738 [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (56738)  |
+|0.016    |         62347 > 32781 [FIN,           |TCP: 62347 > 32781 [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (32781)  |
+|0.016    |         kiosk > 62347 [RST,           |TCP: kiosk > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1061)   |
+|0.016    |         btrieve > 62347 [RS           |TCP: btrieve > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (3351)   |
+|0.016    |         62347 > gopher [FIN           |TCP: 62347 > gopher [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (70)     |
+|0.016    |         62347 > 8007 [FIN,            |TCP: 62347 > 8007 [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (8007)   |
+|0.016    |         62347 > 50300 [FIN,           |TCP: 62347 > 50300 [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (50300)  |
+|0.016    |         62347 > h323hostcal           |TCP: 62347 > h323hostcall [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (1720)   |
+|0.016    |         isoipsigport-2 > 62           |TCP: isoipsigport-2 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1107)   |
+|0.016    |         62347 > 52822 [FIN,           |TCP: 62347 > 52822 [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (52822)  |
+|0.016    |         62347 > nicetec-mgm           |TCP: 62347 > nicetec-mgmt [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (2557)   |
+|0.016    |         62347 > ssdp [FIN,            |TCP: 62347 > ssdp [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (1900)   |
+|0.016    |         62347 > park-agent            |TCP: 62347 > park-agent [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (5431)   |
+|0.016    |         personal-agent > 62           |TCP: personal-agent > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (5555)   |
+|0.016    |         jtag-server > 62347           |TCP: jtag-server > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1309)   |
+|0.016    |         62347 > x25-svc-por           |TCP: 62347 > x25-svc-port [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (1998)   |
+|0.016    |         62347 > msmq [FIN,            |TCP: 62347 > msmq [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (1801)   |
+|0.016    |         62347 > 49153 [FIN,           |TCP: 62347 > 49153 [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (49153)  |
+|0.016    |         hfcs > 62347 [RST,            |TCP: hfcs > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (4900)   |
+|0.016    |         62347 > mailbox [FI           |TCP: 62347 > mailbox [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (2004)   |
+|0.016    |         boks_servm > 62347            |TCP: boks_servm > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (6502)   |
+|0.016    |         62347 > d-s-n [FIN,           |TCP: 62347 > d-s-n [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (8086)   |
+|0.016    |         62347 > apocd [FIN,           |TCP: 62347 > apocd [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (3809)   |
+|0.016    |         62347 > device [FIN           |TCP: 62347 > device [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (801)    |
+|0.016    |         radmin-port > 62347           |TCP: radmin-port > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (4899)   |
+|0.016    |         62347 > sybaseanywh           |TCP: 62347 > sybaseanywhere [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (2638)   |
+|0.016    |         hermes > 62347 [RST           |TCP: hermes > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1248)   |
+|0.016    |         62347 > 60020 [FIN,           |TCP: 62347 > 60020 [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (60020)  |
+|0.016    |         62347 > 5952 [FIN,            |TCP: 62347 > 5952 [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (5952)   |
+|0.017    |         62347 > mit-ml-dev            |TCP: 62347 > mit-ml-dev [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (83)     |
+|0.017    |         56738 > 62347 [RST,           |TCP: 56738 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (56738)  |
+|0.017    |         62347 > mupdate [FI           |TCP: 62347 > mupdate [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (3905)   |
+|0.017    |         62347 > 5221 [FIN,            |TCP: 62347 > 5221 [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (5221)   |
+|0.017    |         62347 > filenet-pei           |TCP: 62347 > filenet-peior [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (32776)  |
+|0.017    |         62347 > commplex-li           |TCP: 62347 > commplex-link [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (5001)   |
+|0.017    |         62347 > 5962 [FIN,            |TCP: 62347 > 5962 [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (5962)   |
+|0.017    |         32781 > 62347 [RST,           |TCP: 32781 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (32781)  |
+|0.017    |         62347 > surf [FIN,            |TCP: 62347 > surf [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (1010)   |
+|0.017    |         62347 > 7741 [FIN,            |TCP: 62347 > 7741 [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (7741)   |
+|0.017    |         gopher > 62347 [RST           |TCP: gopher > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (70)     |
+|0.017    |         62347 > dcutility [           |TCP: 62347 > dcutility [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (1044)   |
+|0.017    |         62347 > zieto-comms           |TCP: 62347 > zieto-comms [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (3766)   |
+|0.017    |         62347 > esl-lm [FIN           |TCP: 62347 > esl-lm [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (1455)   |
+|0.017    |         8007 > 62347 [RST,            |TCP: 8007 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (8007)   |
+|0.017    |         62347 > blp1 [FIN,            |TCP: 62347 > blp1 [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (8194)   |
+|0.017    |         62347 > pharos [FIN           |TCP: 62347 > pharos [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (4443)   |
+|0.017    |         62347 > bvcontrol [           |TCP: 62347 > bvcontrol [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (1236)   |
+|0.017    |         50300 > 62347 [RST,           |TCP: 50300 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (50300)  |
+|0.017    |         62347 > 16001 [FIN,           |TCP: 62347 > 16001 [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (16001)  |
+|0.017    |         62347 > pxc-spvr [F           |TCP: 62347 > pxc-spvr [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (4006)   |
+|0.017    |         62347 > 15004 [FIN,           |TCP: 62347 > 15004 [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (15004)  |
+|0.017    |         h323hostcall > 6234           |TCP: h323hostcall > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1720)   |
+|0.017    |         62347 > 18988 [FIN,           |TCP: 62347 > 18988 [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (18988)  |
+|0.017    |         52822 > 62347 [RST,           |TCP: 52822 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (52822)  |
+|0.017    |         nicetec-mgmt > 6234           |TCP: nicetec-mgmt > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (2557)   |
+|0.017    |         ssdp > 62347 [RST,            |TCP: ssdp > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1900)   |
+|0.018    |         park-agent > 62347            |TCP: park-agent > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (5431)   |
+|0.018    |         x25-svc-port > 6234           |TCP: x25-svc-port > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1998)   |
+|0.018    |         msmq > 62347 [RST,            |TCP: msmq > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1801)   |
+|0.018    |         49153 > 62347 [RST,           |TCP: 49153 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (49153)  |
+|0.018    |         mailbox > 62347 [RS           |TCP: mailbox > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (2004)   |
+|0.018    |         d-s-n > 62347 [RST,           |TCP: d-s-n > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (8086)   |
+|0.018    |         apocd > 62347 [RST,           |TCP: apocd > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (3809)   |
+|0.018    |         device > 62347 [RST           |TCP: device > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (801)    |
+|0.018    |         sybaseanywhere > 62           |TCP: sybaseanywhere > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (2638)   |
+|0.018    |         60020 > 62347 [RST,           |TCP: 60020 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (60020)  |
+|0.018    |         5952 > 62347 [RST,            |TCP: 5952 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (5952)   |
+|0.018    |         mit-ml-dev > 62347            |TCP: mit-ml-dev > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (83)     |
+|0.018    |         mupdate > 62347 [RS           |TCP: mupdate > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (3905)   |
+|0.018    |         5221 > 62347 [RST,            |TCP: 5221 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (5221)   |
+|0.018    |         filenet-peior > 623           |TCP: filenet-peior > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (32776)  |
+|0.018    |         commplex-link > 623           |TCP: commplex-link > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (5001)   |
+|0.018    |         5962 > 62347 [RST,            |TCP: 5962 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (5962)   |
+|0.018    |         surf > 62347 [RST,            |TCP: surf > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1010)   |
+|0.018    |         7741 > 62347 [RST,            |TCP: 7741 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (7741)   |
+|0.018    |         dcutility > 62347 [           |TCP: dcutility > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1044)   |
+|0.018    |         zieto-comms > 62347           |TCP: zieto-comms > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (3766)   |
+|0.018    |         esl-lm > 62347 [RST           |TCP: esl-lm > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1455)   |
+|0.018    |         blp1 > 62347 [RST,            |TCP: blp1 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (8194)   |
+|0.018    |         pharos > 62347 [RST           |TCP: pharos > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (4443)   |
+|0.018    |         bvcontrol > 62347 [           |TCP: bvcontrol > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1236)   |
+|0.018    |         16001 > 62347 [RST,           |TCP: 16001 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (16001)  |
+|0.018    |         pxc-spvr > 62347 [R           |TCP: pxc-spvr > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (4006)   |
+|0.018    |         15004 > 62347 [RST,           |TCP: 15004 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (15004)  |
+|0.018    |         18988 > 62347 [RST,           |TCP: 18988 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (18988)  |
+|0.019    |         62347 > 4279 [FIN,            |TCP: 62347 > 4279 [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (4279)   |
+|0.019    |         62347 > netopia-vo2           |TCP: 62347 > netopia-vo2 [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (1840)   |
+|0.019    |         62347 > lds-distrib           |TCP: 62347 > lds-distrib [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (6543)   |
+|0.019    |         4279 > 62347 [RST,            |TCP: 4279 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (4279)   |
+|0.019    |         62347 > abarsd [FIN           |TCP: 62347 > abarsd [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (8402)   |
+|0.019    |         62347 > 49161 [FIN,           |TCP: 62347 > 49161 [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (49161)  |
+|0.019    |         62347 > 57797 [FIN,           |TCP: 62347 > 57797 [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (57797)  |
+|0.019    |         62347 > cpq-wbem [F           |TCP: 62347 > cpq-wbem [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (2301)   |
+|0.019    |         62347 > 9878 [FIN,            |TCP: 62347 > 9878 [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (9878)   |
+|0.019    |         62347 > 9050 [FIN,            |TCP: 62347 > 9050 [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (9050)   |
+|0.019    |         62347 > hp-pdl-data           |TCP: 62347 > hp-pdl-datastr [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (9100)   |
+|0.019    |         netopia-vo2 > 62347           |TCP: netopia-vo2 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1840)   |
+|0.019    |         62347 > 5998 [FIN,            |TCP: 62347 > 5998 [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (5998)   |
+|0.019    |         lds-distrib > 62347           |TCP: lds-distrib > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (6543)   |
+|0.019    |         62347 > event_liste           |TCP: 62347 > event_listener [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (3017)   |
+|0.019    |         62347 > amiganetfs            |TCP: 62347 > amiganetfs [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (2100)   |
+|0.019    |         abarsd > 62347 [RST           |TCP: abarsd > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (8402)   |
+|0.019    |         62347 > 40193 [FIN,           |TCP: 62347 > 40193 [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (40193)  |
+|0.019    |         62347 > filenet-rpc           |TCP: 62347 > filenet-rpc [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (32769)  |
+|0.019    |         49161 > 62347 [RST,           |TCP: 49161 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (49161)  |
+|0.019    |         62347 > iad2 [FIN,            |TCP: 62347 > iad2 [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (1031)   |
+|0.019    |         62347 > tdaccess [F           |TCP: 62347 > tdaccess [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (2910)   |
+|0.019    |         62347 > ddt [FIN, P           |TCP: 62347 > ddt [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (1052)   |
+|0.019    |         62347 > h323hostcal           |TCP: 62347 > h323hostcallsc [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (1300)   |
+|0.019    |         62347 > 9111 [FIN,            |TCP: 62347 > 9111 [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (9111)   |
+|0.019    |         57797 > 62347 [RST,           |TCP: 57797 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (57797)  |
+|0.019    |         62347 > 5550 [FIN,            |TCP: 62347 > 5550 [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (5550)   |
+|0.019    |         62347 > 5961 [FIN,            |TCP: 62347 > 5961 [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (5961)   |
+|0.019    |         62347 > isbconferen           |TCP: 62347 > isbconference1 [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (1244)   |
+|0.019    |         cpq-wbem > 62347 [R           |TCP: cpq-wbem > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (2301)   |
+|0.019    |         62347 > 5960 [FIN,            |TCP: 62347 > 5960 [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (5960)   |
+|0.020    |         62347 > 6007 [FIN,            |TCP: 62347 > 6007 [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (6007)   |
+|0.020    |         9878 > 62347 [RST,            |TCP: 9878 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (9878)   |
+|0.020    |         9050 > 62347 [RST,            |TCP: 9050 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (9050)   |
+|0.020    |         hp-pdl-datastr > 62           |TCP: hp-pdl-datastr > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (9100)   |
+|0.020    |         5998 > 62347 [RST,            |TCP: 5998 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (5998)   |
+|0.020    |         event_listener > 62           |TCP: event_listener > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (3017)   |
+|0.020    |         amiganetfs > 62347            |TCP: amiganetfs > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (2100)   |
+|0.020    |         40193 > 62347 [RST,           |TCP: 40193 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (40193)  |
+|0.020    |         filenet-rpc > 62347           |TCP: filenet-rpc > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (32769)  |
+|0.020    |         iad2 > 62347 [RST,            |TCP: iad2 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1031)   |
+|0.020    |         tdaccess > 62347 [R           |TCP: tdaccess > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (2910)   |
+|0.020    |         ddt > 62347 [RST, A           |TCP: ddt > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1052)   |
+|0.020    |         h323hostcallsc > 62           |TCP: h323hostcallsc > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1300)   |
+|0.020    |         9111 > 62347 [RST,            |TCP: 9111 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (9111)   |
+|0.020    |         5550 > 62347 [RST,            |TCP: 5550 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (5550)   |
+|0.020    |         5961 > 62347 [RST,            |TCP: 5961 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (5961)   |
+|0.020    |         isbconference1 > 62           |TCP: isbconference1 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1244)   |
+|0.020    |         5960 > 62347 [RST,            |TCP: 5960 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (5960)   |
+|0.020    |         6007 > 62347 [RST,            |TCP: 6007 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (6007)   |
+|0.020    |         62347 > 32782 [FIN,           |TCP: 62347 > 32782 [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (32782)  |
+|0.020    |         62347 > ovsam-mgmt            |TCP: 62347 > ovsam-mgmt [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (3869)   |
+|0.020    |         62347 > mpc-lifenet           |TCP: 62347 > mpc-lifenet [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (1213)   |
+|0.020    |         32782 > 62347 [RST,           |TCP: 32782 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (32782)  |
+|0.020    |         62347 > asprovatalk           |TCP: 62347 > asprovatalk [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (1079)   |
+|0.020    |         62347 > beorl [FIN,           |TCP: 62347 > beorl [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (5633)   |
+|0.020    |         62347 > 3371 [FIN,            |TCP: 62347 > 3371 [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (3371)   |
+|0.021    |         62347 > 50006 [FIN,           |TCP: 62347 > 50006 [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (50006)  |
+|0.021    |         62347 > sunwebadmin           |TCP: 62347 > sunwebadmin [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (8800)   |
+|0.021    |         ovsam-mgmt > 62347            |TCP: ovsam-mgmt > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (3869)   |
+|0.021    |         62347 > netbios-ssn           |TCP: 62347 > netbios-ssn [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (139)    |
+|0.021    |         62347 > msexch-rout           |TCP: 62347 > msexch-routing [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (691)    |
+|0.021    |         62347 > sms-xfer [F           |TCP: 62347 > sms-xfer [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (2702)   |
+|0.021    |         mpc-lifenet > 62347           |TCP: mpc-lifenet > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1213)   |
+|0.021    |         62347 > 6156 [FIN,            |TCP: 62347 > 6156 [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (6156)   |
+|0.021    |         62347 > 28201 [FIN,           |TCP: 62347 > 28201 [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (28201)  |
+|0.021    |         62347 > blackjack [           |TCP: 62347 > blackjack [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (1025)   |
+|0.021    |         62347 > 8291 [FIN,            |TCP: 62347 > 8291 [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (8291)   |
+|0.021    |         62347 > 2196 [FIN,            |TCP: 62347 > 2196 [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (2196)   |
+|0.021    |         asprovatalk > 62347           |TCP: asprovatalk > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1079)   |
+|0.021    |         beorl > 62347 [RST,           |TCP: beorl > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (5633)   |
+|0.021    |         62347 > ndmp [FIN,            |TCP: 62347 > ndmp [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (10000)  |
+|0.021    |         62347 > 7937 [FIN,            |TCP: 62347 > 7937 [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (7937)   |
+|0.021    |         62347 > 6669 [FIN,            |TCP: 62347 > 6669 [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (6669)   |
+|0.021    |         62347 > 10215 [FIN,           |TCP: 62347 > 10215 [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (10215)  |
+|0.021    |         3371 > 62347 [RST,            |TCP: 3371 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (3371)   |
+|0.021    |         62347 > iscsi-targe           |TCP: 62347 > iscsi-target [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (3260)   |
+|0.021    |         62347 > dnx [FIN, P           |TCP: 62347 > dnx [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (3998)   |
+|0.021    |         62347 > imgames [FI           |TCP: 62347 > imgames [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (1077)   |
+|0.021    |         50006 > 62347 [RST,           |TCP: 50006 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (50006)  |
+|0.021    |         62347 > 9415 [FIN,            |TCP: 62347 > 9415 [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (9415)   |
+|0.021    |         62347 > hp-server [           |TCP: 62347 > hp-server [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (5225)   |
+|0.021    |         sunwebadmin > 62347           |TCP: sunwebadmin > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (8800)   |
+|0.021    |         netbios-ssn > 62347           |TCP: netbios-ssn > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (139)    |
+|0.021    |         msexch-routing > 62           |TCP: msexch-routing > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (691)    |
+|0.022    |         sms-xfer > 62347 [R           |TCP: sms-xfer > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (2702)   |
+|0.022    |         6156 > 62347 [RST,            |TCP: 6156 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (6156)   |
+|0.022    |         28201 > 62347 [RST,           |TCP: 28201 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (28201)  |
+|0.022    |         blackjack > 62347 [           |TCP: blackjack > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1025)   |
+|0.022    |         8291 > 62347 [RST,            |TCP: 8291 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (8291)   |
+|0.022    |         2196 > 62347 [RST,            |TCP: 2196 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (2196)   |
+|0.022    |         ndmp > 62347 [RST,            |TCP: ndmp > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (10000)  |
+|0.022    |         7937 > 62347 [RST,            |TCP: 7937 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (7937)   |
+|0.022    |         6669 > 62347 [RST,            |TCP: 6669 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (6669)   |
+|0.022    |         10215 > 62347 [RST,           |TCP: 10215 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (10215)  |
+|0.022    |         iscsi-target > 6234           |TCP: iscsi-target > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (3260)   |
+|0.022    |         dnx > 62347 [RST, A           |TCP: dnx > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (3998)   |
+|0.022    |         imgames > 62347 [RS           |TCP: imgames > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1077)   |
+|0.022    |         9415 > 62347 [RST,            |TCP: 9415 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (9415)   |
+|0.022    |         hp-server > 62347 [           |TCP: hp-server > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (5225)   |
+|0.022    |         62347 > urd [FIN, P           |TCP: 62347 > urd [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (465)    |
+|0.022    |         62347 > 254 [FIN, P           |TCP: 62347 > 254 [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (254)    |
+|0.022    |         62347 > 6901 [FIN,            |TCP: 62347 > 6901 [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (6901)   |
+|0.022    |         62347 > fmpro-fdal            |TCP: 62347 > fmpro-fdal [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (2399)   |
+|0.022    |         62347 > 6692 [FIN,            |TCP: 62347 > 6692 [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (6692)   |
+|0.022    |         urd > 62347 [RST, A           |TCP: urd > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (465)    |
+|0.022    |         62347 > 19101 [FIN,           |TCP: 62347 > 19101 [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (19101)  |
+|0.022    |         62347 > x9-icue [FI           |TCP: 62347 > x9-icue [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (1145)   |
+|0.023    |         62347 > cplscramble           |TCP: 62347 > cplscrambler-lg [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (1086)   |
+|0.023    |         62347 > afs3-filese           |TCP: 62347 > afs3-fileserver [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (7000)   |
+|0.023    |         62347 > snmp [FIN,            |TCP: 62347 > snmp [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (161)    |
+|0.023    |         62347 > 51103 [FIN,           |TCP: 62347 > 51103 [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (51103)  |
+|0.023    |         254 > 62347 [RST, A           |TCP: 254 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (254)    |
+|0.023    |         62347 > x11 [FIN, P           |TCP: 62347 > x11 [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (6000)   |
+|0.023    |         62347 > lmsocialser           |TCP: 62347 > lmsocialserver [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (1111)   |
+|0.023    |         6901 > 62347 [RST,            |TCP: 6901 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (6901)   |
+|0.023    |         62347 > 5907 [FIN,            |TCP: 62347 > 5907 [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (5907)   |
+|0.023    |         62347 > 33899 [FIN,           |TCP: 62347 > 33899 [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (33899)  |
+|0.023    |         62347 > macromedia-           |TCP: 62347 > macromedia-fcs [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (1935)   |
+|0.023    |         62347 > 987 [FIN, P           |TCP: 62347 > 987 [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (987)    |
+|0.023    |         fmpro-fdal > 62347            |TCP: fmpro-fdal > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (2399)   |
+|0.023    |         62347 > us-srv [FIN           |TCP: 62347 > us-srv [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (8083)   |
+|0.023    |         62347 > 8090 [FIN,            |TCP: 62347 > 8090 [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (8090)   |
+|0.023    |         6692 > 62347 [RST,            |TCP: 6692 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (6692)   |
+|0.023    |         62347 > invokator [           |TCP: 62347 > invokator [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (2006)   |
+|0.023    |         62347 > ms-olap4 [F           |TCP: 62347 > ms-olap4 [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (2383)   |
+|0.023    |         62347 > xrl [FIN, P           |TCP: 62347 > xrl [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (1104)   |
+|0.023    |         19101 > 62347 [RST,           |TCP: 19101 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (19101)  |
+|0.023    |         62347 > 7019 [FIN,            |TCP: 62347 > 7019 [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (7019)   |
+|0.023    |         62347 > 10621 [FIN,           |TCP: 62347 > 10621 [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (10621)  |
+|0.023    |         x9-icue > 62347 [RS           |TCP: x9-icue > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1145)   |
+|0.023    |         62347 > 49157 [FIN,           |TCP: 62347 > 49157 [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (49157)  |
+|0.023    |         62347 > 62078 [FIN,           |TCP: 62347 > 62078 [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (62078)  |
+|0.023    |         62347 > 50001 [FIN,           |TCP: 62347 > 50001 [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (50001)  |
+|0.023    |         62347 > nsstp [FIN,           |TCP: 62347 > nsstp [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (1036)   |
+|0.023    |         62347 > ff-fms [FIN           |TCP: 62347 > ff-fms [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (1090)   |
+|0.023    |         cplscrambler-lg > 6           |TCP: cplscrambler-lg > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1086)   |
+|0.023    |         afs3-fileserver > 6           |TCP: afs3-fileserver > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (7000)   |
+|0.023    |         62347 > 5801 [FIN,            |TCP: 62347 > 5801 [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (5801)   |
+|0.024    |         62347 > 8011 [FIN,            |TCP: 62347 > 8011 [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (8011)   |
+|0.024    |         62347 > 7920 [FIN,            |TCP: 62347 > 7920 [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (7920)   |
+|0.024    |         62347 > 11110 [FIN,           |TCP: 62347 > 11110 [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (11110)  |
+|0.024    |         62347 > 3323 [FIN,            |TCP: 62347 > 3323 [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (3323)   |
+|0.024    |         snmp > 62347 [RST,            |TCP: snmp > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (161)    |
+|0.024    |         51103 > 62347 [RST,           |TCP: 51103 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (51103)  |
+|0.024    |         62347 > filenet-pa            |TCP: 62347 > filenet-pa [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (32772)  |
+|0.024    |         62347 > scotty-ft [           |TCP: 62347 > scotty-ft [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (14000)  |
+|0.024    |         x11 > 62347 [RST, A           |TCP: x11 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (6000)   |
+|0.024    |         62347 > proofd [FIN           |TCP: 62347 > proofd [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (1093)   |
+|0.024    |         62347 > 6129 [FIN,            |TCP: 62347 > 6129 [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (6129)   |
+|0.024    |         62347 > 5544 [FIN,            |TCP: 62347 > 5544 [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (5544)   |
+|0.024    |         lmsocialserver > 62           |TCP: lmsocialserver > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1111)   |
+|0.024    |         62347 > 3325 [FIN,            |TCP: 62347 > 3325 [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (3325)   |
+|0.024    |         62347 > 9943 [FIN,            |TCP: 62347 > 9943 [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (9943)   |
+|0.024    |         62347 > 65000 [FIN,           |TCP: 62347 > 65000 [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (65000)  |
+|0.024    |         5907 > 62347 [RST,            |TCP: 5907 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (5907)   |
+|0.024    |         62347 > eyetv [FIN,           |TCP: 62347 > eyetv [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (2170)   |
+|0.024    |         62347 > 27355 [FIN,           |TCP: 62347 > 27355 [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (27355)  |
+|0.024    |         33899 > 62347 [RST,           |TCP: 33899 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (33899)  |
+|0.024    |         62347 > 25735 [FIN,           |TCP: 62347 > 25735 [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (25735)  |
+|0.024    |         62347 > dls [FIN, P           |TCP: 62347 > dls [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (2047)   |
+|0.024    |         macromedia-fcs > 62           |TCP: macromedia-fcs > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1935)   |
+|0.024    |         62347 > 55555 [FIN,           |TCP: 62347 > 55555 [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (55555)  |
+|0.024    |         62347 > 5877 [FIN,            |TCP: 62347 > 5877 [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (5877)   |
+|0.024    |         62347 > 41511 [FIN,           |TCP: 62347 > 41511 [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (41511)  |
+|0.024    |         62347 > hpss-ndapi            |TCP: 62347 > hpss-ndapi [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (1217)   |
+|0.024    |         987 > 62347 [RST, A           |TCP: 987 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (987)    |
+|0.024    |         us-srv > 62347 [RST           |TCP: us-srv > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (8083)   |
+|0.024    |         8090 > 62347 [RST,            |TCP: 8090 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (8090)   |
+|0.025    |         invokator > 62347 [           |TCP: invokator > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (2006)   |
+|0.025    |         ms-olap4 > 62347 [R           |TCP: ms-olap4 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (2383)   |
+|0.025    |         xrl > 62347 [RST, A           |TCP: xrl > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1104)   |
+|0.025    |         7019 > 62347 [RST,            |TCP: 7019 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (7019)   |
+|0.025    |         10621 > 62347 [RST,           |TCP: 10621 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (10621)  |
+|0.025    |         49157 > 62347 [RST,           |TCP: 49157 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (49157)  |
+|0.025    |         62078 > 62347 [RST,           |TCP: 62078 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (62078)  |
+|0.025    |         50001 > 62347 [RST,           |TCP: 50001 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (50001)  |
+|0.025    |         nsstp > 62347 [RST,           |TCP: nsstp > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1036)   |
+|0.025    |         ff-fms > 62347 [RST           |TCP: ff-fms > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1090)   |
+|0.025    |         5801 > 62347 [RST,            |TCP: 5801 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (5801)   |
+|0.025    |         8011 > 62347 [RST,            |TCP: 8011 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (8011)   |
+|0.025    |         7920 > 62347 [RST,            |TCP: 7920 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (7920)   |
+|0.025    |         11110 > 62347 [RST,           |TCP: 11110 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (11110)  |
+|0.025    |         3323 > 62347 [RST,            |TCP: 3323 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (3323)   |
+|0.025    |         filenet-pa > 62347            |TCP: filenet-pa > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (32772)  |
+|0.025    |         scotty-ft > 62347 [           |TCP: scotty-ft > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (14000)  |
+|0.025    |         proofd > 62347 [RST           |TCP: proofd > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1093)   |
+|0.025    |         6129 > 62347 [RST,            |TCP: 6129 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (6129)   |
+|0.025    |         5544 > 62347 [RST,            |TCP: 5544 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (5544)   |
+|0.025    |         3325 > 62347 [RST,            |TCP: 3325 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (3325)   |
+|0.025    |         9943 > 62347 [RST,            |TCP: 9943 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (9943)   |
+|0.025    |         65000 > 62347 [RST,           |TCP: 65000 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (65000)  |
+|0.025    |         eyetv > 62347 [RST,           |TCP: eyetv > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (2170)   |
+|0.025    |         27355 > 62347 [RST,           |TCP: 27355 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (27355)  |
+|0.025    |         25735 > 62347 [RST,           |TCP: 25735 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (25735)  |
+|0.025    |         dls > 62347 [RST, A           |TCP: dls > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (2047)   |
+|0.025    |         55555 > 62347 [RST,           |TCP: 55555 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (55555)  |
+|0.026    |         5877 > 62347 [RST,            |TCP: 5877 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (5877)   |
+|0.026    |         41511 > 62347 [RST,           |TCP: 41511 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (41511)  |
+|0.026    |         hpss-ndapi > 62347            |TCP: hpss-ndapi > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1217)   |
+|0.026    |         62347 > mngsuite [F           |TCP: 62347 > mngsuite [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (9535)   |
+|0.026    |         62347 > documentum_           |TCP: 62347 > documentum_s [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (10003)  |
+|0.026    |         62347 > roboeda [FI           |TCP: 62347 > roboeda [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (2920)   |
+|0.026    |         62347 > mit-ml-dev            |TCP: 62347 > mit-ml-dev [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (85)     |
+|0.026    |         mngsuite > 62347 [R           |TCP: mngsuite > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (9535)   |
+|0.026    |         62347 > msft-gc [FI           |TCP: 62347 > msft-gc [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (3268)   |
+|0.026    |         62347 > chargen [FI           |TCP: 62347 > chargen [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (19)     |
+|0.026    |         62347 > 787 [FIN, P           |TCP: 62347 > 787 [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (787)    |
+|0.026    |         62347 > 23502 [FIN,           |TCP: 62347 > 23502 [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (23502)  |
+|0.026    |         documentum_s > 6234           |TCP: documentum_s > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (10003)  |
+|0.026    |         62347 > 63331 [FIN,           |TCP: 62347 > 63331 [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (63331)  |
+|0.026    |         roboeda > 62347 [RS           |TCP: roboeda > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (2920)   |
+|0.026    |         62347 > 8254 [FIN,            |TCP: 62347 > 8254 [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (8254)   |
+|0.026    |         62347 > newacct [FI           |TCP: 62347 > newacct [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (100)    |
+|0.026    |         62347 > sso-service           |TCP: 62347 > sso-service [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (2710)   |
+|0.026    |         62347 > ms-v-worlds           |TCP: 62347 > ms-v-worlds [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (2525)   |
+|0.026    |         62347 > 50500 [FIN,           |TCP: 62347 > 50500 [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (50500)  |
+|0.026    |         62347 > synchronet-           |TCP: 62347 > synchronet-db [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (6100)   |
+|0.026    |         mit-ml-dev > 62347            |TCP: mit-ml-dev > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (85)     |
+|0.026    |         62347 > apc-3052 [F           |TCP: 62347 > apc-3052 [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (3052)   |
+|0.026    |         62347 > dpm [FIN, P           |TCP: 62347 > dpm [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (5718)   |
+|0.026    |         62347 > intersys-ca           |TCP: 62347 > intersys-cache [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (1972)   |
+|0.026    |         msft-gc > 62347 [RS           |TCP: msft-gc > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (3268)   |
+|0.026    |         62347 > arepa-cas [           |TCP: 62347 > arepa-cas [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (3030)   |
+|0.026    |         62347 > epp [FIN, P           |TCP: 62347 > epp [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (700)    |
+|0.026    |         chargen > 62347 [RS           |TCP: chargen > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (19)     |
+|0.027    |         787 > 62347 [RST, A           |TCP: 787 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (787)    |
+|0.027    |         23502 > 62347 [RST,           |TCP: 23502 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (23502)  |
+|0.027    |         63331 > 62347 [RST,           |TCP: 63331 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (63331)  |
+|0.027    |         8254 > 62347 [RST,            |TCP: 8254 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (8254)   |
+|0.027    |         newacct > 62347 [RS           |TCP: newacct > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (100)    |
+|0.027    |         sso-service > 62347           |TCP: sso-service > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (2710)   |
+|0.027    |         62347 > bacula-sd [           |TCP: 62347 > bacula-sd [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (9103)   |
+|0.027    |         62347 > ita-agent [           |TCP: 62347 > ita-agent [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (5051)   |
+|0.027    |         ms-v-worlds > 62347           |TCP: ms-v-worlds > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (2525)   |
+|0.027    |         62347 > dlip [FIN,            |TCP: 62347 > dlip [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (7201)   |
+|0.027    |         62347 > name [FIN,            |TCP: 62347 > name [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (42)     |
+|0.027    |         62347 > 6004 [FIN,            |TCP: 62347 > 6004 [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (6004)   |
+|0.027    |         62347 > excw [FIN,            |TCP: 62347 > excw [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (1271)   |
+|0.027    |         62347 > scp-config            |TCP: 62347 > scp-config [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (10001)  |
+|0.027    |         50500 > 62347 [RST,           |TCP: 50500 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (50500)  |
+|0.027    |         synchronet-db > 623           |TCP: synchronet-db > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (6100)   |
+|0.027    |         62347 > 10012 [FIN,           |TCP: 62347 > 10012 [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (10012)  |
+|0.027    |         62347 > bfd-control           |TCP: 62347 > bfd-control [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (3784)   |
+|0.027    |         62347 > 8649 [FIN,            |TCP: 62347 > 8649 [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (8649)   |
+|0.027    |         62347 > mxxrlogin [           |TCP: 62347 > mxxrlogin [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (1035)   |
+|0.027    |         apc-3052 > 62347 [R           |TCP: apc-3052 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (3052)   |
+|0.027    |         dpm > 62347 [RST, A           |TCP: dpm > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (5718)   |
+|0.027    |         62347 > uucp-rlogin           |TCP: 62347 > uucp-rlogin [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (541)    |
+|0.027    |         62347 > nati-svrloc           |TCP: 62347 > nati-svrloc [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (3580)   |
+|0.027    |         62347 > asr [FIN, P           |TCP: 62347 > asr [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (7800)   |
+|0.027    |         62347 > filenet-obr           |TCP: 62347 > filenet-obrok [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (32777)  |
+|0.027    |         intersys-cache > 62           |TCP: intersys-cache > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1972)   |
+|0.027    |         arepa-cas > 62347 [           |TCP: arepa-cas > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (3030)   |
+|0.027    |         62347 > 9040 [FIN,            |TCP: 62347 > 9040 [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (9040)   |
+|0.027    |         62347 > 7921 [FIN,            |TCP: 62347 > 7921 [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (7921)   |
+|0.027    |         62347 > 16080 [FIN,           |TCP: 62347 > 16080 [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (16080)  |
+|0.028    |         epp > 62347 [RST, A           |TCP: epp > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (700)    |
+|0.028    |         bacula-sd > 62347 [           |TCP: bacula-sd > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (9103)   |
+|0.028    |         62347 > mtqp [FIN,            |TCP: 62347 > mtqp [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (1038)   |
+|0.028    |         ita-agent > 62347 [           |TCP: ita-agent > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (5051)   |
+|0.028    |         dlip > 62347 [RST,            |TCP: dlip > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (7201)   |
+|0.028    |         name > 62347 [RST,            |TCP: name > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (42)     |
+|0.028    |         62347 > cajo-discov           |TCP: 62347 > cajo-discovery [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (1198)   |
+|0.028    |         62347 > apc-6547 [F           |TCP: 62347 > apc-6547 [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (6547)   |
+|0.028    |         62347 > pktcablemmc           |TCP: 62347 > pktcablemmcops [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (3918)   |
+|0.028    |         6004 > 62347 [RST,            |TCP: 6004 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (6004)   |
+|0.028    |         62347 > 5925 [FIN,            |TCP: 62347 > 5925 [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (5925)   |
+|0.028    |         62347 > orbix-loc-s           |TCP: 62347 > orbix-loc-ssl [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (3077)   |
+|0.028    |         excw > 62347 [RST,            |TCP: excw > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1271)   |
+|0.028    |         62347 > 10616 [FIN,           |TCP: 62347 > 10616 [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (10616)  |
+|0.028    |         62347 > ingreslock            |TCP: 62347 > ingreslock [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (1524)   |
+|0.028    |         62347 > avocent-pro           |TCP: 62347 > avocent-proxy [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (1078)   |
+|0.028    |         scp-config > 62347            |TCP: scp-config > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (10001)  |
+|0.028    |         62347 > oms-nonsecu           |TCP: 62347 > oms-nonsecure [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (5102)   |
+|0.028    |         62347 > 306 [FIN, P           |TCP: 62347 > 306 [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (306)    |
+|0.028    |         62347 > instl_boots           |TCP: 62347 > instl_boots [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (1067)   |
+|0.028    |         10012 > 62347 [RST,           |TCP: 10012 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (10012)  |
+|0.028    |         bfd-control > 62347           |TCP: bfd-control > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (3784)   |
+|0.028    |         8649 > 62347 [RST,            |TCP: 8649 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (8649)   |
+|0.028    |         mxxrlogin > 62347 [           |TCP: mxxrlogin > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1035)   |
+|0.028    |         uucp-rlogin > 62347           |TCP: uucp-rlogin > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (541)    |
+|0.028    |         nati-svrloc > 62347           |TCP: nati-svrloc > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (3580)   |
+|0.029    |         asr > 62347 [RST, A           |TCP: asr > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (7800)   |
+|0.029    |         filenet-obrok > 623           |TCP: filenet-obrok > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (32777)  |
+|0.029    |         9040 > 62347 [RST,            |TCP: 9040 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (9040)   |
+|0.029    |         7921 > 62347 [RST,            |TCP: 7921 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (7921)   |
+|0.029    |         16080 > 62347 [RST,           |TCP: 16080 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (16080)  |
+|0.029    |         mtqp > 62347 [RST,            |TCP: mtqp > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1038)   |
+|0.029    |         cajo-discovery > 62           |TCP: cajo-discovery > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1198)   |
+|0.029    |         apc-6547 > 62347 [R           |TCP: apc-6547 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (6547)   |
+|0.029    |         pktcablemmcops > 62           |TCP: pktcablemmcops > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (3918)   |
+|0.029    |         5925 > 62347 [RST,            |TCP: 5925 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (5925)   |
+|0.029    |         orbix-loc-ssl > 623           |TCP: orbix-loc-ssl > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (3077)   |
+|0.029    |         10616 > 62347 [RST,           |TCP: 10616 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (10616)  |
+|0.029    |         ingreslock > 62347            |TCP: ingreslock > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1524)   |
+|0.029    |         avocent-proxy > 623           |TCP: avocent-proxy > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1078)   |
+|0.029    |         oms-nonsecure > 623           |TCP: oms-nonsecure > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (5102)   |
+|0.029    |         306 > 62347 [RST, A           |TCP: 306 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (306)    |
+|0.029    |         instl_boots > 62347           |TCP: instl_boots > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1067)   |
+|0.029    |         62347 > icp [FIN, P           |TCP: 62347 > icp [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (1112)   |
+|0.029    |         62347 > iad1 [FIN,            |TCP: 62347 > iad1 [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (1030)   |
+|0.029    |         62347 > 9944 [FIN,            |TCP: 62347 > 9944 [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (9944)   |
+|0.029    |         icp > 62347 [RST, A           |TCP: icp > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1112)   |
+|0.029    |         iad1 > 62347 [RST,            |TCP: iad1 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1030)   |
+|0.029    |         9944 > 62347 [RST,            |TCP: 9944 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (9944)   |
+|0.029    |         62347 > svn [FIN, P           |TCP: 62347 > svn [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (3690)   |
+|0.030    |         svn > 62347 [RST, A           |TCP: svn > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (3690)   |
+|0.030    |         62347 > realsecure            |TCP: 62347 > realsecure [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (2998)   |
+|0.030    |         realsecure > 62347            |TCP: realsecure > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (2998)   |
+|0.030    |         62347 > indy [FIN,            |TCP: 62347 > indy [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (5963)   |
+|0.030    |         indy > 62347 [RST,            |TCP: indy > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (5963)   |
+|0.030    |         62347 > corbaloc [F           |TCP: 62347 > corbaloc [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (2809)   |
+|0.030    |         corbaloc > 62347 [R           |TCP: corbaloc > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (2809)   |
+|0.030    |         62347 > 50002 [FIN,           |TCP: 62347 > 50002 [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (50002)  |
+|0.030    |         50002 > 62347 [RST,           |TCP: 50002 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (50002)  |
+|0.030    |         62347 > 3404 [FIN,            |TCP: 62347 > 3404 [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (3404)   |
+|0.030    |         3404 > 62347 [RST,            |TCP: 3404 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (3404)   |
+|0.030    |         62347 > kvm-via-ip            |TCP: 62347 > kvm-via-ip [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (1132)   |
+|0.030    |         kvm-via-ip > 62347            |TCP: kvm-via-ip > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1132)   |
+|0.030    |         62347 > fmpro-inter           |TCP: 62347 > fmpro-internal [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (5003)   |
+|0.030    |         fmpro-internal > 62           |TCP: fmpro-internal > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (5003)   |
+|0.031    |         62347 > neod2 [FIN,           |TCP: 62347 > neod2 [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (1048)   |
+|0.031    |         62347 > ansyslmd [F           |TCP: 62347 > ansyslmd [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (1055)   |
+|0.031    |         62347 > 25734 [FIN,           |TCP: 62347 > 25734 [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (25734)  |
+|0.031    |         62347 > dxspider [F           |TCP: 62347 > dxspider [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (8873)   |
+|0.031    |         neod2 > 62347 [RST,           |TCP: neod2 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1048)   |
+|0.031    |         62347 > glrpc [FIN,           |TCP: 62347 > glrpc [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (9080)   |
+|0.031    |         62347 > mini-sql [F           |TCP: 62347 > mini-sql [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (1114)   |
+|0.031    |         62347 > enpp [FIN,            |TCP: 62347 > enpp [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (2968)   |
+|0.031    |         62347 > brutus [FIN           |TCP: 62347 > brutus [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (2003)   |
+|0.031    |         62347 > visionpyram           |TCP: 62347 > visionpyramid [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (1247)   |
+|0.031    |         ansyslmd > 62347 [R           |TCP: ansyslmd > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1055)   |
+|0.031    |         62347 > trusted-web           |TCP: 62347 > trusted-web [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (3011)   |
+|0.031    |         25734 > 62347 [RST,           |TCP: 25734 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (25734)  |
+|0.031    |         62347 > 9917 [FIN,            |TCP: 62347 > 9917 [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (9917)   |
+|0.031    |         62347 > news [FIN,            |TCP: 62347 > news [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (2009)   |
+|0.031    |         62347 > esp [FIN, P           |TCP: 62347 > esp [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (6567)   |
+|0.031    |         dxspider > 62347 [R           |TCP: dxspider > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (8873)   |
+|0.031    |         62347 > distinct [F           |TCP: 62347 > distinct [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (9999)   |
+|0.031    |         62347 > husky [FIN,           |TCP: 62347 > husky [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (1310)   |
+|0.031    |         62347 > 5902 [FIN,            |TCP: 62347 > 5902 [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (5902)   |
+|0.031    |         62347 > iua [FIN, P           |TCP: 62347 > iua [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (9900)   |
+|0.031    |         glrpc > 62347 [RST,           |TCP: glrpc > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (9080)   |
+|0.031    |         mini-sql > 62347 [R           |TCP: mini-sql > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1114)   |
+|0.031    |         enpp > 62347 [RST,            |TCP: enpp > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (2968)   |
+|0.032    |         brutus > 62347 [RST           |TCP: brutus > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (2003)   |
+|0.032    |         visionpyramid > 623           |TCP: visionpyramid > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1247)   |
+|0.032    |         trusted-web > 62347           |TCP: trusted-web > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (3011)   |
+|0.032    |         9917 > 62347 [RST,            |TCP: 9917 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (9917)   |
+|0.032    |         news > 62347 [RST,            |TCP: news > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (2009)   |
+|0.032    |         esp > 62347 [RST, A           |TCP: esp > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (6567)   |
+|0.032    |         62347 > 50003 [FIN,           |TCP: 62347 > 50003 [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (50003)  |
+|0.032    |         distinct > 62347 [R           |TCP: distinct > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (9999)   |
+|0.032    |         husky > 62347 [RST,           |TCP: husky > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1310)   |
+|0.032    |         5902 > 62347 [RST,            |TCP: 5902 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (5902)   |
+|0.032    |         iua > 62347 [RST, A           |TCP: iua > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (9900)   |
+|0.032    |         62347 > 7435 [FIN,            |TCP: 62347 > 7435 [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (7435)   |
+|0.032    |         62347 > cbt [FIN, P           |TCP: 62347 > cbt [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (7777)   |
+|0.032    |         62347 > 5560 [FIN,            |TCP: 62347 > 5560 [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (5560)   |
+|0.032    |         62347 > newoak [FIN           |TCP: 62347 > newoak [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (4001)   |
+|0.032    |         50003 > 62347 [RST,           |TCP: 50003 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (50003)  |
+|0.032    |         62347 > pxc-splr-ft           |TCP: 62347 > pxc-splr-ft [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (4003)   |
+|0.032    |         7435 > 62347 [RST,            |TCP: 7435 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (7435)   |
+|0.032    |         62347 > apex-mesh [           |TCP: 62347 > apex-mesh [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (912)    |
+|0.032    |         62347 > rfe [FIN, P           |TCP: 62347 > rfe [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (5002)   |
+|0.032    |         62347 > metagram [F           |TCP: 62347 > metagram [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (99)     |
+|0.032    |         62347 > gris [FIN,            |TCP: 62347 > gris [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (2135)   |
+|0.032    |         cbt > 62347 [RST, A           |TCP: cbt > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (7777)   |
+|0.032    |         62347 > geniuslm [F           |TCP: 62347 > geniuslm [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (3005)   |
+|0.032    |         62347 > 8222 [FIN,            |TCP: 62347 > 8222 [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (8222)   |
+|0.032    |         62347 > ismserver [           |TCP: 62347 > ismserver [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (9500)   |
+|0.032    |         5560 > 62347 [RST,            |TCP: 5560 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (5560)   |
+|0.032    |         62347 > http-rpc-ep           |TCP: 62347 > http-rpc-epmap [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (593)    |
+|0.032    |         newoak > 62347 [RST           |TCP: newoak > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (4001)   |
+|0.032    |         62347 > 10243 [FIN,           |TCP: 62347 > 10243 [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (10243)  |
+|0.032    |         62347 > 5911 [FIN,            |TCP: 62347 > 5911 [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (5911)   |
+|0.032    |         62347 > 10180 [FIN,           |TCP: 62347 > 10180 [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (10180)  |
+|0.033    |         62347 > emcads [FIN           |TCP: 62347 > emcads [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (3945)   |
+|0.033    |         pxc-splr-ft > 62347           |TCP: pxc-splr-ft > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (4003)   |
+|0.033    |         apex-mesh > 62347 [           |TCP: apex-mesh > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (912)    |
+|0.033    |         rfe > 62347 [RST, A           |TCP: rfe > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (5002)   |
+|0.033    |         metagram > 62347 [R           |TCP: metagram > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (99)     |
+|0.033    |         gris > 62347 [RST,            |TCP: gris > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (2135)   |
+|0.033    |         geniuslm > 62347 [R           |TCP: geniuslm > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (3005)   |
+|0.033    |         8222 > 62347 [RST,            |TCP: 8222 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (8222)   |
+|0.033    |         ismserver > 62347 [           |TCP: ismserver > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (9500)   |
+|0.033    |         http-rpc-epmap > 62           |TCP: http-rpc-epmap > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (593)    |
+|0.033    |         10243 > 62347 [RST,           |TCP: 10243 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (10243)  |
+|0.033    |         5911 > 62347 [RST,            |TCP: 5911 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (5911)   |
+|0.033    |         10180 > 62347 [RST,           |TCP: 10180 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (10180)  |
+|0.033    |         emcads > 62347 [RST           |TCP: emcads > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (3945)   |
+|0.033    |         62347 > rootd [FIN,           |TCP: 62347 > rootd [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (1094)   |
+|0.033    |         rootd > 62347 [RST,           |TCP: rootd > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1094)   |
+|0.033    |         62347 > tip2 [FIN,            |TCP: 62347 > tip2 [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (3372)   |
+|0.033    |         tip2 > 62347 [RST,            |TCP: tip2 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (3372)   |
+|0.033    |         62347 > radius [FIN           |TCP: 62347 > radius [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (1812)   |
+|0.034    |         62347 > 8089 [FIN,            |TCP: 62347 > 8089 [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (8089)   |
+|0.034    |         radius > 62347 [RST           |TCP: radius > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1812)   |
+|0.034    |         8089 > 62347 [RST,            |TCP: 8089 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (8089)   |
+|0.034    |         62347 > vnc-server            |TCP: 62347 > vnc-server [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (5900)   |
+|0.034    |         vnc-server > 62347            |TCP: vnc-server > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (5900)   |
+|0.034    |         62347 > sane-port [           |TCP: 62347 > sane-port [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (6566)   |
+|0.034    |         sane-port > 62347 [           |TCP: sane-port > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (6566)   |
+|0.034    |         62347 > univ-appser           |TCP: 62347 > univ-appserver [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (1233)   |
+|0.034    |         62347 > ms-olap2 [F           |TCP: 62347 > ms-olap2 [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (2394)   |
+|0.034    |         62347 > 8333 [FIN,            |TCP: 62347 > 8333 [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (8333)   |
+|0.034    |         62347 > blp3 [FIN,            |TCP: 62347 > blp3 [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (8292)   |
+|0.034    |         univ-appserver > 62           |TCP: univ-appserver > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1233)   |
+|0.034    |         62347 > 6006 [FIN,            |TCP: 62347 > 6006 [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (6006)   |
+|0.034    |         62347 > bex-xr [FIN           |TCP: 62347 > bex-xr [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (15660)  |
+|0.034    |         62347 > privatewire           |TCP: 62347 > privatewire [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (4449)   |
+|0.034    |         ms-olap2 > 62347 [R           |TCP: ms-olap2 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (2394)   |
+|0.034    |         62347 > 20031 [FIN,           |TCP: 62347 > 20031 [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (20031)  |
+|0.034    |         62347 > techra-serv           |TCP: 62347 > techra-server [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (1862)   |
+|0.035    |         62347 > novation [F           |TCP: 62347 > novation [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (1322)   |
+|0.035    |         8333 > 62347 [RST,            |TCP: 8333 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (8333)   |
+|0.035    |         blp3 > 62347 [RST,            |TCP: blp3 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (8292)   |
+|0.035    |         62347 > instl_bootc           |TCP: 62347 > instl_bootc [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (1068)   |
+|0.035    |         62347 > asterix [FI           |TCP: 62347 > asterix [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (8600)   |
+|0.035    |         62347 > fnet-remote           |TCP: 62347 > fnet-remote-ui [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (1174)   |
+|0.035    |         62347 > 9666 [FIN,            |TCP: 62347 > 9666 [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (9666)   |
+|0.035    |         6006 > 62347 [RST,            |TCP: 6006 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (6006)   |
+|0.035    |         bex-xr > 62347 [RST           |TCP: bex-xr > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (15660)  |
+|0.035    |         62347 > 3546 [FIN,            |TCP: 62347 > 3546 [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (3546)   |
+|0.035    |         62347 > surfpass [F           |TCP: 62347 > surfpass [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (5030)   |
+|0.035    |         privatewire > 62347           |TCP: privatewire > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (4449)   |
+|0.035    |         62347 > hpvmmdata [           |TCP: 62347 > hpvmmdata [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (1126)   |
+|0.035    |         62347 > 9110 [FIN,            |TCP: 62347 > 9110 [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (9110)   |
+|0.035    |         62347 > gds-adppiw-           |TCP: 62347 > gds-adppiw-db [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (4550)   |
+|0.035    |         20031 > 62347 [RST,           |TCP: 20031 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (20031)  |
+|0.035    |         62347 > 40911 [FIN,           |TCP: 62347 > 40911 [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (40911)  |
+|0.035    |         techra-server > 623           |TCP: techra-server > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1862)   |
+|0.035    |         62347 > nntp [FIN,            |TCP: 62347 > nntp [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (119)    |
+|0.035    |         62347 > monkeycom [           |TCP: 62347 > monkeycom [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (9898)   |
+|0.035    |         novation > 62347 [R           |TCP: novation > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1322)   |
+|0.035    |         62347 > 6003 [FIN,            |TCP: 62347 > 6003 [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (6003)   |
+|0.035    |         62347 > aol [FIN, P           |TCP: 62347 > aol [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (5190)   |
+|0.035    |         62347 > wap-vcal-s            |TCP: 62347 > wap-vcal-s [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (9207)   |
+|0.035    |         62347 > 54328 [FIN,           |TCP: 62347 > 54328 [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (54328)  |
+|0.035    |         instl_bootc > 62347           |TCP: instl_bootc > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1068)   |
+|0.035    |         62347 > daap [FIN,            |TCP: 62347 > daap [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (3689)   |
+|0.035    |         asterix > 62347 [RS           |TCP: asterix > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (8600)   |
+|0.036    |         fnet-remote-ui > 62           |TCP: fnet-remote-ui > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1174)   |
+|0.036    |         9666 > 62347 [RST,            |TCP: 9666 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (9666)   |
+|0.036    |         3546 > 62347 [RST,            |TCP: 3546 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (3546)   |
+|0.036    |         surfpass > 62347 [R           |TCP: surfpass > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (5030)   |
+|0.036    |         hpvmmdata > 62347 [           |TCP: hpvmmdata > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1126)   |
+|0.036    |         9110 > 62347 [RST,            |TCP: 9110 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (9110)   |
+|0.036    |         gds-adppiw-db > 623           |TCP: gds-adppiw-db > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (4550)   |
+|0.036    |         40911 > 62347 [RST,           |TCP: 40911 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (40911)  |
+|0.036    |         nntp > 62347 [RST,            |TCP: nntp > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (119)    |
+|0.036    |         monkeycom > 62347 [           |TCP: monkeycom > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (9898)   |
+|0.036    |         6003 > 62347 [RST,            |TCP: 6003 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (6003)   |
+|0.036    |         aol > 62347 [RST, A           |TCP: aol > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (5190)   |
+|0.036    |         wap-vcal-s > 62347            |TCP: wap-vcal-s > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (9207)   |
+|0.036    |         54328 > 62347 [RST,           |TCP: 54328 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (54328)  |
+|0.036    |         daap > 62347 [RST,            |TCP: daap > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (3689)   |
+|0.036    |         62347 > poweronnud            |TCP: 62347 > poweronnud [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (3168)   |
+|0.036    |         62347 > pn-requeste           |TCP: 62347 > pn-requester2 [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (2718)   |
+|0.036    |         62347 > filenet-pch           |TCP: 62347 > filenet-pch [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (32775)  |
+|0.036    |         62347 > pvuniwien [           |TCP: 62347 > pvuniwien [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (1081)   |
+|0.036    |         62347 > 8010 [FIN,            |TCP: 62347 > 8010 [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (8010)   |
+|0.036    |         poweronnud > 62347            |TCP: poweronnud > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (3168)   |
+|0.036    |         62347 > unieng [FIN           |TCP: 62347 > unieng [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (5730)   |
+|0.036    |         62347 > 5510 [FIN,            |TCP: 62347 > 5510 [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (5510)   |
+|0.037    |         62347 > winshadow [           |TCP: 62347 > winshadow [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (3261)   |
+|0.037    |         pn-requester2 > 623           |TCP: pn-requester2 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (2718)   |
+|0.037    |         62347 > 65389 [FIN,           |TCP: 62347 > 65389 [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (65389)  |
+|0.037    |         62347 > 8042 [FIN,            |TCP: 62347 > 8042 [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (8042)   |
+|0.037    |         62347 > xprint-serv           |TCP: 62347 > xprint-server [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (8100)   |
+|0.037    |         filenet-pch > 62347           |TCP: filenet-pch > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (32775)  |
+|0.037    |         62347 > m2mservices           |TCP: 62347 > m2mservices [FIN, PSH, URG] Seq=1 Win=1024 Urg=0 Len=0
+|         |(62347)  ------------------>  (8383)   |
+|0.037    |         62347 > 9503 [FIN,            |TCP: 62347 > 9503 [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (9503)   |
+|0.037    |         62347 > 340 [FIN, P           |TCP: 62347 > 340 [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (340)    |
+|0.037    |         pvuniwien > 62347 [           |TCP: pvuniwien > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1081)   |
+|0.037    |         62347 > ddrepl [FIN           |TCP: 62347 > ddrepl [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (4126)   |
+|0.037    |         8010 > 62347 [RST,            |TCP: 8010 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (8010)   |
+|0.037    |         62347 > 27715 [FIN,           |TCP: 62347 > 27715 [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (27715)  |
+|0.037    |         62347 > 6839 [FIN,            |TCP: 62347 > 6839 [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (6839)   |
+|0.037    |         unieng > 62347 [RST           |TCP: unieng > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (5730)   |
+|0.037    |         62347 > 5901 [FIN,            |TCP: 62347 > 5901 [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (5901)   |
+|0.037    |         5510 > 62347 [RST,            |TCP: 5510 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (5510)   |
+|0.037    |         winshadow > 62347 [           |TCP: winshadow > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (3261)   |
+|0.037    |         62347 > udpplus [FI           |TCP: 62347 > udpplus [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (5566)   |
+|0.037    |         62347 > 5910 [FIN,            |TCP: 62347 > 5910 [FIN, PSH, URG] Seq=1 Win=4096 Urg=0 Len=0
+|         |(62347)  ------------------>  (5910)   |
+|0.037    |         62347 > nucleus-san           |TCP: 62347 > nucleus-sand [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (1201)   |
+|0.037    |         65389 > 62347 [RST,           |TCP: 65389 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (65389)  |
+|0.037    |         8042 > 62347 [RST,            |TCP: 8042 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (8042)   |
+|0.037    |         xprint-server > 623           |TCP: xprint-server > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (8100)   |
+|0.037    |         m2mservices > 62347           |TCP: m2mservices > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (8383)   |
+|0.037    |         9503 > 62347 [RST,            |TCP: 9503 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (9503)   |
+|0.037    |         340 > 62347 [RST, A           |TCP: 340 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (340)    |
+|0.037    |         ddrepl > 62347 [RST           |TCP: ddrepl > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (4126)   |
+|0.037    |         27715 > 62347 [RST,           |TCP: 27715 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (27715)  |
+|0.037    |         6839 > 62347 [RST,            |TCP: 6839 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (6839)   |
+|0.038    |         5901 > 62347 [RST,            |TCP: 5901 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (5901)   |
+|0.038    |         udpplus > 62347 [RS           |TCP: udpplus > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (5566)   |
+|0.038    |         5910 > 62347 [RST,            |TCP: 5910 > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (5910)   |
+|0.038    |         nucleus-sand > 6234           |TCP: nucleus-sand > 62347 [RST, ACK] Seq=1 Ack=2 Win=0 Len=0
+|         |(62347)  <------------------  (1201)   |
+|0.038    |         62347 > filenet-rmi           |TCP: 62347 > filenet-rmi [FIN, PSH, URG] Seq=1 Win=3072 Urg=0 Len=0
+|         |(62347)  ------------------>  (32771)  |
+|0.038    |         62347 > solid-mux [           |TCP: 62347 > solid-mux [FIN, PSH, URG] Seq=1 Win=2048 Urg=0 Len=0
+|         |(62347)  ------------------>  (1029)   |
