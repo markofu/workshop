@@ -1,0 +1,2001 @@
+|Time     | 192.168.1.10      | 192.168.1.25      |
+|0.000    |         glogger > ldap [SYN           |TCP: glogger > ldap [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2033)   ------------------>  (389)    |
+|0.000    |         scoremgr > https [S           |TCP: scoremgr > https [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2034)   ------------------>  (443)    |
+|0.000    |         ldap > glogger [RST           |TCP: ldap > glogger [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2033)   <------------------  (389)    |
+|0.000    |         https > scoremgr [R           |TCP: https > scoremgr [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2034)   <------------------  (443)    |
+|0.000    |         imsldoc > ftp [SYN]           |TCP: imsldoc > ftp [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2035)   ------------------>  (21)     |
+|0.001    |         ftp > imsldoc [RST,           |TCP: ftp > imsldoc [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2035)   <------------------  (21)     |
+|0.001    |         e-dpnet > pptp [SYN           |TCP: e-dpnet > pptp [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2036)   ------------------>  (1723)   |
+|0.001    |         pptp > e-dpnet [RST           |TCP: pptp > e-dpnet [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2036)   <------------------  (1723)   |
+|0.001    |         applus > ms-wbt-ser           |TCP: applus > ms-wbt-server [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2037)   ------------------>  (3389)   |
+|0.001    |         ms-wbt-server > app           |TCP: ms-wbt-server > applus [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2037)   <------------------  (3389)   |
+|1.102    |         objectmanager > ms-           |TCP: objectmanager > ms-wbt-server [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2038)   ------------------>  (3389)   |
+|1.102    |         prizma > pptp [SYN]           |TCP: prizma > pptp [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2039)   ------------------>  (1723)   |
+|1.103    |         lam > ftp [SYN] Seq           |TCP: lam > ftp [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2040)   ------------------>  (21)     |
+|1.103    |         interbase > https [           |TCP: interbase > https [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2041)   ------------------>  (443)    |
+|1.103    |         isis > ldap [SYN] S           |TCP: isis > ldap [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2042)   ------------------>  (389)    |
+|1.211    |         isis-bcast > telnet           |TCP: isis-bcast > telnet [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2043)   ------------------>  (23)     |
+|1.211    |         rimsl > ldaps [SYN]           |TCP: rimsl > ldaps [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2044)   ------------------>  (636)    |
+|1.211    |         cdfunc > ssh [SYN]            |TCP: cdfunc > ssh [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2045)   ------------------>  (22)     |
+|1.212    |         sdfunc > rap [SYN]            |TCP: sdfunc > rap [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2046)   ------------------>  (256)    |
+|1.212    |         dls > http [SYN] Se           |TCP: dls > http [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2047)   ------------------>  (80)     |
+|1.320    |         dls-monitor > http            |TCP: dls-monitor > http [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2048)   ------------------>  (80)     |
+|1.320    |         nfs > rap [SYN] Seq           |TCP: nfs > rap [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2049)   ------------------>  (256)    |
+|1.321    |         av-emb-config > ssh           |TCP: av-emb-config > ssh [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2050)   ------------------>  (22)     |
+|1.321    |         epnsdp > ldaps [SYN           |TCP: epnsdp > ldaps [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2051)   ------------------>  (636)    |
+|1.321    |         clearvisn > telnet            |TCP: clearvisn > telnet [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2052)   ------------------>  (23)     |
+|1.391    |         ms-wbt-server > obj           |TCP: ms-wbt-server > objectmanager [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2038)   <------------------  (3389)   |
+|1.391    |         pptp > prizma [RST,           |TCP: pptp > prizma [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2039)   <------------------  (1723)   |
+|1.391    |         ftp > lam [RST, ACK           |TCP: ftp > lam [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2040)   <------------------  (21)     |
+|1.391    |         https > interbase [           |TCP: https > interbase [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2041)   <------------------  (443)    |
+|1.391    |         ldap > isis [RST, A           |TCP: ldap > isis [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2042)   <------------------  (389)    |
+|1.391    |         telnet > isis-bcast           |TCP: telnet > isis-bcast [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2043)   <------------------  (23)     |
+|1.391    |         ldaps > rimsl [RST,           |TCP: ldaps > rimsl [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2044)   <------------------  (636)    |
+|1.392    |         ssh > cdfunc [RST,            |TCP: ssh > cdfunc [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2045)   <------------------  (22)     |
+|1.392    |         rap > sdfunc [RST,            |TCP: rap > sdfunc [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2046)   <------------------  (256)    |
+|1.392    |         http > dls [RST, AC           |TCP: http > dls [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2047)   <------------------  (80)     |
+|1.392    |         http > dls-monitor            |TCP: http > dls-monitor [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2048)   <------------------  (80)     |
+|1.392    |         rap > nfs [RST, ACK           |TCP: rap > nfs [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2049)   <------------------  (256)    |
+|1.392    |         ssh > av-emb-config           |TCP: ssh > av-emb-config [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2050)   <------------------  (22)     |
+|1.392    |         ldaps > epnsdp [RST           |TCP: ldaps > epnsdp [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2051)   <------------------  (636)    |
+|1.392    |         telnet > clearvisn            |TCP: telnet > clearvisn [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2052)   <------------------  (23)     |
+|1.429    |         lot105-ds-upd > ide           |TCP: lot105-ds-upd > ident [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2053)   ------------------>  (113)    |
+|1.430    |         weblogin > rtsp [SY           |TCP: weblogin > rtsp [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2054)   ------------------>  (554)    |
+|1.430    |         iop > smtp [SYN] Se           |TCP: iop > smtp [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2055)   ------------------>  (25)     |
+|1.430    |         omnisky > domain [S           |TCP: omnisky > domain [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2056)   ------------------>  (53)     |
+|1.431    |         rich-cp > 5904 [SYN           |TCP: rich-cp > 5904 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2057)   ------------------>  (5904)   |
+|1.437    |         ident > lot105-ds-u           |TCP: ident > lot105-ds-upd [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2053)   <------------------  (113)    |
+|1.437    |         rtsp > weblogin [RS           |TCP: rtsp > weblogin [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2054)   <------------------  (554)    |
+|1.437    |         smtp > iop [RST, AC           |TCP: smtp > iop [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2055)   <------------------  (25)     |
+|1.437    |         domain > omnisky [R           |TCP: domain > omnisky [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2056)   <------------------  (53)     |
+|1.437    |         5904 > rich-cp [RST           |TCP: 5904 > rich-cp [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2057)   <------------------  (5904)   |
+|1.539    |         newwavesearch > 590           |TCP: newwavesearch > 5904 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2058)   ------------------>  (5904)   |
+|1.539    |         5904 > newwavesearc           |TCP: 5904 > newwavesearch [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2058)   <------------------  (5904)   |
+|1.539    |         bmc-messaging > dom           |TCP: bmc-messaging > domain [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2059)   ------------------>  (53)     |
+|1.539    |         domain > bmc-messag           |TCP: domain > bmc-messaging [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2059)   <------------------  (53)     |
+|1.540    |         teleniumdaemon > sm           |TCP: teleniumdaemon > smtp [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2060)   ------------------>  (25)     |
+|1.540    |         smtp > teleniumdaem           |TCP: smtp > teleniumdaemon [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2060)   <------------------  (25)     |
+|1.540    |         netmount > rtsp [SY           |TCP: netmount > rtsp [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2061)   ------------------>  (554)    |
+|1.540    |         rtsp > netmount [RS           |TCP: rtsp > netmount [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2061)   <------------------  (554)    |
+|1.540    |         icg-swp > ident [SY           |TCP: icg-swp > ident [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2062)   ------------------>  (113)    |
+|1.540    |         ident > icg-swp [RS           |TCP: ident > icg-swp [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2062)   <------------------  (113)    |
+|1.649    |         icg-bridge > nimreg           |TCP: icg-bridge > nimreg [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2063)   ------------------>  (1059)   |
+|1.649    |         nimreg > icg-bridge           |TCP: nimreg > icg-bridge [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2063)   <------------------  (1059)   |
+|1.650    |         icg-iprelay > 5906            |TCP: icg-iprelay > 5906 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2064)   ------------------>  (5906)   |
+|1.650    |         5906 > icg-iprelay            |TCP: 5906 > icg-iprelay [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2064)   <------------------  (5906)   |
+|1.650    |         dlsrpn > sunrpc [SY           |TCP: dlsrpn > sunrpc [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2065)   ------------------>  (111)    |
+|1.650    |         sunrpc > dlsrpn [RS           |TCP: sunrpc > dlsrpn [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2065)   <------------------  (111)    |
+|1.650    |         aura > x25-svc-port           |TCP: aura > x25-svc-port [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2066)   ------------------>  (1998)   |
+|1.650    |         x25-svc-port > aura           |TCP: x25-svc-port > aura [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2066)   <------------------  (1998)   |
+|1.651    |         dlswpn > discp-serv           |TCP: dlswpn > discp-server [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2067)   ------------------>  (2602)   |
+|1.651    |         discp-server > dlsw           |TCP: discp-server > dlswpn [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2067)   <------------------  (2602)   |
+|1.758    |         avauthsrvprtcl > di           |TCP: avauthsrvprtcl > discp-server [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2068)   ------------------>  (2602)   |
+|1.759    |         discp-server > avau           |TCP: discp-server > avauthsrvprtcl [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2068)   <------------------  (2602)   |
+|1.759    |         event-port > x25-sv           |TCP: event-port > x25-svc-port [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2069)   ------------------>  (1998)   |
+|1.759    |         x25-svc-port > even           |TCP: x25-svc-port > event-port [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2069)   <------------------  (1998)   |
+|1.759    |         ah-esp-encap > sunr           |TCP: ah-esp-encap > sunrpc [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2070)   ------------------>  (111)    |
+|1.760    |         sunrpc > ah-esp-enc           |TCP: sunrpc > ah-esp-encap [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2070)   <------------------  (111)    |
+|1.760    |         acp-port > 5906 [SY           |TCP: acp-port > 5906 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2071)   ------------------>  (5906)   |
+|1.760    |         5906 > acp-port [RS           |TCP: 5906 > acp-port [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2071)   <------------------  (5906)   |
+|1.760    |         msync > nimreg [SYN           |TCP: msync > nimreg [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2072)   ------------------>  (1059)   |
+|1.760    |         nimreg > msync [RST           |TCP: nimreg > msync [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2072)   <------------------  (1059)   |
+|1.868    |         gxs-data-port > 966           |TCP: gxs-data-port > 9666 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2073)   ------------------>  (9666)   |
+|1.868    |         9666 > gxs-data-por           |TCP: 9666 > gxs-data-port [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2073)   <------------------  (9666)   |
+|1.868    |         vrtl-vmf-sa > disca           |TCP: vrtl-vmf-sa > discard [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2074)   ------------------>  (9)      |
+|1.868    |         discard > vrtl-vmf-           |TCP: discard > vrtl-vmf-sa [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2074)   <------------------  (9)      |
+|1.869    |         newlixengine > pn-r           |TCP: newlixengine > pn-requester2 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2075)   ------------------>  (2718)   |
+|1.869    |         pn-requester2 > new           |TCP: pn-requester2 > newlixengine [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2075)   <------------------  (2718)   |
+|1.869    |         newlixconfig > acms           |TCP: newlixconfig > acmsoda [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2076)   ------------------>  (6969)   |
+|1.869    |         acmsoda > newlixcon           |TCP: acmsoda > newlixconfig [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2076)   <------------------  (6969)   |
+|1.869    |         tsrmagt > qsm-gui [           |TCP: tsrmagt > qsm-gui [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2077)   ------------------>  (1165)   |
+|1.870    |         qsm-gui > tsrmagt [           |TCP: qsm-gui > tsrmagt [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2077)   <------------------  (1165)   |
+|1.978    |         tpcsrvr > qsm-gui [           |TCP: tpcsrvr > qsm-gui [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2078)   ------------------>  (1165)   |
+|1.978    |         qsm-gui > tpcsrvr [           |TCP: qsm-gui > tpcsrvr [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2078)   <------------------  (1165)   |
+|9.668    |         idware-router > acm           |TCP: idware-router > acmsoda [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2079)   ------------------>  (6969)   |
+|9.668    |         acmsoda > idware-ro           |TCP: acmsoda > idware-router [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2079)   <------------------  (6969)   |
+|10.172   |         idware-router > acm           |TCP: idware-router > acmsoda [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2079)   ------------------>  (6969)   |
+|10.172   |         acmsoda > idware-ro           |TCP: acmsoda > idware-router [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2079)   <------------------  (6969)   |
+|10.675   |         idware-router > acm           |TCP: idware-router > acmsoda [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2079)   ------------------>  (6969)   |
+|10.675   |         acmsoda > idware-ro           |TCP: acmsoda > idware-router [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2079)   <------------------  (6969)   |
+|11.177   |         autodesk-nlm > pn-r           |TCP: autodesk-nlm > pn-requester2 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2080)   ------------------>  (2718)   |
+|11.177   |         kme-trap-port > dis           |TCP: kme-trap-port > discard [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2081)   ------------------>  (9)      |
+|11.177   |         idware-router > acm           |TCP: idware-router > acmsoda [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2079)   ------------------>  (6969)   |
+|11.177   |         infowave > 9666 [SY           |TCP: infowave > 9666 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2082)   ------------------>  (9666)   |
+|11.177   |         radsec > 6007 [SYN]           |TCP: radsec > 6007 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2083)   ------------------>  (6007)   |
+|11.177   |         sunclustergeo > gmr           |TCP: sunclustergeo > gmrupdateserv [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2084)   ------------------>  (1070)   |
+|11.177   |         ada-cip > echo [SYN           |TCP: ada-cip > echo [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2085)   ------------------>  (7)      |
+|11.177   |         gnunet > 5915 [SYN]           |TCP: gnunet > 5915 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2086)   ------------------>  (5915)   |
+|11.177   |         eli > 802-11-iapp [           |TCP: eli > 802-11-iapp [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2087)   ------------------>  (3517)   |
+|11.177   |         ip-blf > 802-11-iap           |TCP: ip-blf > 802-11-iapp [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2088)   ------------------>  (3517)   |
+|11.177   |         sep > 5915 [SYN] Se           |TCP: sep > 5915 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2089)   ------------------>  (5915)   |
+|11.177   |         lrp > echo [SYN] Se           |TCP: lrp > echo [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2090)   ------------------>  (7)      |
+|11.177   |         prp > gmrupdateserv           |TCP: prp > gmrupdateserv [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2091)   ------------------>  (1070)   |
+|11.177   |         descent3 > 6007 [SY           |TCP: descent3 > 6007 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2092)   ------------------>  (6007)   |
+|11.177   |         nbx-cc > 9415 [SYN]           |TCP: nbx-cc > 9415 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2093)   ------------------>  (9415)   |
+|11.177   |         nbx-au > monkeycom            |TCP: nbx-au > monkeycom [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2094)   ------------------>  (9898)   |
+|11.177   |         nbx-ser > simplifym           |TCP: nbx-ser > simplifymedia [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2095)   ------------------>  (8087)   |
+|11.177   |         nbx-dir > proofd [S           |TCP: nbx-dir > proofd [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2096)   ------------------>  (1093)   |
+|11.177   |         jetformpreview > fi           |TCP: jetformpreview > filenet-pa [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2097)   ------------------>  (32772)  |
+|11.177   |         dialog-port > filen           |TCP: dialog-port > filenet-pa [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2098)   ------------------>  (32772)  |
+|11.177   |         h2250-annex-g > pro           |TCP: h2250-annex-g > proofd [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2099)   ------------------>  (1093)   |
+|11.177   |         pn-requester2 > aut           |TCP: pn-requester2 > autodesk-nlm [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2080)   <------------------  (2718)   |
+|11.178   |         discard > kme-trap-           |TCP: discard > kme-trap-port [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2081)   <------------------  (9)      |
+|11.178   |         acmsoda > idware-ro           |TCP: acmsoda > idware-router [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2079)   <------------------  (6969)   |
+|11.178   |         9666 > infowave [RS           |TCP: 9666 > infowave [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2082)   <------------------  (9666)   |
+|11.178   |         6007 > radsec [RST,           |TCP: 6007 > radsec [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2083)   <------------------  (6007)   |
+|11.178   |         gmrupdateserv > sun           |TCP: gmrupdateserv > sunclustergeo [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2084)   <------------------  (1070)   |
+|11.178   |         echo > ada-cip [RST           |TCP: echo > ada-cip [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2085)   <------------------  (7)      |
+|11.178   |         5915 > gnunet [RST,           |TCP: 5915 > gnunet [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2086)   <------------------  (5915)   |
+|11.178   |         802-11-iapp > eli [           |TCP: 802-11-iapp > eli [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2087)   <------------------  (3517)   |
+|11.178   |         802-11-iapp > ip-bl           |TCP: 802-11-iapp > ip-blf [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2088)   <------------------  (3517)   |
+|11.178   |         5915 > sep [RST, AC           |TCP: 5915 > sep [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2089)   <------------------  (5915)   |
+|11.178   |         echo > lrp [RST, AC           |TCP: echo > lrp [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2090)   <------------------  (7)      |
+|11.178   |         gmrupdateserv > prp           |TCP: gmrupdateserv > prp [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2091)   <------------------  (1070)   |
+|11.179   |         6007 > descent3 [RS           |TCP: 6007 > descent3 [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2092)   <------------------  (6007)   |
+|11.179   |         9415 > nbx-cc [RST,           |TCP: 9415 > nbx-cc [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2093)   <------------------  (9415)   |
+|11.179   |         monkeycom > nbx-au            |TCP: monkeycom > nbx-au [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2094)   <------------------  (9898)   |
+|11.179   |         simplifymedia > nbx           |TCP: simplifymedia > nbx-ser [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2095)   <------------------  (8087)   |
+|11.179   |         proofd > nbx-dir [R           |TCP: proofd > nbx-dir [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2096)   <------------------  (1093)   |
+|11.179   |         filenet-pa > jetfor           |TCP: filenet-pa > jetformpreview [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2097)   <------------------  (32772)  |
+|11.179   |         filenet-pa > dialog           |TCP: filenet-pa > dialog-port [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2098)   <------------------  (32772)  |
+|11.179   |         proofd > h2250-anne           |TCP: proofd > h2250-annex-g [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2099)   <------------------  (1093)   |
+|11.277   |         amiganetfs > simpli           |TCP: amiganetfs > simplifymedia [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2100)   ------------------>  (8087)   |
+|11.277   |         rtcm-sc104 > monkey           |TCP: rtcm-sc104 > monkeycom [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2101)   ------------------>  (9898)   |
+|11.277   |         zephyr-srv > 9415 [           |TCP: zephyr-srv > 9415 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2102)   ------------------>  (9415)   |
+|11.277   |         zephyr-clt > dif-po           |TCP: zephyr-clt > dif-port [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2103)   ------------------>  (2251)   |
+|11.278   |         zephyr-hm > filenet           |TCP: zephyr-hm > filenet-pch [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2104)   ------------------>  (32775)  |
+|11.278   |         minipay > sane-port           |TCP: minipay > sane-port [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2105)   ------------------>  (6566)   |
+|11.278   |         mzap > h323gatedisc           |TCP: mzap > h323gatedisc [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2106)   ------------------>  (1718)   |
+|11.278   |         bintec-admin > 6006           |TCP: bintec-admin > 6006 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2107)   ------------------>  (6006)   |
+|11.278   |         comcam > 6006 [SYN]           |TCP: comcam > 6006 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2108)   ------------------>  (6006)   |
+|11.278   |         ergolight > h323gat           |TCP: ergolight > h323gatedisc [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2109)   ------------------>  (1718)   |
+|11.278   |         umsp > sane-port [S           |TCP: umsp > sane-port [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2110)   ------------------>  (6566)   |
+|11.278   |         dsatp > filenet-pch           |TCP: dsatp > filenet-pch [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2111)   ------------------>  (32775)  |
+|11.278   |         idonix-metanet > di           |TCP: idonix-metanet > dif-port [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2112)   ------------------>  (2251)   |
+|11.278   |         hsl-storm > nntps [           |TCP: hsl-storm > nntps [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2113)   ------------------>  (563)    |
+|11.278   |         newheights > appser           |TCP: newheights > appserv-http [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2114)   ------------------>  (4848)   |
+|11.278   |         kdm > 9110 [SYN] Se           |TCP: kdm > 9110 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2115)   ------------------>  (9110)   |
+|11.278   |         ccowcmr > 5911 [SYN           |TCP: ccowcmr > 5911 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2116)   ------------------>  (5911)   |
+|11.278   |         mentaclient > reals           |TCP: mentaclient > realsecure [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2117)   ------------------>  (2998)   |
+|11.278   |         mentaserver > reals           |TCP: mentaserver > realsecure [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2118)   ------------------>  (2998)   |
+|11.278   |         gsigatekeeper > 591           |TCP: gsigatekeeper > 5911 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2119)   ------------------>  (5911)   |
+|11.278   |         simplifymedia > ami           |TCP: simplifymedia > amiganetfs [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2100)   <------------------  (8087)   |
+|11.278   |         monkeycom > rtcm-sc           |TCP: monkeycom > rtcm-sc104 [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2101)   <------------------  (9898)   |
+|11.278   |         9415 > zephyr-srv [           |TCP: 9415 > zephyr-srv [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2102)   <------------------  (9415)   |
+|11.278   |         dif-port > zephyr-c           |TCP: dif-port > zephyr-clt [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2103)   <------------------  (2251)   |
+|11.279   |         filenet-pch > zephy           |TCP: filenet-pch > zephyr-hm [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2104)   <------------------  (32775)  |
+|11.279   |         sane-port > minipay           |TCP: sane-port > minipay [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2105)   <------------------  (6566)   |
+|11.279   |         h323gatedisc > mzap           |TCP: h323gatedisc > mzap [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2106)   <------------------  (1718)   |
+|11.279   |         6006 > bintec-admin           |TCP: 6006 > bintec-admin [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2107)   <------------------  (6006)   |
+|11.279   |         6006 > comcam [RST,           |TCP: 6006 > comcam [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2108)   <------------------  (6006)   |
+|11.279   |         h323gatedisc > ergo           |TCP: h323gatedisc > ergolight [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2109)   <------------------  (1718)   |
+|11.279   |         sane-port > umsp [R           |TCP: sane-port > umsp [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2110)   <------------------  (6566)   |
+|11.279   |         filenet-pch > dsatp           |TCP: filenet-pch > dsatp [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2111)   <------------------  (32775)  |
+|11.279   |         dif-port > idonix-m           |TCP: dif-port > idonix-metanet [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2112)   <------------------  (2251)   |
+|11.279   |         nntps > hsl-storm [           |TCP: nntps > hsl-storm [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2113)   <------------------  (563)    |
+|11.279   |         appserv-http > newh           |TCP: appserv-http > newheights [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2114)   <------------------  (4848)   |
+|11.279   |         9110 > kdm [RST, AC           |TCP: 9110 > kdm [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2115)   <------------------  (9110)   |
+|11.279   |         5911 > ccowcmr [RST           |TCP: 5911 > ccowcmr [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2116)   <------------------  (5911)   |
+|11.280   |         realsecure > mentac           |TCP: realsecure > mentaclient [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2117)   <------------------  (2998)   |
+|11.280   |         realsecure > mentas           |TCP: realsecure > mentaserver [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2118)   <------------------  (2998)   |
+|11.280   |         5911 > gsigatekeepe           |TCP: 5911 > gsigatekeeper [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2119)   <------------------  (5911)   |
+|11.378   |         qencp > 9110 [SYN]            |TCP: qencp > 9110 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2120)   ------------------>  (9110)   |
+|11.378   |         scientia-ssdb > app           |TCP: scientia-ssdb > appserv-http [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2121)   ------------------>  (4848)   |
+|11.378   |         caupc-remote > nntp           |TCP: caupc-remote > nntps [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2122)   ------------------>  (563)    |
+|11.378   |         gtp-control > wsdap           |TCP: gtp-control > wsdapi [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2123)   ------------------>  (5357)   |
+|11.378   |         elatelink > husky [           |TCP: elatelink > husky [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2124)   ------------------>  (1310)   |
+|11.378   |         lockstep > oracleas           |TCP: lockstep > oracleas-https [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2125)   ------------------>  (7443)   |
+|11.378   |         pktcable-cops > fil           |TCP: pktcable-cops > filenet-re [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2126)   ------------------>  (32774)  |
+|11.378   |         index-pc-wb > 50500           |TCP: index-pc-wb > 50500 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2127)   ------------------>  (50500)  |
+|11.378   |         net-steward > 50500           |TCP: net-steward > 50500 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2128)   ------------------>  (50500)  |
+|11.378   |         cs-live > filenet-r           |TCP: cs-live > filenet-re [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2129)   ------------------>  (32774)  |
+|11.378   |         xds > oracleas-http           |TCP: xds > oracleas-https [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2130)   ------------------>  (7443)   |
+|11.378   |         avantageb2b > husky           |TCP: avantageb2b > husky [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2131)   ------------------>  (1310)   |
+|11.378   |         solera-epmap > wsda           |TCP: solera-epmap > wsdapi [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2132)   ------------------>  (5357)   |
+|11.378   |         zymed-zpp > 5221 [S           |TCP: zymed-zpp > 5221 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2133)   ------------------>  (5221)   |
+|11.378   |         avenue > 50636 [SYN           |TCP: avenue > 50636 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2134)   ------------------>  (50636)  |
+|11.378   |         gris > 44501 [SYN]            |TCP: gris > 44501 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2135)   ------------------>  (44501)  |
+|11.378   |         appworxsrv > rsh-sp           |TCP: appworxsrv > rsh-spx [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2136)   ------------------>  (222)    |
+|11.378   |         connect > pds [SYN]           |TCP: connect > pds [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2137)   ------------------>  (9595)   |
+|11.378   |         unbind-cluster > pd           |TCP: unbind-cluster > pds [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2138)   ------------------>  (9595)   |
+|11.378   |         ias-auth > rsh-spx            |TCP: ias-auth > rsh-spx [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2139)   ------------------>  (222)    |
+|11.379   |         9110 > qencp [RST,            |TCP: 9110 > qencp [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2120)   <------------------  (9110)   |
+|11.379   |         appserv-http > scie           |TCP: appserv-http > scientia-ssdb [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2121)   <------------------  (4848)   |
+|11.379   |         nntps > caupc-remot           |TCP: nntps > caupc-remote [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2122)   <------------------  (563)    |
+|11.379   |         wsdapi > gtp-contro           |TCP: wsdapi > gtp-control [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2123)   <------------------  (5357)   |
+|11.379   |         husky > elatelink [           |TCP: husky > elatelink [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2124)   <------------------  (1310)   |
+|11.379   |         oracleas-https > lo           |TCP: oracleas-https > lockstep [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2125)   <------------------  (7443)   |
+|11.379   |         filenet-re > pktcab           |TCP: filenet-re > pktcable-cops [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2126)   <------------------  (32774)  |
+|11.379   |         50500 > index-pc-wb           |TCP: 50500 > index-pc-wb [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2127)   <------------------  (50500)  |
+|11.379   |         50500 > net-steward           |TCP: 50500 > net-steward [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2128)   <------------------  (50500)  |
+|11.379   |         filenet-re > cs-liv           |TCP: filenet-re > cs-live [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2129)   <------------------  (32774)  |
+|11.380   |         oracleas-https > xd           |TCP: oracleas-https > xds [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2130)   <------------------  (7443)   |
+|11.380   |         husky > avantageb2b           |TCP: husky > avantageb2b [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2131)   <------------------  (1310)   |
+|11.380   |         wsdapi > solera-epm           |TCP: wsdapi > solera-epmap [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2132)   <------------------  (5357)   |
+|11.380   |         5221 > zymed-zpp [R           |TCP: 5221 > zymed-zpp [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2133)   <------------------  (5221)   |
+|11.380   |         50636 > avenue [RST           |TCP: 50636 > avenue [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2134)   <------------------  (50636)  |
+|11.380   |         44501 > gris [RST,            |TCP: 44501 > gris [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2135)   <------------------  (44501)  |
+|11.380   |         rsh-spx > appworxsr           |TCP: rsh-spx > appworxsrv [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2136)   <------------------  (222)    |
+|11.380   |         pds > connect [RST,           |TCP: pds > connect [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2137)   <------------------  (9595)   |
+|11.380   |         pds > unbind-cluste           |TCP: pds > unbind-cluster [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2138)   <------------------  (9595)   |
+|11.380   |         rsh-spx > ias-auth            |TCP: rsh-spx > ias-auth [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2139)   <------------------  (222)    |
+|11.479   |         ias-reg > 44501 [SY           |TCP: ias-reg > 44501 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2140)   ------------------>  (44501)  |
+|11.479   |         ias-admind > 50636            |TCP: ias-admind > 50636 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2141)   ------------------>  (50636)  |
+|11.479   |         tdmoip > 5221 [SYN]           |TCP: tdmoip > 5221 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2142)   ------------------>  (5221)   |
+|11.479   |         lv-jc > 7512 [SYN]            |TCP: lv-jc > 7512 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2143)   ------------------>  (7512)   |
+|11.479   |         lv-ffx > dec_dlm [S           |TCP: lv-ffx > dec_dlm [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2144)   ------------------>  (625)    |
+|11.479   |         lv-pici > 16080 [SY           |TCP: lv-pici > 16080 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2145)   ------------------>  (16080)  |
+|11.479   |         lv-not > cmip-man [           |TCP: lv-not > cmip-man [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2146)   ------------------>  (163)    |
+|11.479   |         lv-auth > dls-monit           |TCP: lv-auth > dls-monitor [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2147)   ------------------>  (2048)   |
+|11.479   |         veritas-ucl > dls-m           |TCP: veritas-ucl > dls-monitor [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2148)   ------------------>  (2048)   |
+|11.479   |         acptsys > cmip-man            |TCP: acptsys > cmip-man [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2149)   ------------------>  (163)    |
+|11.479   |         dynamic3d > 16080 [           |TCP: dynamic3d > 16080 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2150)   ------------------>  (16080)  |
+|11.479   |         docent > dec_dlm [S           |TCP: docent > dec_dlm [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2151)   ------------------>  (625)    |
+|11.479   |         gtp-user > 7512 [SY           |TCP: gtp-user > 7512 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2152)   ------------------>  (7512)   |
+|11.479   |         ctlptc > sixtrak [S           |TCP: ctlptc > sixtrak [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2153)   ------------------>  (1594)   |
+|11.479   |         stdptc > kiosk [SYN           |TCP: stdptc > kiosk [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2154)   ------------------>  (1061)   |
+|11.479   |         brdptc > asipregist           |TCP: brdptc > asipregistry [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2155)   ------------------>  (687)    |
+|11.479   |         trp > dsf [SYN] Seq           |TCP: trp > dsf [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2156)   ------------------>  (555)    |
+|11.479   |         xnds > trim [SYN] S           |TCP: xnds > trim [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2157)   ------------------>  (1137)   |
+|11.479   |         touchnetplus > trim           |TCP: touchnetplus > trim [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2158)   ------------------>  (1137)   |
+|11.479   |         gdbremote > dsf [SY           |TCP: gdbremote > dsf [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2159)   ------------------>  (555)    |
+|11.479   |         44501 > ias-reg [RS           |TCP: 44501 > ias-reg [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2140)   <------------------  (44501)  |
+|11.480   |         50636 > ias-admind            |TCP: 50636 > ias-admind [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2141)   <------------------  (50636)  |
+|11.480   |         5221 > tdmoip [RST,           |TCP: 5221 > tdmoip [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2142)   <------------------  (5221)   |
+|11.480   |         7512 > lv-jc [RST,            |TCP: 7512 > lv-jc [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2143)   <------------------  (7512)   |
+|11.480   |         dec_dlm > lv-ffx [R           |TCP: dec_dlm > lv-ffx [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2144)   <------------------  (625)    |
+|11.480   |         16080 > lv-pici [RS           |TCP: 16080 > lv-pici [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2145)   <------------------  (16080)  |
+|11.480   |         cmip-man > lv-not [           |TCP: cmip-man > lv-not [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2146)   <------------------  (163)    |
+|11.480   |         dls-monitor > lv-au           |TCP: dls-monitor > lv-auth [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2147)   <------------------  (2048)   |
+|11.480   |         dls-monitor > verit           |TCP: dls-monitor > veritas-ucl [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2148)   <------------------  (2048)   |
+|11.480   |         cmip-man > acptsys            |TCP: cmip-man > acptsys [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2149)   <------------------  (163)    |
+|11.480   |         16080 > dynamic3d [           |TCP: 16080 > dynamic3d [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2150)   <------------------  (16080)  |
+|11.480   |         dec_dlm > docent [R           |TCP: dec_dlm > docent [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2151)   <------------------  (625)    |
+|11.480   |         7512 > gtp-user [RS           |TCP: 7512 > gtp-user [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2152)   <------------------  (7512)   |
+|11.481   |         sixtrak > ctlptc [R           |TCP: sixtrak > ctlptc [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2153)   <------------------  (1594)   |
+|11.481   |         kiosk > stdptc [RST           |TCP: kiosk > stdptc [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2154)   <------------------  (1061)   |
+|11.481   |         asipregistry > brdp           |TCP: asipregistry > brdptc [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2155)   <------------------  (687)    |
+|11.481   |         dsf > trp [RST, ACK           |TCP: dsf > trp [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2156)   <------------------  (555)    |
+|11.481   |         trim > xnds [RST, A           |TCP: trim > xnds [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2157)   <------------------  (1137)   |
+|11.481   |         trim > touchnetplus           |TCP: trim > touchnetplus [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2158)   <------------------  (1137)   |
+|11.481   |         dsf > gdbremote [RS           |TCP: dsf > gdbremote [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2159)   <------------------  (555)    |
+|11.579   |         apc-2160 > asipregi           |TCP: apc-2160 > asipregistry [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2160)   ------------------>  (687)    |
+|11.579   |         apc-2161 > kiosk [S           |TCP: apc-2161 > kiosk [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2161)   ------------------>  (1061)   |
+|11.579   |         navisphere > sixtra           |TCP: navisphere > sixtrak [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2162)   ------------------>  (1594)   |
+|11.579   |         navisphere-sec > 19           |TCP: navisphere-sec > 19350 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2163)   ------------------>  (19350)  |
+|11.579   |         ddns-v3 > gds_db [S           |TCP: ddns-v3 > gds_db [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2164)   ------------------>  (3050)   |
+|11.579   |         x-bone-api > 8084 [           |TCP: x-bone-api > 8084 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2165)   ------------------>  (8084)   |
+|11.579   |         iwserver > filenet-           |TCP: iwserver > filenet-tms [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2166)   ------------------>  (32768)  |
+|11.579   |         raw-serial > dls [S           |TCP: raw-serial > dls [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2167)   ------------------>  (2047)   |
+|11.579   |         easy-soft-mux > dls           |TCP: easy-soft-mux > dls [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2168)   ------------------>  (2047)   |
+|11.579   |         brain > filenet-tms           |TCP: brain > filenet-tms [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2169)   ------------------>  (32768)  |
+|11.579   |         eyetv > 8084 [SYN]            |TCP: eyetv > 8084 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2170)   ------------------>  (8084)   |
+|11.579   |         msfw-storage > gds_           |TCP: msfw-storage > gds_db [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2171)   ------------------>  (3050)   |
+|11.579   |         msfw-s-storage > 19           |TCP: msfw-s-storage > 19350 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2172)   ------------------>  (19350)  |
+|11.580   |         msfw-replica > 6002           |TCP: msfw-replica > 6002 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2173)   ------------------>  (6002)   |
+|11.580   |         msfw-array > 55555            |TCP: msfw-array > 55555 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2174)   ------------------>  (55555)  |
+|11.580   |         airsync > apple-sas           |TCP: airsync > apple-sasl [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2175)   ------------------>  (3659)   |
+|11.580   |         rapi > synchronet-r           |TCP: rapi > synchronet-rtc [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2176)   ------------------>  (6101)   |
+|11.580   |         qwave > wherehoo [S           |TCP: qwave > wherehoo [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2177)   ------------------>  (5859)   |
+|11.580   |         bitspeer > wherehoo           |TCP: bitspeer > wherehoo [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2178)   ------------------>  (5859)   |
+|11.580   |         vmrdp > synchronet-           |TCP: vmrdp > synchronet-rtc [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2179)   ------------------>  (6101)   |
+|11.580   |         asipregistry > apc-           |TCP: asipregistry > apc-2160 [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2160)   <------------------  (687)    |
+|11.580   |         kiosk > apc-2161 [R           |TCP: kiosk > apc-2161 [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2161)   <------------------  (1061)   |
+|11.580   |         sixtrak > navispher           |TCP: sixtrak > navisphere [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2162)   <------------------  (1594)   |
+|11.580   |         19350 > navisphere-           |TCP: 19350 > navisphere-sec [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2163)   <------------------  (19350)  |
+|11.580   |         gds_db > ddns-v3 [R           |TCP: gds_db > ddns-v3 [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2164)   <------------------  (3050)   |
+|11.580   |         8084 > x-bone-api [           |TCP: 8084 > x-bone-api [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2165)   <------------------  (8084)   |
+|11.580   |         filenet-tms > iwser           |TCP: filenet-tms > iwserver [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2166)   <------------------  (32768)  |
+|11.580   |         dls > raw-serial [R           |TCP: dls > raw-serial [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2167)   <------------------  (2047)   |
+|11.581   |         dls > easy-soft-mux           |TCP: dls > easy-soft-mux [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2168)   <------------------  (2047)   |
+|11.581   |         filenet-tms > brain           |TCP: filenet-tms > brain [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2169)   <------------------  (32768)  |
+|11.581   |         8084 > eyetv [RST,            |TCP: 8084 > eyetv [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2170)   <------------------  (8084)   |
+|11.581   |         gds_db > msfw-stora           |TCP: gds_db > msfw-storage [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2171)   <------------------  (3050)   |
+|11.581   |         19350 > msfw-s-stor           |TCP: 19350 > msfw-s-storage [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2172)   <------------------  (19350)  |
+|11.581   |         6002 > msfw-replica           |TCP: 6002 > msfw-replica [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2173)   <------------------  (6002)   |
+|11.581   |         55555 > msfw-array            |TCP: 55555 > msfw-array [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2174)   <------------------  (55555)  |
+|11.581   |         apple-sasl > airsyn           |TCP: apple-sasl > airsync [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2175)   <------------------  (3659)   |
+|11.581   |         synchronet-rtc > ra           |TCP: synchronet-rtc > rapi [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2176)   <------------------  (6101)   |
+|11.581   |         wherehoo > qwave [R           |TCP: wherehoo > qwave [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2177)   <------------------  (5859)   |
+|11.581   |         wherehoo > bitspeer           |TCP: wherehoo > bitspeer [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2178)   <------------------  (5859)   |
+|11.581   |         synchronet-rtc > vm           |TCP: synchronet-rtc > vmrdp [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2179)   <------------------  (6101)   |
+|11.680   |         infowave > 9666 [SY           |TCP: infowave > 9666 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2082)   ------------------>  (9666)   |
+|11.680   |         mc-gt-srv > apple-s           |TCP: mc-gt-srv > apple-sasl [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2180)   ------------------>  (3659)   |
+|11.680   |         eli > 802-11-iapp [           |TCP: eli > 802-11-iapp [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2087)   ------------------>  (3517)   |
+|11.680   |         eforward > 55555 [S           |TCP: eforward > 55555 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2181)   ------------------>  (55555)  |
+|11.680   |         ip-blf > 802-11-iap           |TCP: ip-blf > 802-11-iapp [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2088)   ------------------>  (3517)   |
+|11.680   |         cgn-stat > 6002 [SY           |TCP: cgn-stat > 6002 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2182)   ------------------>  (6002)   |
+|11.680   |         sep > 5915 [SYN] Se           |TCP: sep > 5915 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2089)   ------------------>  (5915)   |
+|11.680   |         descent3 > 6007 [SY           |TCP: descent3 > 6007 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2092)   ------------------>  (6007)   |
+|11.680   |         cgn-config > 40911            |TCP: cgn-config > 40911 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2183)   ------------------>  (40911)  |
+|11.680   |         nbx-cc > 9415 [SYN]           |TCP: nbx-cc > 9415 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2093)   ------------------>  (9415)   |
+|11.680   |         nbx-ser > simplifym           |TCP: nbx-ser > simplifymedia [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2095)   ------------------>  (8087)   |
+|11.680   |         nvd > 5810 [SYN] Se           |TCP: nvd > 5810 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2184)   ------------------>  (5810)   |
+|11.680   |         nbx-dir > proofd [S           |TCP: nbx-dir > proofd [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2096)   ------------------>  (1093)   |
+|11.680   |         onbase-dds > compaq           |TCP: onbase-dds > compaq-https [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2185)   ------------------>  (2381)   |
+|11.680   |         jetformpreview > fi           |TCP: jetformpreview > filenet-pa [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2097)   ------------------>  (32772)  |
+|11.680   |         gtaua > beorl [SYN]           |TCP: gtaua > beorl [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2186)   ------------------>  (5633)   |
+|11.680   |         kme-trap-port > dis           |TCP: kme-trap-port > discard [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2081)   ------------------>  (9)      |
+|11.680   |         idware-router > acm           |TCP: idware-router > acmsoda [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2079)   ------------------>  (6969)   |
+|11.680   |         2187 > neod1 [SYN]            |TCP: 2187 > neod1 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2187)   ------------------>  (1047)   |
+|11.680   |         radsec > 6007 [SYN]           |TCP: radsec > 6007 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2083)   ------------------>  (6007)   |
+|11.680   |         prp > gmrupdateserv           |TCP: prp > gmrupdateserv [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2091)   ------------------>  (1070)   |
+|11.680   |         2188 > neod1 [SYN]            |TCP: 2188 > neod1 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2188)   ------------------>  (1047)   |
+|11.680   |         nbx-au > monkeycom            |TCP: nbx-au > monkeycom [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2094)   ------------------>  (9898)   |
+|11.680   |         dialog-port > filen           |TCP: dialog-port > filenet-pa [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2098)   ------------------>  (32772)  |
+|11.680   |         2189 > beorl [SYN]            |TCP: 2189 > beorl [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2189)   ------------------>  (5633)   |
+|11.680   |         h2250-annex-g > pro           |TCP: h2250-annex-g > proofd [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2099)   ------------------>  (1093)   |
+|11.680   |         tivoconnect > compa           |TCP: tivoconnect > compaq-https [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2190)   ------------------>  (2381)   |
+|11.680   |         tvbus > 5810 [SYN]            |TCP: tvbus > 5810 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2191)   ------------------>  (5810)   |
+|11.680   |         asdis > 40911 [SYN]           |TCP: asdis > 40911 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2192)   ------------------>  (40911)  |
+|11.680   |         drwcs > wbem-rmi [S           |TCP: drwcs > wbem-rmi [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2193)   ------------------>  (5987)   |
+|11.680   |         2194 > xinupageserv           |TCP: 2194 > xinupageserver [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2194)   ------------------>  (2020)   |
+|11.680   |         2195 > 5033 [SYN] S           |TCP: 2195 > 5033 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2195)   ------------------>  (5033)   |
+|11.680   |         2196 > esl-lm [SYN]           |TCP: 2196 > esl-lm [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2196)   ------------------>  (1455)   |
+|11.680   |         mnp-exchange > 6792           |TCP: mnp-exchange > 6792 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2197)   ------------------>  (6792)   |
+|11.680   |         onehome-remote > 67           |TCP: onehome-remote > 6792 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2198)   ------------------>  (6792)   |
+|11.680   |         onehome-help > esl-           |TCP: onehome-help > esl-lm [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2199)   ------------------>  (1455)   |
+|11.680   |         autodesk-nlm > pn-r           |TCP: autodesk-nlm > pn-requester2 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2080)   ------------------>  (2718)   |
+|11.680   |         ada-cip > echo [SYN           |TCP: ada-cip > echo [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2085)   ------------------>  (7)      |
+|11.680   |         sunclustergeo > gmr           |TCP: sunclustergeo > gmrupdateserv [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2084)   ------------------>  (1070)   |
+|11.680   |         gnunet > 5915 [SYN]           |TCP: gnunet > 5915 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2086)   ------------------>  (5915)   |
+|11.680   |         lrp > echo [SYN] Se           |TCP: lrp > echo [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2090)   ------------------>  (7)      |
+|11.681   |         9666 > infowave [RS           |TCP: 9666 > infowave [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2082)   <------------------  (9666)   |
+|11.681   |         apple-sasl > mc-gt-           |TCP: apple-sasl > mc-gt-srv [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2180)   <------------------  (3659)   |
+|11.681   |         802-11-iapp > eli [           |TCP: 802-11-iapp > eli [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2087)   <------------------  (3517)   |
+|11.681   |         55555 > eforward [R           |TCP: 55555 > eforward [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2181)   <------------------  (55555)  |
+|11.681   |         802-11-iapp > ip-bl           |TCP: 802-11-iapp > ip-blf [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2088)   <------------------  (3517)   |
+|11.681   |         6002 > cgn-stat [RS           |TCP: 6002 > cgn-stat [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2182)   <------------------  (6002)   |
+|11.681   |         5915 > sep [RST, AC           |TCP: 5915 > sep [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2089)   <------------------  (5915)   |
+|11.681   |         6007 > descent3 [RS           |TCP: 6007 > descent3 [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2092)   <------------------  (6007)   |
+|11.681   |         40911 > cgn-config            |TCP: 40911 > cgn-config [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2183)   <------------------  (40911)  |
+|11.681   |         9415 > nbx-cc [RST,           |TCP: 9415 > nbx-cc [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2093)   <------------------  (9415)   |
+|11.682   |         simplifymedia > nbx           |TCP: simplifymedia > nbx-ser [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2095)   <------------------  (8087)   |
+|11.682   |         5810 > nvd [RST, AC           |TCP: 5810 > nvd [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2184)   <------------------  (5810)   |
+|11.682   |         proofd > nbx-dir [R           |TCP: proofd > nbx-dir [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2096)   <------------------  (1093)   |
+|11.682   |         compaq-https > onba           |TCP: compaq-https > onbase-dds [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2185)   <------------------  (2381)   |
+|11.682   |         filenet-pa > jetfor           |TCP: filenet-pa > jetformpreview [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2097)   <------------------  (32772)  |
+|11.682   |         beorl > gtaua [RST,           |TCP: beorl > gtaua [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2186)   <------------------  (5633)   |
+|11.682   |         discard > kme-trap-           |TCP: discard > kme-trap-port [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2081)   <------------------  (9)      |
+|11.682   |         acmsoda > idware-ro           |TCP: acmsoda > idware-router [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2079)   <------------------  (6969)   |
+|11.682   |         neod1 > 2187 [RST,            |TCP: neod1 > 2187 [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2187)   <------------------  (1047)   |
+|11.682   |         6007 > radsec [RST,           |TCP: 6007 > radsec [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2083)   <------------------  (6007)   |
+|11.682   |         gmrupdateserv > prp           |TCP: gmrupdateserv > prp [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2091)   <------------------  (1070)   |
+|11.682   |         neod1 > 2188 [RST,            |TCP: neod1 > 2188 [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2188)   <------------------  (1047)   |
+|11.682   |         monkeycom > nbx-au            |TCP: monkeycom > nbx-au [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2094)   <------------------  (9898)   |
+|11.683   |         filenet-pa > dialog           |TCP: filenet-pa > dialog-port [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2098)   <------------------  (32772)  |
+|11.683   |         beorl > 2189 [RST,            |TCP: beorl > 2189 [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2189)   <------------------  (5633)   |
+|11.683   |         proofd > h2250-anne           |TCP: proofd > h2250-annex-g [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2099)   <------------------  (1093)   |
+|11.683   |         compaq-https > tivo           |TCP: compaq-https > tivoconnect [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2190)   <------------------  (2381)   |
+|11.683   |         5810 > tvbus [RST,            |TCP: 5810 > tvbus [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2191)   <------------------  (5810)   |
+|11.683   |         40911 > asdis [RST,           |TCP: 40911 > asdis [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2192)   <------------------  (40911)  |
+|11.683   |         wbem-rmi > drwcs [R           |TCP: wbem-rmi > drwcs [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2193)   <------------------  (5987)   |
+|11.683   |         xinupageserver > 21           |TCP: xinupageserver > 2194 [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2194)   <------------------  (2020)   |
+|11.683   |         5033 > 2195 [RST, A           |TCP: 5033 > 2195 [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2195)   <------------------  (5033)   |
+|11.683   |         esl-lm > 2196 [RST,           |TCP: esl-lm > 2196 [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2196)   <------------------  (1455)   |
+|11.683   |         6792 > mnp-exchange           |TCP: 6792 > mnp-exchange [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2197)   <------------------  (6792)   |
+|11.683   |         6792 > onehome-remo           |TCP: 6792 > onehome-remote [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2198)   <------------------  (6792)   |
+|11.684   |         esl-lm > onehome-he           |TCP: esl-lm > onehome-help [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2199)   <------------------  (1455)   |
+|11.684   |         pn-requester2 > aut           |TCP: pn-requester2 > autodesk-nlm [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2080)   <------------------  (2718)   |
+|11.684   |         echo > ada-cip [RST           |TCP: echo > ada-cip [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2085)   <------------------  (7)      |
+|11.684   |         gmrupdateserv > sun           |TCP: gmrupdateserv > sunclustergeo [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2084)   <------------------  (1070)   |
+|11.684   |         5915 > gnunet [RST,           |TCP: 5915 > gnunet [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2086)   <------------------  (5915)   |
+|11.684   |         echo > lrp [RST, AC           |TCP: echo > lrp [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2090)   <------------------  (7)      |
+|11.780   |         ici > 5033 [SYN] Se           |TCP: ici > 5033 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2200)   ------------------>  (5033)   |
+|11.780   |         ats > xinupageserve           |TCP: ats > xinupageserver [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2201)   ------------------>  (2020)   |
+|11.780   |         imtc-map > wbem-rmi           |TCP: imtc-map > wbem-rmi [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2202)   ------------------>  (5987)   |
+|11.780   |         b2-runtime > n1-fwp           |TCP: b2-runtime > n1-fwp [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2203)   ------------------>  (4446)   |
+|11.780   |         b2-license > radmin           |TCP: b2-license > radmin-port [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2204)   ------------------>  (4899)   |
+|11.780   |         jps > intersys-cach           |TCP: jps > intersys-cache [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2205)   ------------------>  (1972)   |
+|11.780   |         hpocbus > lds-distr           |TCP: hpocbus > lds-distrib [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2206)   ------------------>  (6543)   |
+|11.780   |         hpssd > ardus-mtrns           |TCP: hpssd > ardus-mtrns [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2207)   ------------------>  (1117)   |
+|11.781   |         hpiod > ardus-mtrns           |TCP: hpiod > ardus-mtrns [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2208)   ------------------>  (1117)   |
+|11.781   |         rimf-ps > lds-distr           |TCP: rimf-ps > lds-distrib [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2209)   ------------------>  (6543)   |
+|11.781   |         noaaport > intersys           |TCP: noaaport > intersys-cache [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2210)   ------------------>  (1972)   |
+|11.781   |         emwin > radmin-port           |TCP: emwin > radmin-port [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2211)   ------------------>  (4899)   |
+|11.781   |         leecoposserver > n1           |TCP: leecoposserver > n1-fwp [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2212)   ------------------>  (4446)   |
+|11.781   |         kali > hp-status [S           |TCP: kali > hp-status [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2213)   ------------------>  (5226)   |
+|11.781   |         rpi > mecomm [SYN]            |TCP: rpi > mecomm [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2214)   ------------------>  (668)    |
+|11.781   |         ipcore > bpcd [SYN]           |TCP: ipcore > bpcd [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2215)   ------------------>  (13782)  |
+|11.781   |         vtu-comms > 7921 [S           |TCP: vtu-comms > 7921 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2216)   ------------------>  (7921)   |
+|11.781   |         gotodevice > rrp [S           |TCP: gotodevice > rrp [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2217)   ------------------>  (648)    |
+|11.781   |         bounzza > rrp [SYN]           |TCP: bounzza > rrp [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2218)   ------------------>  (648)    |
+|11.781   |         netiq-ncap > 7921 [           |TCP: netiq-ncap > 7921 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2219)   ------------------>  (7921)   |
+|11.781   |         amiganetfs > simpli           |TCP: amiganetfs > simplifymedia [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2100)   ------------------>  (8087)   |
+|11.781   |         zephyr-srv > 9415 [           |TCP: zephyr-srv > 9415 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2102)   ------------------>  (9415)   |
+|11.781   |         idonix-metanet > di           |TCP: idonix-metanet > dif-port [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2112)   ------------------>  (2251)   |
+|11.781   |         ccowcmr > 5911 [SYN           |TCP: ccowcmr > 5911 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2116)   ------------------>  (5911)   |
+|11.781   |         mentaclient > reals           |TCP: mentaclient > realsecure [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2117)   ------------------>  (2998)   |
+|11.781   |         mentaserver > reals           |TCP: mentaserver > realsecure [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2118)   ------------------>  (2998)   |
+|11.781   |         gsigatekeeper > 591           |TCP: gsigatekeeper > 5911 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2119)   ------------------>  (5911)   |
+|11.781   |         rtcm-sc104 > monkey           |TCP: rtcm-sc104 > monkeycom [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2101)   ------------------>  (9898)   |
+|11.781   |         zephyr-clt > dif-po           |TCP: zephyr-clt > dif-port [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2103)   ------------------>  (2251)   |
+|11.781   |         zephyr-hm > filenet           |TCP: zephyr-hm > filenet-pch [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2104)   ------------------>  (32775)  |
+|11.781   |         minipay > sane-port           |TCP: minipay > sane-port [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2105)   ------------------>  (6566)   |
+|11.781   |         mzap > h323gatedisc           |TCP: mzap > h323gatedisc [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2106)   ------------------>  (1718)   |
+|11.781   |         bintec-admin > 6006           |TCP: bintec-admin > 6006 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2107)   ------------------>  (6006)   |
+|11.781   |         comcam > 6006 [SYN]           |TCP: comcam > 6006 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2108)   ------------------>  (6006)   |
+|11.781   |         newheights > appser           |TCP: newheights > appserv-http [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2114)   ------------------>  (4848)   |
+|11.781   |         5033 > ici [RST, AC           |TCP: 5033 > ici [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2200)   <------------------  (5033)   |
+|11.782   |         xinupageserver > at           |TCP: xinupageserver > ats [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2201)   <------------------  (2020)   |
+|11.782   |         wbem-rmi > imtc-map           |TCP: wbem-rmi > imtc-map [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2202)   <------------------  (5987)   |
+|11.782   |         n1-fwp > b2-runtime           |TCP: n1-fwp > b2-runtime [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2203)   <------------------  (4446)   |
+|11.782   |         radmin-port > b2-li           |TCP: radmin-port > b2-license [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2204)   <------------------  (4899)   |
+|11.782   |         intersys-cache > jp           |TCP: intersys-cache > jps [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2205)   <------------------  (1972)   |
+|11.782   |         lds-distrib > hpocb           |TCP: lds-distrib > hpocbus [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2206)   <------------------  (6543)   |
+|11.782   |         ardus-mtrns > hpssd           |TCP: ardus-mtrns > hpssd [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2207)   <------------------  (1117)   |
+|11.782   |         ardus-mtrns > hpiod           |TCP: ardus-mtrns > hpiod [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2208)   <------------------  (1117)   |
+|11.782   |         lds-distrib > rimf-           |TCP: lds-distrib > rimf-ps [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2209)   <------------------  (6543)   |
+|11.782   |         intersys-cache > no           |TCP: intersys-cache > noaaport [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2210)   <------------------  (1972)   |
+|11.782   |         radmin-port > emwin           |TCP: radmin-port > emwin [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2211)   <------------------  (4899)   |
+|11.782   |         n1-fwp > leecoposse           |TCP: n1-fwp > leecoposserver [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2212)   <------------------  (4446)   |
+|11.782   |         hp-status > kali [R           |TCP: hp-status > kali [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2213)   <------------------  (5226)   |
+|11.783   |         mecomm > rpi [RST,            |TCP: mecomm > rpi [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2214)   <------------------  (668)    |
+|11.783   |         bpcd > ipcore [RST,           |TCP: bpcd > ipcore [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2215)   <------------------  (13782)  |
+|11.783   |         7921 > vtu-comms [R           |TCP: 7921 > vtu-comms [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2216)   <------------------  (7921)   |
+|11.783   |         rrp > gotodevice [R           |TCP: rrp > gotodevice [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2217)   <------------------  (648)    |
+|11.783   |         rrp > bounzza [RST,           |TCP: rrp > bounzza [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2218)   <------------------  (648)    |
+|11.783   |         7921 > netiq-ncap [           |TCP: 7921 > netiq-ncap [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2219)   <------------------  (7921)   |
+|11.783   |         simplifymedia > ami           |TCP: simplifymedia > amiganetfs [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2100)   <------------------  (8087)   |
+|11.783   |         9415 > zephyr-srv [           |TCP: 9415 > zephyr-srv [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2102)   <------------------  (9415)   |
+|11.783   |         dif-port > idonix-m           |TCP: dif-port > idonix-metanet [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2112)   <------------------  (2251)   |
+|11.783   |         5911 > ccowcmr [RST           |TCP: 5911 > ccowcmr [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2116)   <------------------  (5911)   |
+|11.783   |         realsecure > mentac           |TCP: realsecure > mentaclient [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2117)   <------------------  (2998)   |
+|11.783   |         realsecure > mentas           |TCP: realsecure > mentaserver [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2118)   <------------------  (2998)   |
+|11.783   |         5911 > gsigatekeepe           |TCP: 5911 > gsigatekeeper [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2119)   <------------------  (5911)   |
+|11.784   |         monkeycom > rtcm-sc           |TCP: monkeycom > rtcm-sc104 [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2101)   <------------------  (9898)   |
+|11.784   |         dif-port > zephyr-c           |TCP: dif-port > zephyr-clt [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2103)   <------------------  (2251)   |
+|11.784   |         filenet-pch > zephy           |TCP: filenet-pch > zephyr-hm [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2104)   <------------------  (32775)  |
+|11.784   |         sane-port > minipay           |TCP: sane-port > minipay [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2105)   <------------------  (6566)   |
+|11.784   |         h323gatedisc > mzap           |TCP: h323gatedisc > mzap [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2106)   <------------------  (1718)   |
+|11.784   |         6006 > bintec-admin           |TCP: 6006 > bintec-admin [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2107)   <------------------  (6006)   |
+|11.784   |         6006 > comcam [RST,           |TCP: 6006 > comcam [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2108)   <------------------  (6006)   |
+|11.784   |         appserv-http > newh           |TCP: appserv-http > newheights [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2114)   <------------------  (4848)   |
+|11.881   |         ergolight > h323gat           |TCP: ergolight > h323gatedisc [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2109)   ------------------>  (1718)   |
+|11.881   |         netiq > bpcd [SYN]            |TCP: netiq > bpcd [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2220)   ------------------>  (13782)  |
+|11.881   |         umsp > sane-port [S           |TCP: umsp > sane-port [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2110)   ------------------>  (6566)   |
+|11.881   |         rockwell-csp1 > mec           |TCP: rockwell-csp1 > mecomm [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2221)   ------------------>  (668)    |
+|11.881   |         hsl-storm > nntps [           |TCP: hsl-storm > nntps [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2113)   ------------------>  (563)    |
+|11.881   |         pktcable-cops > fil           |TCP: pktcable-cops > filenet-re [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2126)   ------------------>  (32774)  |
+|11.881   |         EtherNet/IP-1 > hp-           |TCP: EtherNet/IP-1 > hp-status [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2222)   ------------------>  (5226)   |
+|11.881   |         index-pc-wb > 50500           |TCP: index-pc-wb > 50500 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2127)   ------------------>  (50500)  |
+|11.881   |         rockwell-csp2 > 107           |TCP: rockwell-csp2 > 10778 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2223)   ------------------>  (10778)  |
+|11.881   |         net-steward > 50500           |TCP: net-steward > 50500 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2128)   ------------------>  (50500)  |
+|11.881   |         xds > oracleas-http           |TCP: xds > oracleas-https [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2130)   ------------------>  (7443)   |
+|11.881   |         efi-mg > enl-name [           |TCP: efi-mg > enl-name [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2224)   ------------------>  (1805)   |
+|11.881   |         avenue > 50636 [SYN           |TCP: avenue > 50636 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2134)   ------------------>  (50636)  |
+|11.881   |         rcip-itu > poweronn           |TCP: rcip-itu > poweronnud [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2225)   ------------------>  (3168)   |
+|11.881   |         appworxsrv > rsh-sp           |TCP: appworxsrv > rsh-spx [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2136)   ------------------>  (222)    |
+|11.881   |         connect > pds [SYN]           |TCP: connect > pds [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2137)   ------------------>  (9595)   |
+|11.881   |         di-drm > qip-login            |TCP: di-drm > qip-login [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2226)   ------------------>  (2366)   |
+|11.881   |         unbind-cluster > pd           |TCP: unbind-cluster > pds [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2138)   ------------------>  (9595)   |
+|11.881   |         di-msg > clariion-e           |TCP: di-msg > clariion-evr01 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2227)   ------------------>  (6389)   |
+|11.881   |         dsatp > filenet-pch           |TCP: dsatp > filenet-pch [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2111)   ------------------>  (32775)  |
+|11.881   |         ehome-ms > clariion           |TCP: ehome-ms > clariion-evr01 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2228)   ------------------>  (6389)   |
+|11.881   |         kdm > 9110 [SYN] Se           |TCP: kdm > 9110 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2115)   ------------------>  (9110)   |
+|11.881   |         scientia-ssdb > app           |TCP: scientia-ssdb > appserv-http [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2121)   ------------------>  (4848)   |
+|11.881   |         datalens > qip-logi           |TCP: datalens > qip-login [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2229)   ------------------>  (2366)   |
+|11.881   |         gtp-control > wsdap           |TCP: gtp-control > wsdapi [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2123)   ------------------>  (5357)   |
+|11.881   |         queueadm > poweronn           |TCP: queueadm > poweronnud [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2230)   ------------------>  (3168)   |
+|11.881   |         elatelink > husky [           |TCP: elatelink > husky [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2124)   ------------------>  (1310)   |
+|11.881   |         cs-live > filenet-r           |TCP: cs-live > filenet-re [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2129)   ------------------>  (32774)  |
+|11.881   |         wimaxasncp > enl-na           |TCP: wimaxasncp > enl-name [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2231)   ------------------>  (1805)   |
+|11.881   |         zymed-zpp > 5221 [S           |TCP: zymed-zpp > 5221 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2133)   ------------------>  (5221)   |
+|11.881   |         ivs-video > 10778 [           |TCP: ivs-video > 10778 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2232)   ------------------>  (10778)  |
+|11.881   |         ias-auth > rsh-spx            |TCP: ias-auth > rsh-spx [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2139)   ------------------>  (222)    |
+|11.881   |         infocrypt > blp1 [S           |TCP: infocrypt > blp1 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2233)   ------------------>  (8194)   |
+|11.881   |         directplay > avt-pr           |TCP: directplay > avt-profile-1 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2234)   ------------------>  (5004)   |
+|11.881   |         sercomm-wlink > 901           |TCP: sercomm-wlink > 9011 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2235)   ------------------>  (9011)   |
+|11.881   |         nani > 7937 [SYN] S           |TCP: nani > 7937 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2236)   ------------------>  (7937)   |
+|11.881   |         optech-port1-lm > d           |TCP: optech-port1-lm > daap [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2237)   ------------------>  (3689)   |
+|11.881   |         aviva-sna > daap [S           |TCP: aviva-sna > daap [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2238)   ------------------>  (3689)   |
+|11.882   |         imagequery > 7937 [           |TCP: imagequery > 7937 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2239)   ------------------>  (7937)   |
+|11.882   |         qencp > 9110 [SYN]            |TCP: qencp > 9110 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2120)   ------------------>  (9110)   |
+|11.882   |         caupc-remote > nntp           |TCP: caupc-remote > nntps [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2122)   ------------------>  (563)    |
+|11.882   |         gris > 44501 [SYN]            |TCP: gris > 44501 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2135)   ------------------>  (44501)  |
+|11.882   |         lockstep > oracleas           |TCP: lockstep > oracleas-https [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2125)   ------------------>  (7443)   |
+|11.882   |         avantageb2b > husky           |TCP: avantageb2b > husky [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2131)   ------------------>  (1310)   |
+|11.882   |         solera-epmap > wsda           |TCP: solera-epmap > wsdapi [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2132)   ------------------>  (5357)   |
+|11.882   |         h323gatedisc > ergo           |TCP: h323gatedisc > ergolight [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2109)   <------------------  (1718)   |
+|11.882   |         bpcd > netiq [RST,            |TCP: bpcd > netiq [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2220)   <------------------  (13782)  |
+|11.882   |         sane-port > umsp [R           |TCP: sane-port > umsp [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2110)   <------------------  (6566)   |
+|11.882   |         mecomm > rockwell-c           |TCP: mecomm > rockwell-csp1 [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2221)   <------------------  (668)    |
+|11.882   |         nntps > hsl-storm [           |TCP: nntps > hsl-storm [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2113)   <------------------  (563)    |
+|11.882   |         filenet-re > pktcab           |TCP: filenet-re > pktcable-cops [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2126)   <------------------  (32774)  |
+|11.883   |         hp-status > EtherNe           |TCP: hp-status > EtherNet/IP-1 [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2222)   <------------------  (5226)   |
+|11.883   |         50500 > index-pc-wb           |TCP: 50500 > index-pc-wb [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2127)   <------------------  (50500)  |
+|11.883   |         10778 > rockwell-cs           |TCP: 10778 > rockwell-csp2 [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2223)   <------------------  (10778)  |
+|11.883   |         50500 > net-steward           |TCP: 50500 > net-steward [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2128)   <------------------  (50500)  |
+|11.883   |         oracleas-https > xd           |TCP: oracleas-https > xds [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2130)   <------------------  (7443)   |
+|11.883   |         enl-name > efi-mg [           |TCP: enl-name > efi-mg [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2224)   <------------------  (1805)   |
+|11.883   |         50636 > avenue [RST           |TCP: 50636 > avenue [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2134)   <------------------  (50636)  |
+|11.883   |         poweronnud > rcip-i           |TCP: poweronnud > rcip-itu [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2225)   <------------------  (3168)   |
+|11.883   |         rsh-spx > appworxsr           |TCP: rsh-spx > appworxsrv [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2136)   <------------------  (222)    |
+|11.883   |         pds > connect [RST,           |TCP: pds > connect [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2137)   <------------------  (9595)   |
+|11.883   |         qip-login > di-drm            |TCP: qip-login > di-drm [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2226)   <------------------  (2366)   |
+|11.883   |         pds > unbind-cluste           |TCP: pds > unbind-cluster [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2138)   <------------------  (9595)   |
+|11.883   |         clariion-evr01 > di           |TCP: clariion-evr01 > di-msg [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2227)   <------------------  (6389)   |
+|11.884   |         filenet-pch > dsatp           |TCP: filenet-pch > dsatp [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2111)   <------------------  (32775)  |
+|11.884   |         clariion-evr01 > eh           |TCP: clariion-evr01 > ehome-ms [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2228)   <------------------  (6389)   |
+|11.884   |         9110 > kdm [RST, AC           |TCP: 9110 > kdm [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2115)   <------------------  (9110)   |
+|11.884   |         appserv-http > scie           |TCP: appserv-http > scientia-ssdb [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2121)   <------------------  (4848)   |
+|11.884   |         qip-login > datalen           |TCP: qip-login > datalens [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2229)   <------------------  (2366)   |
+|11.884   |         wsdapi > gtp-contro           |TCP: wsdapi > gtp-control [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2123)   <------------------  (5357)   |
+|11.884   |         poweronnud > queuea           |TCP: poweronnud > queueadm [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2230)   <------------------  (3168)   |
+|11.884   |         husky > elatelink [           |TCP: husky > elatelink [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2124)   <------------------  (1310)   |
+|11.884   |         filenet-re > cs-liv           |TCP: filenet-re > cs-live [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2129)   <------------------  (32774)  |
+|11.884   |         enl-name > wimaxasn           |TCP: enl-name > wimaxasncp [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2231)   <------------------  (1805)   |
+|11.884   |         5221 > zymed-zpp [R           |TCP: 5221 > zymed-zpp [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2133)   <------------------  (5221)   |
+|11.884   |         10778 > ivs-video [           |TCP: 10778 > ivs-video [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2232)   <------------------  (10778)  |
+|11.885   |         rsh-spx > ias-auth            |TCP: rsh-spx > ias-auth [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2139)   <------------------  (222)    |
+|11.885   |         blp1 > infocrypt [R           |TCP: blp1 > infocrypt [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2233)   <------------------  (8194)   |
+|11.885   |         avt-profile-1 > dir           |TCP: avt-profile-1 > directplay [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2234)   <------------------  (5004)   |
+|11.885   |         9011 > sercomm-wlin           |TCP: 9011 > sercomm-wlink [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2235)   <------------------  (9011)   |
+|11.885   |         7937 > nani [RST, A           |TCP: 7937 > nani [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2236)   <------------------  (7937)   |
+|11.885   |         daap > optech-port1           |TCP: daap > optech-port1-lm [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2237)   <------------------  (3689)   |
+|11.885   |         daap > aviva-sna [R           |TCP: daap > aviva-sna [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2238)   <------------------  (3689)   |
+|11.885   |         7937 > imagequery [           |TCP: 7937 > imagequery [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2239)   <------------------  (7937)   |
+|11.885   |         9110 > qencp [RST,            |TCP: 9110 > qencp [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2120)   <------------------  (9110)   |
+|11.885   |         nntps > caupc-remot           |TCP: nntps > caupc-remote [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2122)   <------------------  (563)    |
+|11.885   |         44501 > gris [RST,            |TCP: 44501 > gris [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2135)   <------------------  (44501)  |
+|11.885   |         oracleas-https > lo           |TCP: oracleas-https > lockstep [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2125)   <------------------  (7443)   |
+|11.886   |         husky > avantageb2b           |TCP: husky > avantageb2b [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2131)   <------------------  (1310)   |
+|11.886   |         wsdapi > solera-epm           |TCP: wsdapi > solera-epmap [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2132)   <------------------  (5357)   |
+|11.981   |         recipe > 9011 [SYN]           |TCP: recipe > 9011 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2240)   ------------------>  (9011)   |
+|11.982   |         ivsd > avt-profile-           |TCP: ivsd > avt-profile-1 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2241)   ------------------>  (5004)   |
+|11.982   |         foliocorp > blp1 [S           |TCP: foliocorp > blp1 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2242)   ------------------>  (8194)   |
+|11.982   |         magicom > 7920 [SYN           |TCP: magicom > 7920 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2243)   ------------------>  (7920)   |
+|11.982   |         nmsserver > 787 [SY           |TCP: nmsserver > 787 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2244)   ------------------>  (787)    |
+|11.982   |         hao > soap-http [SY           |TCP: hao > soap-http [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2245)   ------------------>  (7627)   |
+|11.982   |         pc-mta-addrmap > ra           |TCP: pc-mta-addrmap > radius [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2246)   ------------------>  (1812)   |
+|11.982   |         antidotemgrsvr > 10           |TCP: antidotemgrsvr > 10626 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2247)   ------------------>  (10626)  |
+|11.982   |         ums > 10626 [SYN] S           |TCP: ums > 10626 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2248)   ------------------>  (10626)  |
+|11.982   |         rfmp > radius [SYN]           |TCP: rfmp > radius [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2249)   ------------------>  (1812)   |
+|11.982   |         remote-collab > soa           |TCP: remote-collab > soap-http [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2250)   ------------------>  (7627)   |
+|11.982   |         dif-port > 787 [SYN           |TCP: dif-port > 787 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2251)   ------------------>  (787)    |
+|11.982   |         njenet-ssl > 7920 [           |TCP: njenet-ssl > 7920 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2252)   ------------------>  (7920)   |
+|11.982   |         dtv-chan-req > kshe           |TCP: dtv-chan-req > kshell [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2253)   ------------------>  (544)    |
+|11.982   |         seispoc > rwhois [S           |TCP: seispoc > rwhois [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2254)   ------------------>  (4321)   |
+|11.982   |         vrtp > netopia-vo1            |TCP: vrtp > netopia-vo1 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2255)   ------------------>  (1839)   |
+|11.982   |         pcc-mfp > 34571 [SY           |TCP: pcc-mfp > 34571 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2256)   ------------------>  (34571)  |
+|11.982   |         simple-tx-rx > 5030           |TCP: simple-tx-rx > 50300 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2257)   ------------------>  (50300)  |
+|11.982   |         rcts > 50300 [SYN]            |TCP: rcts > 50300 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2258)   ------------------>  (50300)  |
+|11.982   |         acd-pm > 34571 [SYN           |TCP: acd-pm > 34571 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2259)   ------------------>  (34571)  |
+|11.982   |         xnds > trim [SYN] S           |TCP: xnds > trim [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2157)   ------------------>  (1137)   |
+|11.982   |         ias-reg > 44501 [SY           |TCP: ias-reg > 44501 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2140)   ------------------>  (44501)  |
+|11.982   |         lv-ffx > dec_dlm [S           |TCP: lv-ffx > dec_dlm [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2144)   ------------------>  (625)    |
+|11.982   |         lv-pici > 16080 [SY           |TCP: lv-pici > 16080 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2145)   ------------------>  (16080)  |
+|11.982   |         gtp-user > 7512 [SY           |TCP: gtp-user > 7512 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2152)   ------------------>  (7512)   |
+|11.982   |         stdptc > kiosk [SYN           |TCP: stdptc > kiosk [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2154)   ------------------>  (1061)   |
+|11.982   |         touchnetplus > trim           |TCP: touchnetplus > trim [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2158)   ------------------>  (1137)   |
+|11.982   |         9011 > recipe [RST,           |TCP: 9011 > recipe [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2240)   <------------------  (9011)   |
+|11.983   |         avt-profile-1 > ivs           |TCP: avt-profile-1 > ivsd [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2241)   <------------------  (5004)   |
+|11.983   |         blp1 > foliocorp [R           |TCP: blp1 > foliocorp [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2242)   <------------------  (8194)   |
+|11.983   |         7920 > magicom [RST           |TCP: 7920 > magicom [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2243)   <------------------  (7920)   |
+|11.983   |         787 > nmsserver [RS           |TCP: 787 > nmsserver [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2244)   <------------------  (787)    |
+|11.983   |         soap-http > hao [RS           |TCP: soap-http > hao [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2245)   <------------------  (7627)   |
+|11.983   |         radius > pc-mta-add           |TCP: radius > pc-mta-addrmap [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2246)   <------------------  (1812)   |
+|11.983   |         10626 > antidotemgr           |TCP: 10626 > antidotemgrsvr [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2247)   <------------------  (10626)  |
+|11.983   |         10626 > ums [RST, A           |TCP: 10626 > ums [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2248)   <------------------  (10626)  |
+|11.983   |         radius > rfmp [RST,           |TCP: radius > rfmp [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2249)   <------------------  (1812)   |
+|11.983   |         soap-http > remote-           |TCP: soap-http > remote-collab [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2250)   <------------------  (7627)   |
+|11.983   |         787 > dif-port [RST           |TCP: 787 > dif-port [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2251)   <------------------  (787)    |
+|11.983   |         7920 > njenet-ssl [           |TCP: 7920 > njenet-ssl [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2252)   <------------------  (7920)   |
+|11.983   |         tdmoip > 5221 [SYN]           |TCP: tdmoip > 5221 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2142)   ------------------>  (5221)   |
+|11.983   |         lv-not > cmip-man [           |TCP: lv-not > cmip-man [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2146)   ------------------>  (163)    |
+|11.983   |         lv-auth > dls-monit           |TCP: lv-auth > dls-monitor [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2147)   ------------------>  (2048)   |
+|11.983   |         veritas-ucl > dls-m           |TCP: veritas-ucl > dls-monitor [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2148)   ------------------>  (2048)   |
+|11.984   |         dynamic3d > 16080 [           |TCP: dynamic3d > 16080 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2150)   ------------------>  (16080)  |
+|11.984   |         ctlptc > sixtrak [S           |TCP: ctlptc > sixtrak [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2153)   ------------------>  (1594)   |
+|11.984   |         ias-admind > 50636            |TCP: ias-admind > 50636 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2141)   ------------------>  (50636)  |
+|11.984   |         lv-jc > 7512 [SYN]            |TCP: lv-jc > 7512 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2143)   ------------------>  (7512)   |
+|11.984   |         acptsys > cmip-man            |TCP: acptsys > cmip-man [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2149)   ------------------>  (163)    |
+|11.984   |         docent > dec_dlm [S           |TCP: docent > dec_dlm [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2151)   ------------------>  (625)    |
+|11.984   |         brdptc > asipregist           |TCP: brdptc > asipregistry [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2155)   ------------------>  (687)    |
+|11.984   |         trp > dsf [SYN] Seq           |TCP: trp > dsf [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2156)   ------------------>  (555)    |
+|11.984   |         gdbremote > dsf [SY           |TCP: gdbremote > dsf [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2159)   ------------------>  (555)    |
+|11.984   |         kshell > dtv-chan-r           |TCP: kshell > dtv-chan-req [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2253)   <------------------  (544)    |
+|11.984   |         rwhois > seispoc [R           |TCP: rwhois > seispoc [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2254)   <------------------  (4321)   |
+|11.984   |         netopia-vo1 > vrtp            |TCP: netopia-vo1 > vrtp [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2255)   <------------------  (1839)   |
+|11.984   |         34571 > pcc-mfp [RS           |TCP: 34571 > pcc-mfp [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2256)   <------------------  (34571)  |
+|11.984   |         50300 > simple-tx-r           |TCP: 50300 > simple-tx-rx [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2257)   <------------------  (50300)  |
+|11.984   |         50300 > rcts [RST,            |TCP: 50300 > rcts [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2258)   <------------------  (50300)  |
+|11.984   |         34571 > acd-pm [RST           |TCP: 34571 > acd-pm [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2259)   <------------------  (34571)  |
+|11.984   |         trim > xnds [RST, A           |TCP: trim > xnds [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2157)   <------------------  (1137)   |
+|11.984   |         44501 > ias-reg [RS           |TCP: 44501 > ias-reg [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2140)   <------------------  (44501)  |
+|11.985   |         dec_dlm > lv-ffx [R           |TCP: dec_dlm > lv-ffx [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2144)   <------------------  (625)    |
+|11.985   |         16080 > lv-pici [RS           |TCP: 16080 > lv-pici [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2145)   <------------------  (16080)  |
+|11.985   |         7512 > gtp-user [RS           |TCP: 7512 > gtp-user [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2152)   <------------------  (7512)   |
+|11.985   |         kiosk > stdptc [RST           |TCP: kiosk > stdptc [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2154)   <------------------  (1061)   |
+|11.985   |         trim > touchnetplus           |TCP: trim > touchnetplus [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2158)   <------------------  (1137)   |
+|11.985   |         5221 > tdmoip [RST,           |TCP: 5221 > tdmoip [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2142)   <------------------  (5221)   |
+|11.985   |         cmip-man > lv-not [           |TCP: cmip-man > lv-not [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2146)   <------------------  (163)    |
+|11.985   |         dls-monitor > lv-au           |TCP: dls-monitor > lv-auth [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2147)   <------------------  (2048)   |
+|11.985   |         dls-monitor > verit           |TCP: dls-monitor > veritas-ucl [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2148)   <------------------  (2048)   |
+|11.985   |         16080 > dynamic3d [           |TCP: 16080 > dynamic3d [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2150)   <------------------  (16080)  |
+|11.986   |         sixtrak > ctlptc [R           |TCP: sixtrak > ctlptc [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2153)   <------------------  (1594)   |
+|11.986   |         50636 > ias-admind            |TCP: 50636 > ias-admind [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2141)   <------------------  (50636)  |
+|11.986   |         7512 > lv-jc [RST,            |TCP: 7512 > lv-jc [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2143)   <------------------  (7512)   |
+|11.986   |         cmip-man > acptsys            |TCP: cmip-man > acptsys [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2149)   <------------------  (163)    |
+|11.986   |         dec_dlm > docent [R           |TCP: dec_dlm > docent [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2151)   <------------------  (625)    |
+|11.986   |         asipregistry > brdp           |TCP: asipregistry > brdptc [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2155)   <------------------  (687)    |
+|11.986   |         dsf > trp [RST, ACK           |TCP: dsf > trp [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2156)   <------------------  (555)    |
+|11.986   |         dsf > gdbremote [RS           |TCP: dsf > gdbremote [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2159)   <------------------  (555)    |
+|12.082   |         apc-2260 > netopia-           |TCP: apc-2260 > netopia-vo1 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2260)   ------------------>  (1839)   |
+|12.082   |         apc-2161 > kiosk [S           |TCP: apc-2161 > kiosk [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2161)   ------------------>  (1061)   |
+|12.082   |         raw-serial > dls [S           |TCP: raw-serial > dls [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2167)   ------------------>  (2047)   |
+|12.082   |         comotionmaster > rw           |TCP: comotionmaster > rwhois [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2261)   ------------------>  (4321)   |
+|12.082   |         msfw-storage > gds_           |TCP: msfw-storage > gds_db [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2171)   ------------------>  (3050)   |
+|12.082   |         comotionback > kshe           |TCP: comotionback > kshell [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2262)   ------------------>  (544)    |
+|12.082   |         rapi > synchronet-r           |TCP: rapi > synchronet-rtc [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2176)   ------------------>  (6101)   |
+|12.082   |         qwave > wherehoo [S           |TCP: qwave > wherehoo [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2177)   ------------------>  (5859)   |
+|12.082   |         ecwcfg > personal-a           |TCP: ecwcfg > personal-agent [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2263)   ------------------>  (5555)   |
+|12.082   |         bitspeer > wherehoo           |TCP: bitspeer > wherehoo [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2178)   ------------------>  (5859)   |
+|12.082   |         apx500api-1 > inter           |TCP: apx500api-1 > interwise [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2264)   ------------------>  (7778)   |
+|12.082   |         navisphere-sec > 19           |TCP: navisphere-sec > 19350 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2163)   ------------------>  (19350)  |
+|12.082   |         apx500api-2 > 49153           |TCP: apx500api-2 > 49153 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2265)   ------------------>  (49153)  |
+|12.082   |         x-bone-api > 8084 [           |TCP: x-bone-api > 8084 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2165)   ------------------>  (8084)   |
+|12.082   |         iwserver > filenet-           |TCP: iwserver > filenet-tms [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2166)   ------------------>  (32768)  |
+|12.082   |         mfserver > xmltec-x           |TCP: mfserver > xmltec-xmlmail [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2266)   ------------------>  (9091)   |
+|12.082   |         easy-soft-mux > dls           |TCP: easy-soft-mux > dls [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2168)   ------------------>  (2047)   |
+|12.082   |         ontobroker > winpop           |TCP: ontobroker > winpoplanmess [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2267)   ------------------>  (1152)   |
+|12.082   |         brain > filenet-tms           |TCP: brain > filenet-tms [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2169)   ------------------>  (32768)  |
+|12.082   |         airsync > apple-sas           |TCP: airsync > apple-sasl [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2175)   ------------------>  (3659)   |
+|12.082   |         amt > winpoplanmess           |TCP: amt > winpoplanmess [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2268)   ------------------>  (1152)   |
+|12.082   |         vmrdp > synchronet-           |TCP: vmrdp > synchronet-rtc [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2179)   ------------------>  (6101)   |
+|12.082   |         mikey > xmltec-xmlm           |TCP: mikey > xmltec-xmlmail [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2269)   ------------------>  (9091)   |
+|12.082   |         starschool > 49153            |TCP: starschool > 49153 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2270)   ------------------>  (49153)  |
+|12.082   |         mmcals > interwise            |TCP: mmcals > interwise [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2271)   ------------------>  (7778)   |
+|12.082   |         mmcal > personal-ag           |TCP: mmcal > personal-agent [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2272)   ------------------>  (5555)   |
+|12.083   |         mysql-im > emcads [           |TCP: mysql-im > emcads [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2273)   ------------------>  (3945)   |
+|12.083   |         pcttunnell > 306 [S           |TCP: pcttunnell > 306 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2274)   ------------------>  (306)    |
+|12.083   |         ibridge-data > pole           |TCP: ibridge-data > polestar [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2275)   ------------------>  (1060)   |
+|12.083   |         ibridge-mgmt > btri           |TCP: ibridge-mgmt > btrieve [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2276)   ------------------>  (3351)   |
+|12.083   |         bluectrlproxy > aol           |TCP: bluectrlproxy > aol [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2277)   ------------------>  (5190)   |
+|12.083   |         s3db > aol [SYN] Se           |TCP: s3db > aol [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2278)   ------------------>  (5190)   |
+|12.083   |         xmquery > btrieve [           |TCP: xmquery > btrieve [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2279)   ------------------>  (3351)   |
+|12.083   |         navisphere > sixtra           |TCP: navisphere > sixtrak [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2162)   ------------------>  (1594)   |
+|12.083   |         ddns-v3 > gds_db [S           |TCP: ddns-v3 > gds_db [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2164)   ------------------>  (3050)   |
+|12.083   |         eyetv > 8084 [SYN]            |TCP: eyetv > 8084 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2170)   ------------------>  (8084)   |
+|12.083   |         apc-2160 > asipregi           |TCP: apc-2160 > asipregistry [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2160)   ------------------>  (687)    |
+|12.083   |         msfw-s-storage > 19           |TCP: msfw-s-storage > 19350 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2172)   ------------------>  (19350)  |
+|12.083   |         msfw-replica > 6002           |TCP: msfw-replica > 6002 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2173)   ------------------>  (6002)   |
+|12.083   |         msfw-array > 55555            |TCP: msfw-array > 55555 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2174)   ------------------>  (55555)  |
+|12.183   |         lnvpoller > polesta           |TCP: lnvpoller > polestar [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2280)   ------------------>  (1060)   |
+|12.183   |         lnvconsole > 306 [S           |TCP: lnvconsole > 306 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2281)   ------------------>  (306)    |
+|12.183   |         lnvalarm > emcads [           |TCP: lnvalarm > emcads [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2282)   ------------------>  (3945)   |
+|12.183   |         lnvstatus > xgrid [           |TCP: lnvstatus > xgrid [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2283)   ------------------>  (4111)   |
+|12.183   |         lnvmaps > 32 [SYN]            |TCP: lnvmaps > 32 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2284)   ------------------>  (32)     |
+|12.183   |         lnvmailmon > 27715            |TCP: lnvmailmon > 27715 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2285)   ------------------>  (27715)  |
+|12.183   |         nas-metering > boks           |TCP: nas-metering > boks_servm [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2286)   ------------------>  (6502)   |
+|12.183   |         dna > upnotifyp [SY           |TCP: dna > upnotifyp [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2287)   ------------------>  (4445)   |
+|12.183   |         netml > upnotifyp [           |TCP: netml > upnotifyp [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2288)   ------------------>  (4445)   |
+|12.183   |         dict-lookup > boks_           |TCP: dict-lookup > boks_servm [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2289)   ------------------>  (6502)   |
+|12.183   |         sonus-logging > 277           |TCP: sonus-logging > 27715 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2290)   ------------------>  (27715)  |
+|12.183   |         eapsp > 32 [SYN] Se           |TCP: eapsp > 32 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2291)   ------------------>  (32)     |
+|12.183   |         mib-streaming > xgr           |TCP: mib-streaming > xgrid [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2292)   ------------------>  (4111)   |
+|12.183   |         npdbgmngr > 15004 [           |TCP: npdbgmngr > 15004 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2293)   ------------------>  (15004)  |
+|12.183   |         konshus-lm > 1027 [           |TCP: konshus-lm > 1027 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2294)   ------------------>  (1027)   |
+|12.183   |         advant-lm > dab-sti           |TCP: advant-lm > dab-sti-c [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2295)   ------------------>  (1076)   |
+|12.183   |         theta-lm > simbaexp           |TCP: theta-lm > simbaexpress [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2296)   ------------------>  (1583)   |
+|12.183   |         d2k-datamover1 > ew           |TCP: d2k-datamover1 > ewall [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2297)   ------------------>  (1328)   |
+|12.183   |         d2k-datamover2 > ew           |TCP: d2k-datamover2 > ewall [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2298)   ------------------>  (1328)   |
+|12.183   |         pc-telecommute > si           |TCP: pc-telecommute > simbaexpress [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2299)   ------------------>  (1583)   |
+|12.183   |         gtaua > beorl [SYN]           |TCP: gtaua > beorl [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2186)   ------------------>  (5633)   |
+|12.183   |         2189 > beorl [SYN]            |TCP: 2189 > beorl [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2189)   ------------------>  (5633)   |
+|12.183   |         tivoconnect > compa           |TCP: tivoconnect > compaq-https [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2190)   ------------------>  (2381)   |
+|12.183   |         2195 > 5033 [SYN] S           |TCP: 2195 > 5033 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2195)   ------------------>  (5033)   |
+|12.183   |         mnp-exchange > 6792           |TCP: mnp-exchange > 6792 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2197)   ------------------>  (6792)   |
+|12.183   |         onehome-remote > 67           |TCP: onehome-remote > 6792 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2198)   ------------------>  (6792)   |
+|12.183   |         autodesk-nlm > pn-r           |TCP: autodesk-nlm > pn-requester2 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2080)   ------------------>  (2718)   |
+|12.183   |         ada-cip > echo [SYN           |TCP: ada-cip > echo [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2085)   ------------------>  (7)      |
+|12.183   |         mc-gt-srv > apple-s           |TCP: mc-gt-srv > apple-sasl [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2180)   ------------------>  (3659)   |
+|12.183   |         2187 > neod1 [SYN]            |TCP: 2187 > neod1 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2187)   ------------------>  (1047)   |
+|12.183   |         tvbus > 5810 [SYN]            |TCP: tvbus > 5810 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2191)   ------------------>  (5810)   |
+|12.183   |         asdis > 40911 [SYN]           |TCP: asdis > 40911 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2192)   ------------------>  (40911)  |
+|12.183   |         sunclustergeo > gmr           |TCP: sunclustergeo > gmrupdateserv [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2084)   ------------------>  (1070)   |
+|12.183   |         gnunet > 5915 [SYN]           |TCP: gnunet > 5915 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2086)   ------------------>  (5915)   |
+|12.183   |         lrp > echo [SYN] Se           |TCP: lrp > echo [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2090)   ------------------>  (7)      |
+|12.184   |         infowave > 9666 [SY           |TCP: infowave > 9666 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2082)   ------------------>  (9666)   |
+|12.184   |         eli > 802-11-iapp [           |TCP: eli > 802-11-iapp [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2087)   ------------------>  (3517)   |
+|12.184   |         ip-blf > 802-11-iap           |TCP: ip-blf > 802-11-iapp [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2088)   ------------------>  (3517)   |
+|12.184   |         sep > 5915 [SYN] Se           |TCP: sep > 5915 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2089)   ------------------>  (5915)   |
+|12.184   |         descent3 > 6007 [SY           |TCP: descent3 > 6007 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2092)   ------------------>  (6007)   |
+|12.184   |         nbx-cc > 9415 [SYN]           |TCP: nbx-cc > 9415 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2093)   ------------------>  (9415)   |
+|12.184   |         nbx-ser > simplifym           |TCP: nbx-ser > simplifymedia [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2095)   ------------------>  (8087)   |
+|12.184   |         nbx-dir > proofd [S           |TCP: nbx-dir > proofd [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2096)   ------------------>  (1093)   |
+|12.184   |         onbase-dds > compaq           |TCP: onbase-dds > compaq-https [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2185)   ------------------>  (2381)   |
+|12.184   |         jetformpreview > fi           |TCP: jetformpreview > filenet-pa [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2097)   ------------------>  (32772)  |
+|12.184   |         2188 > neod1 [SYN]            |TCP: 2188 > neod1 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2188)   ------------------>  (1047)   |
+|12.184   |         drwcs > wbem-rmi [S           |TCP: drwcs > wbem-rmi [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2193)   ------------------>  (5987)   |
+|12.184   |         2194 > xinupageserv           |TCP: 2194 > xinupageserver [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2194)   ------------------>  (2020)   |
+|12.184   |         2196 > esl-lm [SYN]           |TCP: 2196 > esl-lm [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2196)   ------------------>  (1455)   |
+|12.184   |         onehome-help > esl-           |TCP: onehome-help > esl-lm [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2199)   ------------------>  (1455)   |
+|12.184   |         noaaport > intersys           |TCP: noaaport > intersys-cache [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2210)   ------------------>  (1972)   |
+|12.184   |         emwin > radmin-port           |TCP: emwin > radmin-port [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2211)   ------------------>  (4899)   |
+|12.184   |         eforward > 55555 [S           |TCP: eforward > 55555 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2181)   ------------------>  (55555)  |
+|12.184   |         cgn-stat > 6002 [SY           |TCP: cgn-stat > 6002 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2182)   ------------------>  (6002)   |
+|12.184   |         cgn-config > 40911            |TCP: cgn-config > 40911 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2183)   ------------------>  (40911)  |
+|12.184   |         nvd > 5810 [SYN] Se           |TCP: nvd > 5810 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2184)   ------------------>  (5810)   |
+|12.184   |         kme-trap-port > dis           |TCP: kme-trap-port > discard [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2081)   ------------------>  (9)      |
+|12.184   |         idware-router > acm           |TCP: idware-router > acmsoda [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2079)   ------------------>  (6969)   |
+|12.184   |         radsec > 6007 [SYN]           |TCP: radsec > 6007 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2083)   ------------------>  (6007)   |
+|12.184   |         prp > gmrupdateserv           |TCP: prp > gmrupdateserv [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2091)   ------------------>  (1070)   |
+|12.184   |         nbx-au > monkeycom            |TCP: nbx-au > monkeycom [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2094)   ------------------>  (9898)   |
+|12.184   |         dialog-port > filen           |TCP: dialog-port > filenet-pa [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2098)   ------------------>  (32772)  |
+|12.184   |         h2250-annex-g > pro           |TCP: h2250-annex-g > proofd [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2099)   ------------------>  (1093)   |
+|12.184   |         b2-runtime > n1-fwp           |TCP: b2-runtime > n1-fwp [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2203)   ------------------>  (4446)   |
+|12.184   |         vtu-comms > 7921 [S           |TCP: vtu-comms > 7921 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2216)   ------------------>  (7921)   |
+|12.283   |         cvmmon > dab-sti-c            |TCP: cvmmon > dab-sti-c [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2300)   ------------------>  (1076)   |
+|12.283   |         cpq-wbem > 1027 [SY           |TCP: cpq-wbem > 1027 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2301)   ------------------>  (1027)   |
+|12.283   |         binderysupport > 15           |TCP: binderysupport > 15004 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2302)   ------------------>  (15004)  |
+|12.283   |         proxy-gateway > 257           |TCP: proxy-gateway > 25734 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2303)   ------------------>  (25734)  |
+|12.283   |         attachmate-uts > en           |TCP: attachmate-uts > encrypted_admin [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2304)   ------------------>  (1138)   |
+|12.283   |         mt-scaleserver > 81           |TCP: mt-scaleserver > 8181 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2305)   ------------------>  (8181)   |
+|12.283   |         tappi-boxnet > kpas           |TCP: tappi-boxnet > kpasswd [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2306)   ------------------>  (464)    |
+|12.283   |         pehelp > kerberos-a           |TCP: pehelp > kerberos-adm [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2307)   ------------------>  (749)    |
+|12.283   |         sdhelp > kerberos-a           |TCP: sdhelp > kerberos-adm [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2308)   ------------------>  (749)    |
+|12.283   |         sdserver > kpasswd            |TCP: sdserver > kpasswd [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2309)   ------------------>  (464)    |
+|12.284   |         sdclient > 8181 [SY           |TCP: sdclient > 8181 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2310)   ------------------>  (8181)   |
+|12.284   |         messageservice > en           |TCP: messageservice > encrypted_admin [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2311)   ------------------>  (1138)   |
+|12.284   |         wanscaler > 25734 [           |TCP: wanscaler > 25734 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2312)   ------------------>  (25734)  |
+|12.284   |         iapp > lv-ffx [SYN]           |TCP: iapp > lv-ffx [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2313)   ------------------>  (2144)   |
+|12.284   |         cr-websystems > ins           |TCP: cr-websystems > instl_bootc [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2314)   ------------------>  (1068)   |
+|12.284   |         precise-sft > x11 [           |TCP: precise-sft > x11 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2315)   ------------------>  (6000)   |
+|12.284   |         sent-lm > klogin [S           |TCP: sent-lm > klogin [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2316)   ------------------>  (543)    |
+|12.284   |         attachmate-g32 > dd           |TCP: attachmate-g32 > ddt [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2317)   ------------------>  (1052)   |
+|12.284   |         cadencecontrol > dd           |TCP: cadencecontrol > ddt [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2318)   ------------------>  (1052)   |
+|12.284   |         infolibria > klogin           |TCP: infolibria > klogin [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2319)   ------------------>  (543)    |
+|12.284   |         ats > xinupageserve           |TCP: ats > xinupageserver [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2201)   ------------------>  (2020)   |
+|12.284   |         imtc-map > wbem-rmi           |TCP: imtc-map > wbem-rmi [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2202)   ------------------>  (5987)   |
+|12.284   |         hpocbus > lds-distr           |TCP: hpocbus > lds-distrib [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2206)   ------------------>  (6543)   |
+|12.284   |         hpssd > ardus-mtrns           |TCP: hpssd > ardus-mtrns [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2207)   ------------------>  (1117)   |
+|12.284   |         hpiod > ardus-mtrns           |TCP: hpiod > ardus-mtrns [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2208)   ------------------>  (1117)   |
+|12.284   |         ipcore > bpcd [SYN]           |TCP: ipcore > bpcd [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2215)   ------------------>  (13782)  |
+|12.284   |         netiq-ncap > 7921 [           |TCP: netiq-ncap > 7921 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2219)   ------------------>  (7921)   |
+|12.284   |         amiganetfs > simpli           |TCP: amiganetfs > simplifymedia [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2100)   ------------------>  (8087)   |
+|12.284   |         zephyr-srv > 9415 [           |TCP: zephyr-srv > 9415 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2102)   ------------------>  (9415)   |
+|12.284   |         idonix-metanet > di           |TCP: idonix-metanet > dif-port [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2112)   ------------------>  (2251)   |
+|12.284   |         ccowcmr > 5911 [SYN           |TCP: ccowcmr > 5911 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2116)   ------------------>  (5911)   |
+|12.284   |         mentaclient > reals           |TCP: mentaclient > realsecure [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2117)   ------------------>  (2998)   |
+|12.284   |         mentaserver > reals           |TCP: mentaserver > realsecure [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2118)   ------------------>  (2998)   |
+|12.284   |         gsigatekeeper > 591           |TCP: gsigatekeeper > 5911 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2119)   ------------------>  (5911)   |
+|12.284   |         efi-mg > enl-name [           |TCP: efi-mg > enl-name [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2224)   ------------------>  (1805)   |
+|12.284   |         infocrypt > blp1 [S           |TCP: infocrypt > blp1 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2233)   ------------------>  (8194)   |
+|12.284   |         sercomm-wlink > 901           |TCP: sercomm-wlink > 9011 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2235)   ------------------>  (9011)   |
+|12.284   |         nani > 7937 [SYN] S           |TCP: nani > 7937 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2236)   ------------------>  (7937)   |
+|12.284   |         qencp > 9110 [SYN]            |TCP: qencp > 9110 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2120)   ------------------>  (9110)   |
+|12.284   |         caupc-remote > nntp           |TCP: caupc-remote > nntps [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2122)   ------------------>  (563)    |
+|12.284   |         gris > 44501 [SYN]            |TCP: gris > 44501 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2135)   ------------------>  (44501)  |
+|12.284   |         ici > 5033 [SYN] Se           |TCP: ici > 5033 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2200)   ------------------>  (5033)   |
+|12.284   |         b2-license > radmin           |TCP: b2-license > radmin-port [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2204)   ------------------>  (4899)   |
+|12.284   |         jps > intersys-cach           |TCP: jps > intersys-cache [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2205)   ------------------>  (1972)   |
+|12.284   |         rimf-ps > lds-distr           |TCP: rimf-ps > lds-distrib [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2209)   ------------------>  (6543)   |
+|12.284   |         leecoposserver > n1           |TCP: leecoposserver > n1-fwp [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2212)   ------------------>  (4446)   |
+|12.284   |         kali > hp-status [S           |TCP: kali > hp-status [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2213)   ------------------>  (5226)   |
+|12.284   |         rpi > mecomm [SYN]            |TCP: rpi > mecomm [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2214)   ------------------>  (668)    |
+|12.284   |         gotodevice > rrp [S           |TCP: gotodevice > rrp [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2217)   ------------------>  (648)    |
+|12.284   |         bounzza > rrp [SYN]           |TCP: bounzza > rrp [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2218)   ------------------>  (648)    |
+|12.284   |         rtcm-sc104 > monkey           |TCP: rtcm-sc104 > monkeycom [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2101)   ------------------>  (9898)   |
+|12.284   |         zephyr-clt > dif-po           |TCP: zephyr-clt > dif-port [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2103)   ------------------>  (2251)   |
+|12.284   |         zephyr-hm > filenet           |TCP: zephyr-hm > filenet-pch [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2104)   ------------------>  (32775)  |
+|12.284   |         minipay > sane-port           |TCP: minipay > sane-port [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2105)   ------------------>  (6566)   |
+|12.284   |         mzap > h323gatedisc           |TCP: mzap > h323gatedisc [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2106)   ------------------>  (1718)   |
+|12.284   |         bintec-admin > 6006           |TCP: bintec-admin > 6006 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2107)   ------------------>  (6006)   |
+|12.284   |         comcam > 6006 [SYN]           |TCP: comcam > 6006 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2108)   ------------------>  (6006)   |
+|12.284   |         newheights > appser           |TCP: newheights > appserv-http [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2114)   ------------------>  (4848)   |
+|12.284   |         netiq > bpcd [SYN]            |TCP: netiq > bpcd [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2220)   ------------------>  (13782)  |
+|12.284   |         rcip-itu > poweronn           |TCP: rcip-itu > poweronnud [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2225)   ------------------>  (3168)   |
+|12.284   |         di-drm > qip-login            |TCP: di-drm > qip-login [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2226)   ------------------>  (2366)   |
+|12.284   |         ivs-video > 10778 [           |TCP: ivs-video > 10778 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2232)   ------------------>  (10778)  |
+|12.284   |         imagequery > 7937 [           |TCP: imagequery > 7937 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2239)   ------------------>  (7937)   |
+|12.284   |         lockstep > oracleas           |TCP: lockstep > oracleas-https [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2125)   ------------------>  (7443)   |
+|12.284   |         avantageb2b > husky           |TCP: avantageb2b > husky [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2131)   ------------------>  (1310)   |
+|12.284   |         solera-epmap > wsda           |TCP: solera-epmap > wsdapi [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2132)   ------------------>  (5357)   |
+|12.285   |         ergolight > h323gat           |TCP: ergolight > h323gatedisc [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2109)   ------------------>  (1718)   |
+|12.285   |         umsp > sane-port [S           |TCP: umsp > sane-port [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2110)   ------------------>  (6566)   |
+|12.285   |         hsl-storm > nntps [           |TCP: hsl-storm > nntps [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2113)   ------------------>  (563)    |
+|12.285   |         pktcable-cops > fil           |TCP: pktcable-cops > filenet-re [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2126)   ------------------>  (32774)  |
+|12.285   |         index-pc-wb > 50500           |TCP: index-pc-wb > 50500 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2127)   ------------------>  (50500)  |
+|12.285   |         net-steward > 50500           |TCP: net-steward > 50500 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2128)   ------------------>  (50500)  |
+|12.285   |         xds > oracleas-http           |TCP: xds > oracleas-https [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2130)   ------------------>  (7443)   |
+|12.285   |         avenue > 50636 [SYN           |TCP: avenue > 50636 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2134)   ------------------>  (50636)  |
+|12.285   |         appworxsrv > rsh-sp           |TCP: appworxsrv > rsh-spx [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2136)   ------------------>  (222)    |
+|12.285   |         connect > pds [SYN]           |TCP: connect > pds [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2137)   ------------------>  (9595)   |
+|12.285   |         unbind-cluster > pd           |TCP: unbind-cluster > pds [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2138)   ------------------>  (9595)   |
+|12.285   |         datalens > qip-logi           |TCP: datalens > qip-login [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2229)   ------------------>  (2366)   |
+|12.285   |         queueadm > poweronn           |TCP: queueadm > poweronnud [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2230)   ------------------>  (3168)   |
+|12.285   |         wimaxasncp > enl-na           |TCP: wimaxasncp > enl-name [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2231)   ------------------>  (1805)   |
+|12.285   |         directplay > avt-pr           |TCP: directplay > avt-profile-1 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2234)   ------------------>  (5004)   |
+|12.285   |         optech-port1-lm > d           |TCP: optech-port1-lm > daap [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2237)   ------------------>  (3689)   |
+|12.285   |         rockwell-csp1 > mec           |TCP: rockwell-csp1 > mecomm [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2221)   ------------------>  (668)    |
+|12.285   |         EtherNet/IP-1 > hp-           |TCP: EtherNet/IP-1 > hp-status [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2222)   ------------------>  (5226)   |
+|12.285   |         rockwell-csp2 > 107           |TCP: rockwell-csp2 > 10778 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2223)   ------------------>  (10778)  |
+|12.285   |         di-msg > clariion-e           |TCP: di-msg > clariion-evr01 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2227)   ------------------>  (6389)   |
+|12.285   |         dsatp > filenet-pch           |TCP: dsatp > filenet-pch [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2111)   ------------------>  (32775)  |
+|12.285   |         ehome-ms > clariion           |TCP: ehome-ms > clariion-evr01 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2228)   ------------------>  (6389)   |
+|12.285   |         kdm > 9110 [SYN] Se           |TCP: kdm > 9110 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2115)   ------------------>  (9110)   |
+|12.285   |         scientia-ssdb > app           |TCP: scientia-ssdb > appserv-http [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2121)   ------------------>  (4848)   |
+|12.285   |         gtp-control > wsdap           |TCP: gtp-control > wsdapi [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2123)   ------------------>  (5357)   |
+|12.285   |         elatelink > husky [           |TCP: elatelink > husky [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2124)   ------------------>  (1310)   |
+|12.285   |         cs-live > filenet-r           |TCP: cs-live > filenet-re [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2129)   ------------------>  (32774)  |
+|12.285   |         zymed-zpp > 5221 [S           |TCP: zymed-zpp > 5221 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2133)   ------------------>  (5221)   |
+|12.285   |         ias-auth > rsh-spx            |TCP: ias-auth > rsh-spx [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2139)   ------------------>  (222)    |
+|12.285   |         aviva-sna > daap [S           |TCP: aviva-sna > daap [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2238)   ------------------>  (3689)   |
+|12.384   |         recipe > 9011 [SYN]           |TCP: recipe > 9011 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2240)   ------------------>  (9011)   |
+|12.384   |         siebel-ns > x11 [SY           |TCP: siebel-ns > x11 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2320)   ------------------>  (6000)   |
+|12.384   |         foliocorp > blp1 [S           |TCP: foliocorp > blp1 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2242)   ------------------>  (8194)   |
+|12.384   |         rdlap > instl_bootc           |TCP: rdlap > instl_bootc [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2321)   ------------------>  (1068)   |
+|12.384   |         magicom > 7920 [SYN           |TCP: magicom > 7920 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2243)   ------------------>  (7920)   |
+|12.384   |         remote-collab > soa           |TCP: remote-collab > soap-http [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2250)   ------------------>  (7627)   |
+|12.384   |         ofsd > lv-ffx [SYN]           |TCP: ofsd > lv-ffx [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2322)   ------------------>  (2144)   |
+|12.384   |         tdmoip > 5221 [SYN]           |TCP: tdmoip > 5221 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2142)   ------------------>  (5221)   |
+|12.384   |         lv-not > cmip-man [           |TCP: lv-not > cmip-man [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2146)   ------------------>  (163)    |
+|12.384   |         3d-nfsd > 35500 [SY           |TCP: 3d-nfsd > 35500 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2323)   ------------------>  (35500)  |
+|12.384   |         lv-auth > dls-monit           |TCP: lv-auth > dls-monitor [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2147)   ------------------>  (2048)   |
+|12.384   |         veritas-ucl > dls-m           |TCP: veritas-ucl > dls-monitor [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2148)   ------------------>  (2048)   |
+|12.384   |         cosmocall > 843 [SY           |TCP: cosmocall > 843 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2324)   ------------------>  (843)    |
+|12.384   |         dynamic3d > 16080 [           |TCP: dynamic3d > 16080 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2150)   ------------------>  (16080)  |
+|12.384   |         ctlptc > sixtrak [S           |TCP: ctlptc > sixtrak [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2153)   ------------------>  (1594)   |
+|12.384   |         designspace-lm > ap           |TCP: designspace-lm > apc-2260 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2325)   ------------------>  (2260)   |
+|12.384   |         nmsserver > 787 [SY           |TCP: nmsserver > 787 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2244)   ------------------>  (787)    |
+|12.384   |         idcp > 4 [SYN] Seq=           |TCP: idcp > 4 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2326)   ------------------>  (4)      |
+|12.384   |         pc-mta-addrmap > ra           |TCP: pc-mta-addrmap > radius [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2246)   ------------------>  (1812)   |
+|12.384   |         antidotemgrsvr > 10           |TCP: antidotemgrsvr > 10626 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2247)   ------------------>  (10626)  |
+|12.384   |         xingcsm > sso-servi           |TCP: xingcsm > sso-service [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2327)   ------------------>  (2710)   |
+|12.384   |         ums > 10626 [SYN] S           |TCP: ums > 10626 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2248)   ------------------>  (10626)  |
+|12.384   |         ias-admind > 50636            |TCP: ias-admind > 50636 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2141)   ------------------>  (50636)  |
+|12.384   |         netrix-sftm > sso-s           |TCP: netrix-sftm > sso-service [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2328)   ------------------>  (2710)   |
+|12.384   |         lv-jc > 7512 [SYN]            |TCP: lv-jc > 7512 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2143)   ------------------>  (7512)   |
+|12.384   |         acptsys > cmip-man            |TCP: acptsys > cmip-man [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2149)   ------------------>  (163)    |
+|12.384   |         nvd > 4 [SYN] Seq=0           |TCP: nvd > 4 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2329)   ------------------>  (4)      |
+|12.384   |         docent > dec_dlm [S           |TCP: docent > dec_dlm [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2151)   ------------------>  (625)    |
+|12.384   |         tscchat > apc-2260            |TCP: tscchat > apc-2260 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2330)   ------------------>  (2260)   |
+|12.384   |         brdptc > asipregist           |TCP: brdptc > asipregistry [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2155)   ------------------>  (687)    |
+|12.384   |         trp > dsf [SYN] Seq           |TCP: trp > dsf [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2156)   ------------------>  (555)    |
+|12.384   |         agentview > 843 [SY           |TCP: agentview > 843 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2331)   ------------------>  (843)    |
+|12.384   |         gdbremote > dsf [SY           |TCP: gdbremote > dsf [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2159)   ------------------>  (555)    |
+|12.384   |         rcc-host > 35500 [S           |TCP: rcc-host > 35500 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2332)   ------------------>  (35500)  |
+|12.384   |         snapp > 32779 [SYN]           |TCP: snapp > 32779 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2333)   ------------------>  (32779)  |
+|12.384   |         ace-client > parady           |TCP: ace-client > paradym-31port [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2334)   ------------------>  (1864)   |
+|12.384   |         ace-proxy > ms-sql-           |TCP: ace-proxy > ms-sql-m [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2335)   ------------------>  (1434)   |
+|12.384   |         appleugcontrol > dn           |TCP: appleugcontrol > dnp [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2336)   ------------------>  (20000)  |
+|12.384   |         ideesrv > ms-olap2            |TCP: ideesrv > ms-olap2 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2337)   ------------------>  (2394)   |
+|12.384   |         norton-lambert > ms           |TCP: norton-lambert > ms-olap2 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2338)   ------------------>  (2394)   |
+|12.384   |         3com-webview > dnp            |TCP: 3com-webview > dnp [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2339)   ------------------>  (20000)  |
+|12.384   |         ivsd > avt-profile-           |TCP: ivsd > avt-profile-1 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2241)   ------------------>  (5004)   |
+|12.384   |         rfmp > radius [SYN]           |TCP: rfmp > radius [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2249)   ------------------>  (1812)   |
+|12.384   |         dif-port > 787 [SYN           |TCP: dif-port > 787 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2251)   ------------------>  (787)    |
+|12.384   |         njenet-ssl > 7920 [           |TCP: njenet-ssl > 7920 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2252)   ------------------>  (7920)   |
+|12.384   |         dtv-chan-req > kshe           |TCP: dtv-chan-req > kshell [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2253)   ------------------>  (544)    |
+|12.384   |         vrtp > netopia-vo1            |TCP: vrtp > netopia-vo1 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2255)   ------------------>  (1839)   |
+|12.385   |         pcc-mfp > 34571 [SY           |TCP: pcc-mfp > 34571 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2256)   ------------------>  (34571)  |
+|12.385   |         simple-tx-rx > 5030           |TCP: simple-tx-rx > 50300 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2257)   ------------------>  (50300)  |
+|12.385   |         xnds > trim [SYN] S           |TCP: xnds > trim [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2157)   ------------------>  (1137)   |
+|12.385   |         hao > soap-http [SY           |TCP: hao > soap-http [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2245)   ------------------>  (7627)   |
+|12.385   |         seispoc > rwhois [S           |TCP: seispoc > rwhois [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2254)   ------------------>  (4321)   |
+|12.385   |         rcts > 50300 [SYN]            |TCP: rcts > 50300 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2258)   ------------------>  (50300)  |
+|12.385   |         acd-pm > 34571 [SYN           |TCP: acd-pm > 34571 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2259)   ------------------>  (34571)  |
+|12.385   |         ias-reg > 44501 [SY           |TCP: ias-reg > 44501 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2140)   ------------------>  (44501)  |
+|12.385   |         lv-ffx > dec_dlm [S           |TCP: lv-ffx > dec_dlm [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2144)   ------------------>  (625)    |
+|12.385   |         lv-pici > 16080 [SY           |TCP: lv-pici > 16080 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2145)   ------------------>  (16080)  |
+|12.385   |         gtp-user > 7512 [SY           |TCP: gtp-user > 7512 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2152)   ------------------>  (7512)   |
+|12.385   |         stdptc > kiosk [SYN           |TCP: stdptc > kiosk [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2154)   ------------------>  (1061)   |
+|12.385   |         touchnetplus > trim           |TCP: touchnetplus > trim [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2158)   ------------------>  (1137)   |
+|12.484   |         wrs_registry > ms-s           |TCP: wrs_registry > ms-sql-m [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2340)   ------------------>  (1434)   |
+|12.484   |         xiostatus > paradym           |TCP: xiostatus > paradym-31port [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2341)   ------------------>  (1864)   |
+|12.485   |         manage-exec > 32779           |TCP: manage-exec > 32779 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2342)   ------------------>  (32779)  |
+|12.485   |         nati-logos > 50003            |TCP: nati-logos > 50003 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2343)   ------------------>  (50003)  |
+|12.485   |         fcmsys > rtps-dd-mt           |TCP: fcmsys > rtps-dd-mt [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2344)   ------------------>  (7402)   |
+|12.485   |         dbm > surfpass [SYN           |TCP: dbm > surfpass [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2345)   ------------------>  (5030)   |
+|12.485   |         redstorm_join > syb           |TCP: redstorm_join > sybaseanywhere [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2346)   ------------------>  (2638)   |
+|12.485   |         redstorm_find > 605           |TCP: redstorm_find > 6059 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2347)   ------------------>  (6059)   |
+|12.485   |         redstorm_info > 605           |TCP: redstorm_info > 6059 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2348)   ------------------>  (6059)   |
+|12.485   |         redstorm_diag > syb           |TCP: redstorm_diag > sybaseanywhere [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2349)   ------------------>  (2638)   |
+|12.485   |         psbserver > surfpas           |TCP: psbserver > surfpass [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2350)   ------------------>  (5030)   |
+|12.485   |         psrserver > rtps-dd           |TCP: psrserver > rtps-dd-mt [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2351)   ------------------>  (7402)   |
+|12.485   |         pslserver > 50003 [           |TCP: pslserver > 50003 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2352)   ------------------>  (50003)  |
+|12.485   |         pspserver > ideafar           |TCP: pspserver > ideafarm-door [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2353)   ------------------>  (902)    |
+|12.485   |         psprserver > opsvie           |TCP: psprserver > opsview-envoy [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2354)   ------------------>  (4125)   |
+|12.485   |         psdbserver > 5952 [           |TCP: psdbserver > 5952 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2355)   ------------------>  (5952)   |
+|12.485   |         gxtelmd > sdr [SYN]           |TCP: gxtelmd > sdr [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2356)   ------------------>  (9010)   |
+|12.485   |         unihub-server > rob           |TCP: unihub-server > roboeda [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2357)   ------------------>  (2920)   |
+|12.485   |         futrix > roboeda [S           |TCP: futrix > roboeda [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2358)   ------------------>  (2920)   |
+|12.485   |         flukeserver > sdr [           |TCP: flukeserver > sdr [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2359)   ------------------>  (9010)   |
+|12.585   |         nexstorindltd > 595           |TCP: nexstorindltd > 5952 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2360)   ------------------>  (5952)   |
+|12.585   |         tl1 > opsview-envoy           |TCP: tl1 > opsview-envoy [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2361)   ------------------>  (4125)   |
+|12.585   |         digiman > ideafarm-           |TCP: digiman > ideafarm-door [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2362)   ------------------>  (902)    |
+|12.585   |         mediacntrlnfsd > is           |TCP: mediacntrlnfsd > isis [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2363)   ------------------>  (2042)   |
+|12.585   |         oi-2000 > 25735 [SY           |TCP: oi-2000 > 25735 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2364)   ------------------>  (25735)  |
+|12.585   |         dbref > 8291 [SYN]            |TCP: dbref > 8291 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2365)   ------------------>  (8291)   |
+|12.585   |         qip-login > oa-syst           |TCP: qip-login > oa-system [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2366)   ------------------>  (8022)   |
+|12.585   |         service-ctrl > wfre           |TCP: service-ctrl > wfremotertm [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2367)   ------------------>  (1046)   |
+|12.585   |         opentable > wfremot           |TCP: opentable > wfremotertm [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2368)   ------------------>  (1046)   |
+|12.585   |         2369 > oa-system [S           |TCP: 2369 > oa-system [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2369)   ------------------>  (8022)   |
+|12.585   |         l3-hbmon > 8291 [SY           |TCP: l3-hbmon > 8291 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2370)   ------------------>  (8291)   |
+|12.585   |         worldwire > 25735 [           |TCP: worldwire > 25735 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2371)   ------------------>  (25735)  |
+|12.585   |         lanmessenger > isis           |TCP: lanmessenger > isis [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2372)   ------------------>  (2042)   |
+|12.585   |         2373 > ipp [SYN] Se           |TCP: 2373 > ipp [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2373)   ------------------>  (631)    |
+|12.585   |         2374 > ms-olap3 [SY           |TCP: 2374 > ms-olap3 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2374)   ------------------>  (2382)   |
+|12.585   |         2375 > vlsi-lm [SYN           |TCP: 2375 > vlsi-lm [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2375)   ------------------>  (1500)   |
+|12.585   |         2376 > mysql [SYN]            |TCP: 2376 > mysql [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2376)   ------------------>  (3306)   |
+|12.585   |         2377 > dcutility [S           |TCP: 2377 > dcutility [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2377)   ------------------>  (1044)   |
+|12.585   |         2378 > dcutility [S           |TCP: 2378 > dcutility [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2378)   ------------------>  (1044)   |
+|12.586   |         2379 > mysql [SYN]            |TCP: 2379 > mysql [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2379)   ------------------>  (3306)   |
+|12.686   |         2380 > vlsi-lm [SYN           |TCP: 2380 > vlsi-lm [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2380)   ------------------>  (1500)   |
+|12.686   |         compaq-https > ms-o           |TCP: compaq-https > ms-olap3 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2381)   ------------------>  (2382)   |
+|12.686   |         ms-olap3 > ipp [SYN           |TCP: ms-olap3 > ipp [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2382)   ------------------>  (631)    |
+|12.686   |         ms-olap4 > ms-sql-s           |TCP: ms-olap4 > ms-sql-s [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2383)   ------------------>  (1433)   |
+|12.686   |         sd-request > news [           |TCP: sd-request > news [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2384)   ------------------>  (2009)   |
+|12.686   |         sd-data > 65000 [SY           |TCP: sd-data > 65000 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2385)   ------------------>  (65000)  |
+|12.686   |         virtualtape > berkn           |TCP: virtualtape > berknet [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2386)   ------------------>  (2005)   |
+|12.686   |         vsamredirector > ss           |TCP: vsamredirector > ssdp [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2387)   ------------------>  (1900)   |
+|12.686   |         mynahautostart > ss           |TCP: mynahautostart > ssdp [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2388)   ------------------>  (1900)   |
+|12.686   |         ovsessionmgr > berk           |TCP: ovsessionmgr > berknet [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2389)   ------------------>  (2005)   |
+|12.686   |         rsmtp > 65000 [SYN]           |TCP: rsmtp > 65000 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2390)   ------------------>  (65000)  |
+|12.686   |         3com-net-mgmt > new           |TCP: 3com-net-mgmt > news [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2391)   ------------------>  (2009)   |
+|12.686   |         tacticalauth > ms-s           |TCP: tacticalauth > ms-sql-s [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2392)   ------------------>  (1433)   |
+|12.686   |         ms-olap1 > git [SYN           |TCP: ms-olap1 > git [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2393)   ------------------>  (9418)   |
+|12.686   |         ms-olap2 > 56738 [S           |TCP: ms-olap2 > 56738 [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2394)   ------------------>  (56738)  |
+|12.686   |         lan900_remote > fon           |TCP: lan900_remote > font-service [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2395)   ------------------>  (7100)   |
+|12.686   |         wusage > tcp-id-por           |TCP: wusage > tcp-id-port [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2396)   ------------------>  (1999)   |
+|12.686   |         ncl > glrpc [SYN] S           |TCP: ncl > glrpc [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2397)   ------------------>  (9080)   |
+|12.686   |         orbiter > glrpc [SY           |TCP: orbiter > glrpc [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2398)   ------------------>  (9080)   |
+|12.686   |         fmpro-fdal > tcp-id           |TCP: fmpro-fdal > tcp-id-port [SYN] Seq=0 Win=65535 Len=0 MSS=1460
+|         |(2399)   ------------------>  (1999)   |
+|12.735   |         netopia-vo1 > apc-2           |TCP: netopia-vo1 > apc-2260 [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2260)   <------------------  (1839)   |
+|12.735   |         kiosk > apc-2161 [R           |TCP: kiosk > apc-2161 [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2161)   <------------------  (1061)   |
+|12.735   |         dls > raw-serial [R           |TCP: dls > raw-serial [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2167)   <------------------  (2047)   |
+|12.735   |         rwhois > comotionma           |TCP: rwhois > comotionmaster [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2261)   <------------------  (4321)   |
+|12.735   |         gds_db > msfw-stora           |TCP: gds_db > msfw-storage [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2171)   <------------------  (3050)   |
+|12.735   |         kshell > comotionba           |TCP: kshell > comotionback [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2262)   <------------------  (544)    |
+|12.736   |         synchronet-rtc > ra           |TCP: synchronet-rtc > rapi [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2176)   <------------------  (6101)   |
+|12.736   |         wherehoo > qwave [R           |TCP: wherehoo > qwave [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2177)   <------------------  (5859)   |
+|12.736   |         personal-agent > ec           |TCP: personal-agent > ecwcfg [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2263)   <------------------  (5555)   |
+|12.736   |         wherehoo > bitspeer           |TCP: wherehoo > bitspeer [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2178)   <------------------  (5859)   |
+|12.736   |         interwise > apx500a           |TCP: interwise > apx500api-1 [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2264)   <------------------  (7778)   |
+|12.736   |         19350 > navisphere-           |TCP: 19350 > navisphere-sec [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2163)   <------------------  (19350)  |
+|12.736   |         49153 > apx500api-2           |TCP: 49153 > apx500api-2 [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2265)   <------------------  (49153)  |
+|12.736   |         8084 > x-bone-api [           |TCP: 8084 > x-bone-api [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2165)   <------------------  (8084)   |
+|12.736   |         filenet-tms > iwser           |TCP: filenet-tms > iwserver [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2166)   <------------------  (32768)  |
+|12.736   |         xmltec-xmlmail > mf           |TCP: xmltec-xmlmail > mfserver [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2266)   <------------------  (9091)   |
+|12.736   |         dls > easy-soft-mux           |TCP: dls > easy-soft-mux [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2168)   <------------------  (2047)   |
+|12.736   |         winpoplanmess > ont           |TCP: winpoplanmess > ontobroker [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2267)   <------------------  (1152)   |
+|12.737   |         filenet-tms > brain           |TCP: filenet-tms > brain [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2169)   <------------------  (32768)  |
+|12.737   |         apple-sasl > airsyn           |TCP: apple-sasl > airsync [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2175)   <------------------  (3659)   |
+|12.737   |         winpoplanmess > amt           |TCP: winpoplanmess > amt [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2268)   <------------------  (1152)   |
+|12.737   |         synchronet-rtc > vm           |TCP: synchronet-rtc > vmrdp [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2179)   <------------------  (6101)   |
+|12.737   |         xmltec-xmlmail > mi           |TCP: xmltec-xmlmail > mikey [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2269)   <------------------  (9091)   |
+|12.737   |         49153 > starschool            |TCP: 49153 > starschool [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2270)   <------------------  (49153)  |
+|12.737   |         interwise > mmcals            |TCP: interwise > mmcals [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2271)   <------------------  (7778)   |
+|12.737   |         personal-agent > mm           |TCP: personal-agent > mmcal [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2272)   <------------------  (5555)   |
+|12.737   |         emcads > mysql-im [           |TCP: emcads > mysql-im [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2273)   <------------------  (3945)   |
+|12.737   |         306 > pcttunnell [R           |TCP: 306 > pcttunnell [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2274)   <------------------  (306)    |
+|12.737   |         polestar > ibridge-           |TCP: polestar > ibridge-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2275)   <------------------  (1060)   |
+|12.738   |         btrieve > ibridge-m           |TCP: btrieve > ibridge-mgmt [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2276)   <------------------  (3351)   |
+|12.738   |         aol > bluectrlproxy           |TCP: aol > bluectrlproxy [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2277)   <------------------  (5190)   |
+|12.738   |         aol > s3db [RST, AC           |TCP: aol > s3db [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2278)   <------------------  (5190)   |
+|12.738   |         btrieve > xmquery [           |TCP: btrieve > xmquery [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2279)   <------------------  (3351)   |
+|12.738   |         sixtrak > navispher           |TCP: sixtrak > navisphere [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2162)   <------------------  (1594)   |
+|12.738   |         gds_db > ddns-v3 [R           |TCP: gds_db > ddns-v3 [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2164)   <------------------  (3050)   |
+|12.738   |         8084 > eyetv [RST,            |TCP: 8084 > eyetv [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2170)   <------------------  (8084)   |
+|12.738   |         asipregistry > apc-           |TCP: asipregistry > apc-2160 [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2160)   <------------------  (687)    |
+|12.738   |         19350 > msfw-s-stor           |TCP: 19350 > msfw-s-storage [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2172)   <------------------  (19350)  |
+|12.738   |         6002 > msfw-replica           |TCP: 6002 > msfw-replica [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2173)   <------------------  (6002)   |
+|12.738   |         55555 > msfw-array            |TCP: 55555 > msfw-array [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2174)   <------------------  (55555)  |
+|12.738   |         polestar > lnvpolle           |TCP: polestar > lnvpoller [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2280)   <------------------  (1060)   |
+|12.739   |         306 > lnvconsole [R           |TCP: 306 > lnvconsole [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2281)   <------------------  (306)    |
+|12.739   |         emcads > lnvalarm [           |TCP: emcads > lnvalarm [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2282)   <------------------  (3945)   |
+|12.739   |         xgrid > lnvstatus [           |TCP: xgrid > lnvstatus [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2283)   <------------------  (4111)   |
+|12.739   |         32 > lnvmaps [RST,            |TCP: 32 > lnvmaps [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2284)   <------------------  (32)     |
+|12.739   |         27715 > lnvmailmon            |TCP: 27715 > lnvmailmon [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2285)   <------------------  (27715)  |
+|12.739   |         boks_servm > nas-me           |TCP: boks_servm > nas-metering [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2286)   <------------------  (6502)   |
+|12.739   |         upnotifyp > dna [RS           |TCP: upnotifyp > dna [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2287)   <------------------  (4445)   |
+|12.739   |         upnotifyp > netml [           |TCP: upnotifyp > netml [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2288)   <------------------  (4445)   |
+|12.739   |         boks_servm > dict-l           |TCP: boks_servm > dict-lookup [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2289)   <------------------  (6502)   |
+|12.739   |         27715 > sonus-loggi           |TCP: 27715 > sonus-logging [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2290)   <------------------  (27715)  |
+|12.739   |         32 > eapsp [RST, AC           |TCP: 32 > eapsp [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2291)   <------------------  (32)     |
+|12.739   |         xgrid > mib-streami           |TCP: xgrid > mib-streaming [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2292)   <------------------  (4111)   |
+|12.739   |         15004 > npdbgmngr [           |TCP: 15004 > npdbgmngr [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2293)   <------------------  (15004)  |
+|12.739   |         1027 > konshus-lm [           |TCP: 1027 > konshus-lm [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2294)   <------------------  (1027)   |
+|12.740   |         dab-sti-c > advant-           |TCP: dab-sti-c > advant-lm [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2295)   <------------------  (1076)   |
+|12.740   |         simbaexpress > thet           |TCP: simbaexpress > theta-lm [RST, ACK] Seq=1 Ack=1 Win=0 Len=0
+|         |(2296)   <------------------  (1583)   |

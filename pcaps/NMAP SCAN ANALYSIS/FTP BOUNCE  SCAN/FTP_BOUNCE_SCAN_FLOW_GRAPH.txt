@@ -1,0 +1,2001 @@
+|Time	| 192.168.1.15      | 192.168.1.25			
+|0.000	|	4270 > ftp [SYN] Se		|TCP:	4270 > ftp [SYN] Seq=0 Win=65535 Len=0 MSS=1460	
+|	|(4270)	------------------>	-21	|		
+|0.000	|	"ftp > 4270 [SYN, AC"		|TCP:	"ftp > 4270 [SYN, ACK] Seq=0 Ack=1 Win=17520 Len=0 MSS"	1460
+|	|(4270)	<------------------	-21	|		
+|0.000	|	4270 > ftp [ACK] Se		|TCP:	4270 > ftp [ACK] Seq=1 Ack=1 Win=65535 [TCP CHECKSUM	INCORRECT] Len=0
+|	|(4270)	------------------>	-21	|		
+|0.002	|	Response: 220 3Com		|FTP:	Response: 220 3Com 3CDaemon FTP Server Version 2.0	
+|	|(4270)	<------------------	-21	|		
+|0.143	|	4270 > ftp [ACK] Se		|TCP:	4270 > ftp [ACK] Seq=1 Ack=43 Win=65493 [TCP CHECKSUM	INCORRECT] Len=0
+|	|(4270)	------------------>	-21	|		
+|7.002	|	Request: USER anony		|FTP:	Request: USER anonymous	
+|	|(4270)	------------------>	-21	|		
+|7.003	|	Response: 331 User		|FTP:	"Response: 331 User name ok, need password"	
+|	|(4270)	<------------------	-21	|		
+|7.003	|	Request: PASS -wwwu		|FTP:	Request: PASS -wwwuser@	
+|	|(4270)	------------------>	-21	|		
+|7.005	|	Response: 230 User		|FTP:	Response: 230 User logged in	
+|	|(4270)	<------------------	-21	|		
+|7.184	|	4270 > ftp [ACK] Se		|TCP:	4270 > ftp [ACK] Seq=33 Ack=96 Win=65440 [TCP CHECKSU	M INCORRECT] Len=0
+|	|(4270)	------------------>	-21	|		
+|9.005	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,2,42"	
+|	|(4270)	------------------>	-21	|		
+|9.006	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|9.006	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|9.008	|	ftp-data > rtsp [SY		|TCP:	ftp-data > rtsp [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(554)	<------------------	-20	|		
+|9.008	|	rtsp > ftp-data [RS		|TCP:	"rtsp > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(554)	------------------>	-20	|		
+|9.155	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=126 Ack=63 Win=17458 Len=0	
+|	|(4270)	<------------------	-21	|		
+|9.484	|	ftp-data > rtsp [SY		|TCP:	ftp-data > rtsp [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(554)	<------------------	-20	|		
+|9.484	|	rtsp > ftp-data [RS		|TCP:	"rtsp > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(554)	------------------>	-20	|		
+|9.926	|	ftp-data > rtsp [SY		|TCP:	ftp-data > rtsp [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(554)	<------------------	-20	|		
+|9.926	|	rtsp > ftp-data [RS		|TCP:	"rtsp > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(554)	------------------>	-20	|		
+|9.927	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|9.927	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,0,22"	
+|	|(4270)	------------------>	-21	|		
+|9.929	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|9.929	|	Request: LIST		|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|9.930	|	ftp-data > ssh [SYN		|TCP:	ftp-data > ssh [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(22)	<------------------	-20	|		
+|9.930	|	ssh > ftp-data [RST		|TCP:	"ssh > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(22)	------------------>	-20	|		
+|10.321	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=185 Ack=93 Win=17428 Len=0	
+|	|(4270)	<------------------	-21	|		
+|10.462	|	ftp-data > ssh [SYN		|TCP:	ftp-data > ssh [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(22)	<------------------	-20	|		
+|10.462	|	ssh > ftp-data [RST		|TCP:	"ssh > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(22)	------------------>	-20	|		
+|10.900	|	ftp-data > ssh [SYN		|TCP:	ftp-data > ssh [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(22)	<------------------	-20	|		
+|10.900	|	ssh > ftp-data [RST		|TCP:	"ssh > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(22)	------------------>	-20	|		
+|10.901	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|10.901	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,0,21"	
+|	|(4270)	------------------>	-21	|		
+|10.902	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|10.902	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|10.904	|	ftp-data > ftp [SYN		|TCP:	ftp-data > ftp [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(21)	<------------------	-20	|		
+|10.904	|	ftp > ftp-data [RST		|TCP:	"ftp > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(21)	------------------>	-20	|		
+|11.118	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=244 Ack=123 Win=17398 Len=0	
+|	|(4270)	<------------------	-21	|		
+|11.449	|	ftp-data > ftp [SYN		|TCP:	ftp-data > ftp [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(21)	<------------------	-20	|		
+|11.449	|	ftp > ftp-data [RST		|TCP:	"ftp > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(21)	------------------>	-20	|		
+|11.999	|	ftp-data > ftp [SYN		|TCP:	ftp-data > ftp [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(21)	<------------------	-20	|		
+|11.999	|	ftp > ftp-data [RST		|TCP:	"ftp > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(21)	------------------>	-20	|		
+|12.001	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|12.001	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,13,61"	
+|	|(4270)	------------------>	-21	|		
+|12.003	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|12.003	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|12.005	|	ftp-data > ms-wbt-s		|TCP:	ftp-data > ms-wbt-server [SYN] Seq=0 Win=16384 Len=0	MSS=1460
+|	|(3389)	<------------------	-20	|		
+|12.005	|	ms-wbt-server > ftp		|TCP:	"ms-wbt-server > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0"	Len=0
+|	|(3389)	------------------>	-20	|		
+|12.111	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=303 Ack=154 Win=17367 Len=0	
+|	|(4270)	<------------------	-21	|		
+|13.304	|	ftp-data > ms-wbt-s		|TCP:	ftp-data > ms-wbt-server [SYN] Seq=0 Win=16384 Len=0	MSS=1460
+|	|(3389)	<------------------	-20	|		
+|13.304	|	ms-wbt-server > ftp		|TCP:	"ms-wbt-server > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0"	Len=0
+|	|(3389)	------------------>	-20	|		
+|13.522	|	ftp-data > ms-wbt-s		|TCP:	ftp-data > ms-wbt-server [SYN] Seq=0 Win=16384 Len=0	MSS=1460
+|	|(3389)	<------------------	-20	|		
+|13.522	|	ms-wbt-server > ftp		|TCP:	"ms-wbt-server > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0"	Len=0
+|	|(3389)	------------------>	-20	|		
+|13.523	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|13.523	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,0,113"	
+|	|(4270)	------------------>	-21	|		
+|13.525	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|13.525	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|13.526	|	ftp-data > ident [S		|TCP:	ftp-data > ident [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(113)	<------------------	-20	|		
+|13.527	|	ident > ftp-data [R		|TCP:	"ident > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(113)	------------------>	-20	|		
+|13.564	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=362 Ack=185 Win=17336 Len=0	
+|	|(4270)	<------------------	-21	|		
+|13.692	|	ftp-data > ident [S		|TCP:	ftp-data > ident [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(113)	<------------------	-20	|		
+|13.692	|	ident > ftp-data [R		|TCP:	"ident > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(113)	------------------>	-20	|		
+|13.975	|	ftp-data > ident [S		|TCP:	ftp-data > ident [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(113)	<------------------	-20	|		
+|13.975	|	ident > ftp-data [R		|TCP:	"ident > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(113)	------------------>	-20	|		
+|13.976	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|13.976	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,0,25"	
+|	|(4270)	------------------>	-21	|		
+|13.977	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|13.977	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|13.978	|	ftp-data > smtp [SY		|TCP:	ftp-data > smtp [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(25)	<------------------	-20	|		
+|13.978	|	smtp > ftp-data [RS		|TCP:	"smtp > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(25)	------------------>	-20	|		
+|14.194	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=421 Ack=215 Win=17306 Len=0	
+|	|(4270)	<------------------	-21	|		
+|14.412	|	ftp-data > smtp [SY		|TCP:	ftp-data > smtp [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(25)	<------------------	-20	|		
+|14.412	|	smtp > ftp-data [RS		|TCP:	"smtp > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(25)	------------------>	-20	|		
+|14.959	|	ftp-data > smtp [SY		|TCP:	ftp-data > smtp [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(25)	<------------------	-20	|		
+|14.959	|	smtp > ftp-data [RS		|TCP:	"smtp > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(25)	------------------>	-20	|		
+|14.961	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|14.961	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,0,80"	
+|	|(4270)	------------------>	-21	|		
+|14.962	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|14.962	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|14.964	|	ftp-data > http [SY		|TCP:	ftp-data > http [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(80)	<------------------	-20	|		
+|14.964	|	http > ftp-data [RS		|TCP:	"http > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(80)	------------------>	-20	|		
+|15.179	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=480 Ack=245 Win=17276 Len=0	
+|	|(4270)	<------------------	-21	|		
+|15.510	|	ftp-data > http [SY		|TCP:	ftp-data > http [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(80)	<------------------	-20	|		
+|15.510	|	http > ftp-data [RS		|TCP:	"http > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(80)	------------------>	-20	|		
+|15.943	|	ftp-data > http [SY		|TCP:	ftp-data > http [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(80)	<------------------	-20	|		
+|15.943	|	http > ftp-data [RS		|TCP:	"http > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(80)	------------------>	-20	|		
+|15.945	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|15.945	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,0,23"	
+|	|(4270)	------------------>	-21	|		
+|15.947	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|15.947	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|15.949	|	ftp-data > telnet [		|TCP:	ftp-data > telnet [SYN] Seq=0 Win=16384 Len=0 MSS=146	0
+|	|(23)	<------------------	-20	|		
+|15.949	|	telnet > ftp-data [		|TCP:	"telnet > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(23)	------------------>	-20	|		
+|16.163	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=539 Ack=275 Win=17246 Len=0	
+|	|(4270)	<------------------	-21	|		
+|16.491	|	ftp-data > telnet [		|TCP:	ftp-data > telnet [SYN] Seq=0 Win=16384 Len=0 MSS=146	0
+|	|(23)	<------------------	-20	|		
+|16.491	|	telnet > ftp-data [		|TCP:	"telnet > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(23)	------------------>	-20	|		
+|16.930	|	ftp-data > telnet [		|TCP:	ftp-data > telnet [SYN] Seq=0 Win=16384 Len=0 MSS=146	0
+|	|(23)	<------------------	-20	|		
+|16.930	|	telnet > ftp-data [		|TCP:	"telnet > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(23)	------------------>	-20	|		
+|16.931	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|16.931	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,1,0"	
+|	|(4270)	------------------>	-21	|		
+|16.933	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|16.933	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|16.934	|	ftp-data > rap [SYN		|TCP:	ftp-data > rap [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(256)	<------------------	-20	|		
+|16.934	|	rap > ftp-data [RST		|TCP:	"rap > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(256)	------------------>	-20	|		
+|17.151	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=598 Ack=304 Win=17217 Len=0	
+|	|(4270)	<------------------	-21	|		
+|18.423	|	ftp-data > rap [SYN		|TCP:	ftp-data > rap [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(256)	<------------------	-20	|		
+|18.423	|	rap > ftp-data [RST		|TCP:	"rap > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(256)	------------------>	-20	|		
+|18.591	|	ftp-data > rap [SYN		|TCP:	ftp-data > rap [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(256)	<------------------	-20	|		
+|18.591	|	rap > ftp-data [RST		|TCP:	"rap > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(256)	------------------>	-20	|		
+|18.592	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|18.592	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,1,187"	
+|	|(4270)	------------------>	-21	|		
+|18.594	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|18.594	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|18.595	|	ftp-data > https [S		|TCP:	ftp-data > https [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(443)	<------------------	-20	|		
+|18.595	|	https > ftp-data [R		|TCP:	"https > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(443)	------------------>	-20	|		
+|18.674	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=657 Ack=335 Win=17186 Len=0	
+|	|(4270)	<------------------	-21	|		
+|18.807	|	ftp-data > https [S		|TCP:	ftp-data > https [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(443)	<------------------	-20	|		
+|18.807	|	https > ftp-data [R		|TCP:	"https > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(443)	------------------>	-20	|		
+|18.980	|	ftp-data > https [S		|TCP:	ftp-data > https [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(443)	<------------------	-20	|		
+|18.980	|	https > ftp-data [R		|TCP:	"https > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(443)	------------------>	-20	|		
+|18.981	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|18.982	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,2,124"	
+|	|(4270)	------------------>	-21	|		
+|18.983	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|18.983	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|18.985	|	ftp-data > ldaps [S		|TCP:	ftp-data > ldaps [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(636)	<------------------	-20	|		
+|18.985	|	ldaps > ftp-data [R		|TCP:	"ldaps > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(636)	------------------>	-20	|		
+|19.132	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=716 Ack=366 Win=17155 Len=0	
+|	|(4270)	<------------------	-21	|		
+|19.462	|	ftp-data > ldaps [S		|TCP:	ftp-data > ldaps [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(636)	<------------------	-20	|		
+|19.462	|	ldaps > ftp-data [R		|TCP:	"ldaps > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(636)	------------------>	-20	|		
+|19.912	|	ftp-data > ldaps [S		|TCP:	ftp-data > ldaps [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(636)	<------------------	-20	|		
+|19.912	|	ldaps > ftp-data [R		|TCP:	"ldaps > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(636)	------------------>	-20	|		
+|19.913	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|19.913	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,6,187"	
+|	|(4270)	------------------>	-21	|		
+|19.915	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|19.915	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|19.916	|	ftp-data > pptp [SY		|TCP:	ftp-data > pptp [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(1723)	<------------------	-20	|		
+|19.916	|	pptp > ftp-data [RS		|TCP:	"pptp > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(1723)	------------------>	-20	|		
+|20.121	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=775 Ack=397 Win=17124 Len=0	
+|	|(4270)	<------------------	-21	|		
+|20.748	|	ftp-data > pptp [SY		|TCP:	ftp-data > pptp [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(1723)	<------------------	-20	|		
+|20.748	|	pptp > ftp-data [RS		|TCP:	"pptp > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(1723)	------------------>	-20	|		
+|20.999	|	ftp-data > pptp [SY		|TCP:	ftp-data > pptp [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(1723)	<------------------	-20	|		
+|20.999	|	pptp > ftp-data [RS		|TCP:	"pptp > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(1723)	------------------>	-20	|		
+|21.000	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|21.000	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,1,133"	
+|	|(4270)	------------------>	-21	|		
+|21.001	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|21.001	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|21.002	|	ftp-data > ldap [SY		|TCP:	ftp-data > ldap [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(389)	<------------------	-20	|		
+|21.003	|	ldap > ftp-data [RS		|TCP:	"ldap > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(389)	------------------>	-20	|		
+|21.108	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=834 Ack=428 Win=17093 Len=0	
+|	|(4270)	<------------------	-21	|		
+|21.436	|	ftp-data > ldap [SY		|TCP:	ftp-data > ldap [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(389)	<------------------	-20	|		
+|21.436	|	ldap > ftp-data [RS		|TCP:	"ldap > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(389)	------------------>	-20	|		
+|21.982	|	ftp-data > ldap [SY		|TCP:	ftp-data > ldap [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(389)	<------------------	-20	|		
+|21.982	|	ldap > ftp-data [RS		|TCP:	"ldap > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(389)	------------------>	-20	|		
+|21.983	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|21.983	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,0,53"	
+|	|(4270)	------------------>	-21	|		
+|21.985	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|21.985	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|21.988	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|21.989	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,5,181"	
+|	|(4270)	------------------>	-21	|		
+|21.990	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|21.991	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|21.992	|	ftp-data > ibm_wrle		|TCP:	ftp-data > ibm_wrless_lan [SYN] Seq=0 Win=16384 Len=0	MSS=1460
+|	|(1461)	<------------------	-20	|		
+|21.992	|	ibm_wrless_lan > ft		|TCP:	"ibm_wrless_lan > ftp-data [RST, ACK] Seq=1 Ack=1 Win="	0 Len=0
+|	|(1461)	------------------>	-20	|		
+|22.201	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=952 Ack=489 Win=17032 Len=0	
+|	|(4270)	<------------------	-21	|		
+|22.423	|	ftp-data > ibm_wrle		|TCP:	ftp-data > ibm_wrless_lan [SYN] Seq=0 Win=16384 Len=0	MSS=1460
+|	|(1461)	<------------------	-20	|		
+|22.423	|	ibm_wrless_lan > ft		|TCP:	"ibm_wrless_lan > ftp-data [RST, ACK] Seq=1 Ack=1 Win="	0 Len=0
+|	|(1461)	------------------>	-20	|		
+|23.917	|	ftp-data > ibm_wrle		|TCP:	ftp-data > ibm_wrless_lan [SYN] Seq=0 Win=16384 Len=0	MSS=1460
+|	|(1461)	<------------------	-20	|		
+|23.917	|	ibm_wrless_lan > ft		|TCP:	"ibm_wrless_lan > ftp-data [RST, ACK] Seq=1 Ack=1 Win="	0 Len=0
+|	|(1461)	------------------>	-20	|		
+|23.918	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|23.918	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,4,212"	
+|	|(4270)	------------------>	-21	|		
+|23.919	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|23.919	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|23.921	|	ftp-data > bvcontro		|TCP:	ftp-data > bvcontrol [SYN] Seq=0 Win=16384 Len=0 MSS=	1460
+|	|(1236)	<------------------	-20	|		
+|23.921	|	bvcontrol > ftp-dat		|TCP:	"bvcontrol > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len"	0
+|	|(1236)	------------------>	-20	|		
+|24.005	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=1011 Ack=520 Win=17001 Len=0	
+|	|(4270)	<------------------	-21	|		
+|24.091	|	ftp-data > bvcontro		|TCP:	ftp-data > bvcontrol [SYN] Seq=0 Win=16384 Len=0 MSS=	1460
+|	|(1236)	<------------------	-20	|		
+|24.091	|	bvcontrol > ftp-dat		|TCP:	"bvcontrol > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len"	0
+|	|(1236)	------------------>	-20	|		
+|24.308	|	ftp-data > bvcontro		|TCP:	ftp-data > bvcontrol [SYN] Seq=0 Win=16384 Len=0 MSS=	1460
+|	|(1236)	<------------------	-20	|		
+|24.308	|	bvcontrol > ftp-dat		|TCP:	"bvcontrol > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len"	0
+|	|(1236)	------------------>	-20	|		
+|24.309	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|24.309	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,31,71"	
+|	|(4270)	------------------>	-21	|		
+|24.310	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|24.310	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|24.312	|	ftp-data > 8007 [SY		|TCP:	ftp-data > 8007 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(8007)	<------------------	-20	|		
+|24.312	|	8007 > ftp-data [RS		|TCP:	"8007 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(8007)	------------------>	-20	|		
+|24.396	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=1070 Ack=551 Win=16970 Len=0	
+|	|(4270)	<------------------	-21	|		
+|24.482	|	ftp-data > 8007 [SY		|TCP:	ftp-data > 8007 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(8007)	<------------------	-20	|		
+|24.482	|	8007 > ftp-data [RS		|TCP:	"8007 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(8007)	------------------>	-20	|		
+|24.943	|	ftp-data > 8007 [SY		|TCP:	ftp-data > 8007 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(8007)	<------------------	-20	|		
+|24.943	|	8007 > ftp-data [RS		|TCP:	"8007 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(8007)	------------------>	-20	|		
+|24.944	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|24.944	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,4,194"	
+|	|(4270)	------------------>	-21	|		
+|24.945	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|24.945	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|24.947	|	ftp-data > aeroflig		|TCP:	ftp-data > aeroflight-ads [SYN] Seq=0 Win=16384 Len=0	MSS=1460
+|	|(1218)	<------------------	-20	|		
+|24.947	|	aeroflight-ads > ft		|TCP:	"aeroflight-ads > ftp-data [RST, ACK] Seq=1 Ack=1 Win="	0 Len=0
+|	|(1218)	------------------>	-20	|		
+|25.161	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=1129 Ack=582 Win=16939 Len=0	
+|	|(4270)	<------------------	-21	|		
+|25.491	|	ftp-data > aeroflig		|TCP:	ftp-data > aeroflight-ads [SYN] Seq=0 Win=16384 Len=0	MSS=1460
+|	|(1218)	<------------------	-20	|		
+|25.491	|	aeroflight-ads > ft		|TCP:	"aeroflight-ads > ftp-data [RST, ACK] Seq=1 Ack=1 Win="	0 Len=0
+|	|(1218)	------------------>	-20	|		
+|26.033	|	ftp-data > aeroflig		|TCP:	ftp-data > aeroflight-ads [SYN] Seq=0 Win=16384 Len=0	MSS=1460
+|	|(1218)	<------------------	-20	|		
+|26.033	|	aeroflight-ads > ft		|TCP:	"aeroflight-ads > ftp-data [RST, ACK] Seq=1 Ack=1 Win="	0 Len=0
+|	|(1218)	------------------>	-20	|		
+|26.034	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|26.034	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,2,32"	
+|	|(4270)	------------------>	-21	|		
+|26.035	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|26.035	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|26.037	|	ftp-data > kshell [		|TCP:	ftp-data > kshell [SYN] Seq=0 Win=16384 Len=0 MSS=146	0
+|	|(544)	<------------------	-20	|		
+|26.037	|	kshell > ftp-data [		|TCP:	"kshell > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(544)	------------------>	-20	|		
+|26.148	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=1188 Ack=612 Win=16909 Len=0	
+|	|(4270)	<------------------	-21	|		
+|26.476	|	ftp-data > kshell [		|TCP:	ftp-data > kshell [SYN] Seq=0 Win=16384 Len=0 MSS=146	0
+|	|(544)	<------------------	-20	|		
+|26.476	|	kshell > ftp-data [		|TCP:	"kshell > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(544)	------------------>	-20	|		
+|26.915	|	ftp-data > kshell [		|TCP:	ftp-data > kshell [SYN] Seq=0 Win=16384 Len=0 MSS=146	0
+|	|(544)	<------------------	-20	|		
+|26.915	|	kshell > ftp-data [		|TCP:	"kshell > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(544)	------------------>	-20	|		
+|26.916	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|26.916	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,39,231"	
+|	|(4270)	------------------>	-21	|		
+|26.917	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|26.917	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|26.919	|	ftp-data > 10215 [S		|TCP:	ftp-data > 10215 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(10215)	<------------------	-20	|		
+|26.919	|	10215 > ftp-data [R		|TCP:	"10215 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(10215)	------------------>	-20	|		
+|27.132	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=1247 Ack=644 Win=16877 Len=0	
+|	|(4270)	<------------------	-21	|		
+|27.461	|	ftp-data > 10215 [S		|TCP:	ftp-data > 10215 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(10215)	<------------------	-20	|		
+|27.461	|	10215 > ftp-data [R		|TCP:	"10215 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(10215)	------------------>	-20	|		
+|27.900	|	ftp-data > 10215 [S		|TCP:	ftp-data > 10215 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(10215)	<------------------	-20	|		
+|27.900	|	10215 > ftp-data [R		|TCP:	"10215 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(10215)	------------------>	-20	|		
+|27.901	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|27.902	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,254,105"	
+|	|(4270)	------------------>	-21	|		
+|27.903	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|27.903	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|27.905	|	ftp-data > 65129 [S		|TCP:	ftp-data > 65129 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(65129)	<------------------	-20	|		
+|27.905	|	65129 > ftp-data [R		|TCP:	"65129 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(65129)	------------------>	-20	|		
+|28.508	|	[TCP Retransmission		|FTP:	[TCP Retransmission] Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|28.733	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=1306 Ack=677 Win=16844 Len=0	
+|	|(4270)	<------------------	-21	|		
+|28.900	|	ftp-data > 65129 [S		|TCP:	ftp-data > 65129 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(65129)	<------------------	-20	|		
+|28.900	|	65129 > ftp-data [R		|TCP:	"65129 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(65129)	------------------>	-20	|		
+|29.117	|	ftp-data > 65129 [S		|TCP:	ftp-data > 65129 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(65129)	<------------------	-20	|		
+|29.117	|	65129 > ftp-data [R		|TCP:	"65129 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(65129)	------------------>	-20	|		
+|29.118	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|29.118	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,4,107"	
+|	|(4270)	------------------>	-21	|		
+|29.119	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|29.119	|	Request: LIST		|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|29.121	|	ftp-data > caspssl		|TCP:	ftp-data > caspssl [SYN] Seq=0 Win=16384 Len=0 MSS=14	60
+|	|(1131)	<------------------	-20	|		
+|29.121	|	caspssl > ftp-data		|TCP:	"caspssl > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(1131)	------------------>	-20	|		
+|29.159	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=1365 Ack=708 Win=16813 Len=0	
+|	|(4270)	<------------------	-21	|		
+|29.428	|	ftp-data > caspssl		|TCP:	ftp-data > caspssl [SYN] Seq=0 Win=16384 Len=0 MSS=14	60
+|	|(1131)	<------------------	-20	|		
+|29.428	|	caspssl > ftp-data		|TCP:	"caspssl > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(1131)	------------------>	-20	|		
+|29.979	|	ftp-data > caspssl		|TCP:	ftp-data > caspssl [SYN] Seq=0 Win=16384 Len=0 MSS=14	60
+|	|(1131)	<------------------	-20	|		
+|29.979	|	caspssl > ftp-data		|TCP:	"caspssl > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(1131)	------------------>	-20	|		
+|29.980	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|29.981	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,35,130"	
+|	|(4270)	------------------>	-21	|		
+|29.982	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|29.982	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|29.983	|	ftp-data > websm [S		|TCP:	ftp-data > websm [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(9090)	<------------------	-20	|		
+|29.983	|	websm > ftp-data [R		|TCP:	"websm > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(9090)	------------------>	-20	|		
+|30.197	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=1424 Ack=740 Win=16781 Len=0	
+|	|(4270)	<------------------	-21	|		
+|30.417	|	ftp-data > websm [S		|TCP:	ftp-data > websm [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(9090)	<------------------	-20	|		
+|30.417	|	websm > ftp-data [R		|TCP:	"websm > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(9090)	------------------>	-20	|		
+|31.019	|	ftp-data > websm [S		|TCP:	ftp-data > websm [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(9090)	<------------------	-20	|		
+|31.019	|	websm > ftp-data [R		|TCP:	"websm > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(9090)	------------------>	-20	|		
+|31.020	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|31.020	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,19,190"	
+|	|(4270)	------------------>	-21	|		
+|31.021	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|31.021	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|31.022	|	ftp-data > rlm-admi		|TCP:	ftp-data > rlm-admin [SYN] Seq=0 Win=16384 Len=0 MSS=	1460
+|	|(5054)	<------------------	-20	|		
+|31.022	|	rlm-admin > ftp-dat		|TCP:	"rlm-admin > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len"	0
+|	|(5054)	------------------>	-20	|		
+|31.172	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=1483 Ack=772 Win=16749 Len=0	
+|	|(4270)	<------------------	-21	|		
+|31.392	|	ftp-data > rlm-admi		|TCP:	ftp-data > rlm-admin [SYN] Seq=0 Win=16384 Len=0 MSS=	1460
+|	|(5054)	<------------------	-20	|		
+|31.392	|	rlm-admin > ftp-dat		|TCP:	"rlm-admin > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len"	0
+|	|(5054)	------------------>	-20	|		
+|31.943	|	ftp-data > rlm-admi		|TCP:	ftp-data > rlm-admin [SYN] Seq=0 Win=16384 Len=0 MSS=	1460
+|	|(5054)	<------------------	-20	|		
+|31.943	|	rlm-admin > ftp-dat		|TCP:	"rlm-admin > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len"	0
+|	|(5054)	------------------>	-20	|		
+|31.945	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|31.945	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,70,181"	
+|	|(4270)	------------------>	-21	|		
+|31.946	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|31.946	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|31.947	|	ftp-data > 18101 [S		|TCP:	ftp-data > 18101 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(18101)	<------------------	-20	|		
+|31.947	|	18101 > ftp-data [R		|TCP:	"18101 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(18101)	------------------>	-20	|		
+|32.161	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=1542 Ack=804 Win=16717 Len=0	
+|	|(4270)	<------------------	-21	|		
+|32.491	|	ftp-data > 18101 [S		|TCP:	ftp-data > 18101 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(18101)	<------------------	-20	|		
+|32.491	|	18101 > ftp-data [R		|TCP:	"18101 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(18101)	------------------>	-20	|		
+|32.927	|	ftp-data > 18101 [S		|TCP:	ftp-data > 18101 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(18101)	<------------------	-20	|		
+|32.927	|	18101 > ftp-data [R		|TCP:	"18101 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(18101)	------------------>	-20	|		
+|32.929	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|32.929	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,39,14"	
+|	|(4270)	------------------>	-21	|		
+|32.930	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|32.930	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|32.931	|	ftp-data > distinct		|TCP:	ftp-data > distinct32 [SYN] Seq=0 Win=16384 Len=0 MSS	1460
+|	|(9998)	<------------------	-20	|		
+|32.931	|	distinct32 > ftp-da		|TCP:	"distinct32 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Le"	n=0
+|	|(9998)	------------------>	-20	|		
+|33.539	|	[TCP Retransmission		|FTP:	[TCP Retransmission] Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|33.890	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=1601 Ack=835 Win=16686 Len=0	
+|	|(4270)	<------------------	-21	|		
+|34.096	|	ftp-data > distinct		|TCP:	ftp-data > distinct32 [SYN] Seq=0 Win=16384 Len=0 MSS	1460
+|	|(9998)	<------------------	-20	|		
+|34.096	|	distinct32 > ftp-da		|TCP:	"distinct32 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Le"	n=0
+|	|(9998)	------------------>	-20	|		
+|34.272	|	ftp-data > distinct		|TCP:	ftp-data > distinct32 [SYN] Seq=0 Win=16384 Len=0 MSS	1460
+|	|(9998)	<------------------	-20	|		
+|34.272	|	distinct32 > ftp-da		|TCP:	"distinct32 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Le"	n=0
+|	|(9998)	------------------>	-20	|		
+|34.273	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|34.273	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,23,71"	
+|	|(4270)	------------------>	-21	|		
+|34.274	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|34.274	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|34.276	|	ftp-data > 5959 [SY		|TCP:	ftp-data > 5959 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(5959)	<------------------	-20	|		
+|34.276	|	5959 > ftp-data [RS		|TCP:	"5959 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(5959)	------------------>	-20	|		
+|34.356	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=1660 Ack=866 Win=16655 Len=0	
+|	|(4270)	<------------------	-21	|		
+|34.486	|	ftp-data > 5959 [SY		|TCP:	ftp-data > 5959 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(5959)	<------------------	-20	|		
+|34.486	|	5959 > ftp-data [RS		|TCP:	"5959 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(5959)	------------------>	-20	|		
+|34.896	|	ftp-data > 5959 [SY		|TCP:	ftp-data > 5959 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(5959)	<------------------	-20	|		
+|34.896	|	5959 > ftp-data [RS		|TCP:	"5959 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(5959)	------------------>	-20	|		
+|34.898	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|34.898	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,16,247"	
+|	|(4270)	------------------>	-21	|		
+|34.899	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|34.899	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|34.902	|	ftp-data > unicall		|TCP:	ftp-data > unicall [SYN] Seq=0 Win=16384 Len=0 MSS=14	60
+|	|(4343)	<------------------	-20	|		
+|34.902	|	unicall > ftp-data		|TCP:	"unicall > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(4343)	------------------>	-20	|		
+|35.117	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=1719 Ack=898 Win=16623 Len=0	
+|	|(4270)	<------------------	-21	|		
+|35.447	|	ftp-data > unicall		|TCP:	ftp-data > unicall [SYN] Seq=0 Win=16384 Len=0 MSS=14	60
+|	|(4343)	<------------------	-20	|		
+|35.447	|	unicall > ftp-data		|TCP:	"unicall > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(4343)	------------------>	-20	|		
+|36.144	|	ftp-data > unicall		|TCP:	ftp-data > unicall [SYN] Seq=0 Win=16384 Len=0 MSS=14	60
+|	|(4343)	<------------------	-20	|		
+|36.144	|	unicall > ftp-data		|TCP:	"unicall > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(4343)	------------------>	-20	|		
+|36.145	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|36.145	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,2,155"	
+|	|(4270)	------------------>	-21	|		
+|36.146	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|36.146	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|36.147	|	ftp-data > disclose		|TCP:	ftp-data > disclose [SYN] Seq=0 Win=16384 Len=0 MSS=1	460
+|	|(667)	<------------------	-20	|		
+|36.147	|	disclose > ftp-data		|TCP:	"disclose > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len="	0
+|	|(667)	------------------>	-20	|		
+|36.188	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=1778 Ack=929 Win=16592 Len=0	
+|	|(4270)	<------------------	-21	|		
+|36.423	|	ftp-data > disclose		|TCP:	ftp-data > disclose [SYN] Seq=0 Win=16384 Len=0 MSS=1	460
+|	|(667)	<------------------	-20	|		
+|36.423	|	disclose > ftp-data		|TCP:	"disclose > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len="	0
+|	|(667)	------------------>	-20	|		
+|36.972	|	ftp-data > disclose		|TCP:	ftp-data > disclose [SYN] Seq=0 Win=16384 Len=0 MSS=1	460
+|	|(667)	<------------------	-20	|		
+|36.972	|	disclose > ftp-data		|TCP:	"disclose > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len="	0
+|	|(667)	------------------>	-20	|		
+|36.973	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|36.974	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,3,132"	
+|	|(4270)	------------------>	-21	|		
+|36.975	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|36.975	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|36.976	|	ftp-data > omginiti		|TCP:	ftp-data > omginitialrefs [SYN] Seq=0 Win=16384 Len=0	MSS=1460
+|	|(900)	<------------------	-20	|		
+|36.976	|	omginitialrefs > ft		|TCP:	"omginitialrefs > ftp-data [RST, ACK] Seq=1 Ack=1 Win="	0 Len=0
+|	|(900)	------------------>	-20	|		
+|37.192	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=1837 Ack=960 Win=16561 Len=0	
+|	|(4270)	<------------------	-21	|		
+|37.413	|	ftp-data > omginiti		|TCP:	ftp-data > omginitialrefs [SYN] Seq=0 Win=16384 Len=0	MSS=1460
+|	|(900)	<------------------	-20	|		
+|37.413	|	omginitialrefs > ft		|TCP:	"omginitialrefs > ftp-data [RST, ACK] Seq=1 Ack=1 Win="	0 Len=0
+|	|(900)	------------------>	-20	|		
+|37.959	|	ftp-data > omginiti		|TCP:	ftp-data > omginitialrefs [SYN] Seq=0 Win=16384 Len=0	MSS=1460
+|	|(900)	<------------------	-20	|		
+|37.959	|	omginitialrefs > ft		|TCP:	"omginitialrefs > ftp-data [RST, ACK] Seq=1 Ack=1 Win="	0 Len=0
+|	|(900)	------------------>	-20	|		
+|37.960	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|37.960	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,4,10"	
+|	|(4270)	------------------>	-21	|		
+|37.961	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|37.961	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|37.963	|	ftp-data > activesy		|TCP:	ftp-data > activesync [SYN] Seq=0 Win=16384 Len=0 MSS	1460
+|	|(1034)	<------------------	-20	|		
+|37.963	|	activesync > ftp-da		|TCP:	"activesync > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Le"	n=0
+|	|(1034)	------------------>	-20	|		
+|38.669	|	[TCP Retransmission		|FTP:	[TCP Retransmission] Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|39.047	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=1896 Ack=990 Win=16531 Len=0	
+|	|(4270)	<------------------	-21	|		
+|39.143	|	ftp-data > activesy		|TCP:	ftp-data > activesync [SYN] Seq=0 Win=16384 Len=0 MSS	1460
+|	|(1034)	<------------------	-20	|		
+|39.143	|	activesync > ftp-da		|TCP:	"activesync > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Le"	n=0
+|	|(1034)	------------------>	-20	|		
+|39.361	|	ftp-data > activesy		|TCP:	ftp-data > activesync [SYN] Seq=0 Win=16384 Len=0 MSS	1460
+|	|(1034)	<------------------	-20	|		
+|39.361	|	activesync > ftp-da		|TCP:	"activesync > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Le"	n=0
+|	|(1034)	------------------>	-20	|		
+|39.362	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|39.362	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,84,67"	
+|	|(4270)	------------------>	-21	|		
+|39.363	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|39.363	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|39.365	|	ftp-data > 21571 [S		|TCP:	ftp-data > 21571 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(21571)	<------------------	-20	|		
+|39.365	|	21571 > ftp-data [R		|TCP:	"21571 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(21571)	------------------>	-20	|		
+|39.447	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=1955 Ack=1021 Win=16500 Len=0	
+|	|(4270)	<------------------	-21	|		
+|39.581	|	ftp-data > 21571 [S		|TCP:	ftp-data > 21571 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(21571)	<------------------	-20	|		
+|39.581	|	21571 > ftp-data [R		|TCP:	"21571 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(21571)	------------------>	-20	|		
+|39.923	|	ftp-data > 21571 [S		|TCP:	ftp-data > 21571 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(21571)	<------------------	-20	|		
+|39.923	|	21571 > ftp-data [R		|TCP:	"21571 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(21571)	------------------>	-20	|		
+|39.924	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|39.925	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,100,135"	
+|	|(4270)	------------------>	-21	|		
+|39.926	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|39.926	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|39.928	|	ftp-data > 25735 [S		|TCP:	ftp-data > 25735 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(25735)	<------------------	-20	|		
+|39.928	|	25735 > ftp-data [R		|TCP:	"25735 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(25735)	------------------>	-20	|		
+|40.140	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=2014 Ack=1054 Win=16467 Len=0	
+|	|(4270)	<------------------	-21	|		
+|40.470	|	ftp-data > 25735 [S		|TCP:	ftp-data > 25735 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(25735)	<------------------	-20	|		
+|40.471	|	25735 > ftp-data [R		|TCP:	"25735 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(25735)	------------------>	-20	|		
+|40.911	|	ftp-data > 25735 [S		|TCP:	ftp-data > 25735 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(25735)	<------------------	-20	|		
+|40.911	|	25735 > ftp-data [R		|TCP:	"25735 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(25735)	------------------>	-20	|		
+|40.912	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|40.913	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,2,253"	
+|	|(4270)	------------------>	-21	|		
+|40.914	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|40.914	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|40.916	|	ftp-data > webster		|TCP:	ftp-data > webster [SYN] Seq=0 Win=16384 Len=0 MSS=14	60
+|	|(765)	<------------------	-20	|		
+|40.916	|	webster > ftp-data		|TCP:	"webster > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(765)	------------------>	-20	|		
+|41.272	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=2073 Ack=1085 Win=16436 Len=0	
+|	|(4270)	<------------------	-21	|		
+|41.451	|	ftp-data > webster		|TCP:	ftp-data > webster [SYN] Seq=0 Win=16384 Len=0 MSS=14	60
+|	|(765)	<------------------	-20	|		
+|41.451	|	webster > ftp-data		|TCP:	"webster > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(765)	------------------>	-20	|		
+|41.889	|	ftp-data > webster		|TCP:	ftp-data > webster [SYN] Seq=0 Win=16384 Len=0 MSS=14	60
+|	|(765)	<------------------	-20	|		
+|41.889	|	webster > ftp-data		|TCP:	"webster > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(765)	------------------>	-20	|		
+|41.890	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|41.891	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,19,197"	
+|	|(4270)	------------------>	-21	|		
+|41.892	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|41.892	|	Request: LIST		|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|41.893	|	ftp-data > sip-tls		|TCP:	ftp-data > sip-tls [SYN] Seq=0 Win=16384 Len=0 MSS=14	60
+|	|(5061)	<------------------	-20	|		
+|41.893	|	sip-tls > ftp-data		|TCP:	"sip-tls > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(5061)	------------------>	-20	|		
+|42.107	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=2132 Ack=1117 Win=16404 Len=0	
+|	|(4270)	<------------------	-21	|		
+|42.438	|	ftp-data > sip-tls		|TCP:	ftp-data > sip-tls [SYN] Seq=0 Win=16384 Len=0 MSS=14	60
+|	|(5061)	<------------------	-20	|		
+|42.438	|	sip-tls > ftp-data		|TCP:	"sip-tls > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(5061)	------------------>	-20	|		
+|42.987	|	ftp-data > sip-tls		|TCP:	ftp-data > sip-tls [SYN] Seq=0 Win=16384 Len=0 MSS=14	60
+|	|(5061)	<------------------	-20	|		
+|42.987	|	sip-tls > ftp-data		|TCP:	"sip-tls > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(5061)	------------------>	-20	|		
+|42.988	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|42.988	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,30,120"	
+|	|(4270)	------------------>	-21	|		
+|42.990	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|42.990	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|42.991	|	ftp-data > asr [SYN		|TCP:	ftp-data > asr [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(7800)	<------------------	-20	|		
+|42.991	|	asr > ftp-data [RST		|TCP:	"asr > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(7800)	------------------>	-20	|		
+|43.097	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=2191 Ack=1149 Win=16372 Len=0	
+|	|(4270)	<------------------	-21	|		
+|44.261	|	ftp-data > asr [SYN		|TCP:	ftp-data > asr [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(7800)	<------------------	-20	|		
+|44.261	|	asr > ftp-data [RST		|TCP:	"asr > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(7800)	------------------>	-20	|		
+|44.480	|	ftp-data > asr [SYN		|TCP:	ftp-data > asr [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(7800)	<------------------	-20	|		
+|44.480	|	asr > ftp-data [RST		|TCP:	"asr > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(7800)	------------------>	-20	|		
+|44.481	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|44.482	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,23,116"	
+|	|(4270)	------------------>	-21	|		
+|44.483	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|44.483	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|44.484	|	ftp-data > 6004 [SY		|TCP:	ftp-data > 6004 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(6004)	<------------------	-20	|		
+|44.484	|	6004 > ftp-data [RS		|TCP:	"6004 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(6004)	------------------>	-20	|		
+|44.568	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=2250 Ack=1181 Win=16340 Len=0	
+|	|(4270)	<------------------	-21	|		
+|44.655	|	ftp-data > 6004 [SY		|TCP:	ftp-data > 6004 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(6004)	<------------------	-20	|		
+|44.655	|	6004 > ftp-data [RS		|TCP:	"6004 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(6004)	------------------>	-20	|		
+|44.948	|	ftp-data > 6004 [SY		|TCP:	ftp-data > 6004 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(6004)	<------------------	-20	|		
+|44.948	|	6004 > ftp-data [RS		|TCP:	"6004 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(6004)	------------------>	-20	|		
+|44.949	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|44.949	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,205,193"	
+|	|(4270)	------------------>	-21	|		
+|44.951	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|44.951	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|44.952	|	ftp-data > 52673 [S		|TCP:	ftp-data > 52673 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(52673)	<------------------	-20	|		
+|44.952	|	52673 > ftp-data [R		|TCP:	"52673 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(52673)	------------------>	-20	|		
+|45.167	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=2309 Ack=1214 Win=16307 Len=0	
+|	|(4270)	<------------------	-21	|		
+|45.385	|	ftp-data > 52673 [S		|TCP:	ftp-data > 52673 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(52673)	<------------------	-20	|		
+|45.385	|	52673 > ftp-data [R		|TCP:	"52673 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(52673)	------------------>	-20	|		
+|45.933	|	ftp-data > 52673 [S		|TCP:	ftp-data > 52673 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(52673)	<------------------	-20	|		
+|45.933	|	52673 > ftp-data [R		|TCP:	"52673 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(52673)	------------------>	-20	|		
+|45.934	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|45.934	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,66,96"	
+|	|(4270)	------------------>	-21	|		
+|45.935	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|45.936	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|45.937	|	ftp-data > amt-soap		|TCP:	ftp-data > amt-soap-http [SYN] Seq=0 Win=16384 Len=0	MSS=1460
+|	|(16992)	<------------------	-20	|		
+|45.937	|	amt-soap-http > ftp		|TCP:	"amt-soap-http > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0"	Len=0
+|	|(16992)	------------------>	-20	|		
+|46.153	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=2368 Ack=1245 Win=16276 Len=0	
+|	|(4270)	<------------------	-21	|		
+|46.509	|	ftp-data > amt-soap		|TCP:	ftp-data > amt-soap-http [SYN] Seq=0 Win=16384 Len=0	MSS=1460
+|	|(16992)	<------------------	-20	|		
+|46.509	|	amt-soap-http > ftp		|TCP:	"amt-soap-http > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0"	Len=0
+|	|(16992)	------------------>	-20	|		
+|46.919	|	ftp-data > amt-soap		|TCP:	ftp-data > amt-soap-http [SYN] Seq=0 Win=16384 Len=0	MSS=1460
+|	|(16992)	<------------------	-20	|		
+|46.919	|	amt-soap-http > ftp		|TCP:	"amt-soap-http > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0"	Len=0
+|	|(16992)	------------------>	-20	|		
+|46.920	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|46.920	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,37,194"	
+|	|(4270)	------------------>	-21	|		
+|46.921	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|46.922	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|46.923	|	ftp-data > 9666 [SY		|TCP:	ftp-data > 9666 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(9666)	<------------------	-20	|		
+|46.923	|	9666 > ftp-data [RS		|TCP:	"9666 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(9666)	------------------>	-20	|		
+|47.137	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=2427 Ack=1277 Win=16244 Len=0	
+|	|(4270)	<------------------	-21	|		
+|47.465	|	ftp-data > 9666 [SY		|TCP:	ftp-data > 9666 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(9666)	<------------------	-20	|		
+|47.465	|	9666 > ftp-data [RS		|TCP:	"9666 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(9666)	------------------>	-20	|		
+|47.907	|	ftp-data > 9666 [SY		|TCP:	ftp-data > 9666 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(9666)	<------------------	-20	|		
+|47.907	|	9666 > ftp-data [RS		|TCP:	"9666 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(9666)	------------------>	-20	|		
+|47.908	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|47.908	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,29,72"	
+|	|(4270)	------------------>	-21	|		
+|47.910	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|47.910	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|47.912	|	ftp-data > 7496 [SY		|TCP:	ftp-data > 7496 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(7496)	<------------------	-20	|		
+|47.912	|	7496 > ftp-data [RS		|TCP:	"7496 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(7496)	------------------>	-20	|		
+|48.128	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=2486 Ack=1308 Win=16213 Len=0	
+|	|(4270)	<------------------	-21	|		
+|49.365	|	ftp-data > 7496 [SY		|TCP:	ftp-data > 7496 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(7496)	<------------------	-20	|		
+|49.365	|	7496 > ftp-data [RS		|TCP:	"7496 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(7496)	------------------>	-20	|		
+|49.541	|	ftp-data > 7496 [SY		|TCP:	ftp-data > 7496 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(7496)	<------------------	-20	|		
+|49.541	|	7496 > ftp-data [RS		|TCP:	"7496 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(7496)	------------------>	-20	|		
+|49.542	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|49.542	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,6,183"	
+|	|(4270)	------------------>	-21	|		
+|49.544	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|49.544	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|49.545	|	ftp-data > h323gate		|TCP:	ftp-data > h323gatestat [SYN] Seq=0 Win=16384 Len=0 M	SS=1460
+|	|(1719)	<------------------	-20	|		
+|49.545	|	h323gatestat > ftp-		|TCP:	"h323gatestat > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0"	Len=0
+|	|(1719)	------------------>	-20	|		
+|49.628	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=2545 Ack=1339 Win=16182 Len=0	
+|	|(4270)	<------------------	-21	|		
+|49.759	|	ftp-data > h323gate		|TCP:	ftp-data > h323gatestat [SYN] Seq=0 Win=16384 Len=0 M	SS=1460
+|	|(1719)	<------------------	-20	|		
+|49.759	|	h323gatestat > ftp-		|TCP:	"h323gatestat > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0"	Len=0
+|	|(1719)	------------------>	-20	|		
+|49.984	|	ftp-data > h323gate		|TCP:	ftp-data > h323gatestat [SYN] Seq=0 Win=16384 Len=0 M	SS=1460
+|	|(1719)	<------------------	-20	|		
+|49.984	|	h323gatestat > ftp-		|TCP:	"h323gatestat > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0"	Len=0
+|	|(1719)	------------------>	-20	|		
+|49.985	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|49.986	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,2,33"	
+|	|(4270)	------------------>	-21	|		
+|49.987	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|49.987	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|49.988	|	ftp-data > appleqtc		|TCP:	ftp-data > appleqtcsrvr [SYN] Seq=0 Win=16384 Len=0 M	SS=1460
+|	|(545)	<------------------	-20	|		
+|49.988	|	appleqtcsrvr > ftp-		|TCP:	"appleqtcsrvr > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0"	Len=0
+|	|(545)	------------------>	-20	|		
+|50.093	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=2604 Ack=1369 Win=16152 Len=0	
+|	|(4270)	<------------------	-21	|		
+|50.421	|	ftp-data > appleqtc		|TCP:	ftp-data > appleqtcsrvr [SYN] Seq=0 Win=16384 Len=0 M	SS=1460
+|	|(545)	<------------------	-20	|		
+|50.421	|	appleqtcsrvr > ftp-		|TCP:	"appleqtcsrvr > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0"	Len=0
+|	|(545)	------------------>	-20	|		
+|50.969	|	ftp-data > appleqtc		|TCP:	ftp-data > appleqtcsrvr [SYN] Seq=0 Win=16384 Len=0 M	SS=1460
+|	|(545)	<------------------	-20	|		
+|50.969	|	appleqtcsrvr > ftp-		|TCP:	"appleqtcsrvr > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0"	Len=0
+|	|(545)	------------------>	-20	|		
+|50.970	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|50.970	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,192,6"	
+|	|(4270)	------------------>	-21	|		
+|50.971	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|50.971	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|50.973	|	ftp-data > 49158 [S		|TCP:	ftp-data > 49158 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(49158)	<------------------	-20	|		
+|50.973	|	49158 > ftp-data [R		|TCP:	"49158 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(49158)	------------------>	-20	|		
+|51.187	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=2663 Ack=1400 Win=16121 Len=0	
+|	|(4270)	<------------------	-21	|		
+|51.568	|	ftp-data > 49158 [S		|TCP:	ftp-data > 49158 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(49158)	<------------------	-20	|		
+|51.568	|	49158 > ftp-data [R		|TCP:	"49158 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(49158)	------------------>	-20	|		
+|51.944	|	ftp-data > 49158 [S		|TCP:	ftp-data > 49158 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(49158)	<------------------	-20	|		
+|51.944	|	49158 > ftp-data [R		|TCP:	"49158 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(49158)	------------------>	-20	|		
+|51.945	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|51.946	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,4,20"	
+|	|(4270)	------------------>	-21	|		
+|51.947	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|51.947	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|51.976	|	ftp-data > dcutilit		|TCP:	ftp-data > dcutility [SYN] Seq=0 Win=16384 Len=0 MSS=	1460
+|	|(1044)	<------------------	-20	|		
+|51.976	|	dcutility > ftp-dat		|TCP:	"dcutility > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len"	0
+|	|(1044)	------------------>	-20	|		
+|52.172	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=2722 Ack=1430 Win=16091 Len=0	
+|	|(4270)	<------------------	-21	|		
+|52.391	|	ftp-data > dcutilit		|TCP:	ftp-data > dcutility [SYN] Seq=0 Win=16384 Len=0 MSS=	1460
+|	|(1044)	<------------------	-20	|		
+|52.391	|	dcutility > ftp-dat		|TCP:	"dcutility > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len"	0
+|	|(1044)	------------------>	-20	|		
+|52.937	|	ftp-data > dcutilit		|TCP:	ftp-data > dcutility [SYN] Seq=0 Win=16384 Len=0 MSS=	1460
+|	|(1044)	<------------------	-20	|		
+|52.937	|	dcutility > ftp-dat		|TCP:	"dcutility > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len"	0
+|	|(1044)	------------------>	-20	|		
+|52.938	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|52.938	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,4,13"	
+|	|(4270)	------------------>	-21	|		
+|52.939	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|52.939	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|52.941	|	ftp-data > ams [SYN		|TCP:	ftp-data > ams [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(1037)	<------------------	-20	|		
+|52.941	|	ams > ftp-data [RST		|TCP:	"ams > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(1037)	------------------>	-20	|		
+|53.157	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=2781 Ack=1460 Win=16061 Len=0	
+|	|(4270)	<------------------	-21	|		
+|53.487	|	ftp-data > ams [SYN		|TCP:	ftp-data > ams [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(1037)	<------------------	-20	|		
+|53.487	|	ams > ftp-data [RST		|TCP:	"ams > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(1037)	------------------>	-20	|		
+|54.664	|	ftp-data > ams [SYN		|TCP:	ftp-data > ams [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(1037)	<------------------	-20	|		
+|54.664	|	ams > ftp-data [RST		|TCP:	"ams > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(1037)	------------------>	-20	|		
+|54.665	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|54.666	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,19,36"	
+|	|(4270)	------------------>	-21	|		
+|54.667	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|54.667	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|54.668	|	ftp-data > hfcs [SY		|TCP:	ftp-data > hfcs [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(4900)	<------------------	-20	|		
+|54.668	|	hfcs > ftp-data [RS		|TCP:	"hfcs > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(4900)	------------------>	-20	|		
+|54.748	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=2840 Ack=1491 Win=17514 Len=0	
+|	|(4270)	<------------------	-21	|		
+|54.877	|	ftp-data > hfcs [SY		|TCP:	ftp-data > hfcs [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(4900)	<------------------	-20	|		
+|54.877	|	hfcs > ftp-data [RS		|TCP:	"hfcs > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(4900)	------------------>	-20	|		
+|55.052	|	ftp-data > hfcs [SY		|TCP:	ftp-data > hfcs [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(4900)	<------------------	-20	|		
+|55.052	|	hfcs > ftp-data [RS		|TCP:	"hfcs > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(4900)	------------------>	-20	|		
+|55.054	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|55.054	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,11,104"	
+|	|(4270)	------------------>	-21	|		
+|55.055	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|55.055	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|55.058	|	ftp-data > roboeda		|TCP:	ftp-data > roboeda [SYN] Seq=0 Win=16384 Len=0 MSS=14	60
+|	|(2920)	<------------------	-20	|		
+|55.058	|	roboeda > ftp-data		|TCP:	"roboeda > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(2920)	------------------>	-20	|		
+|55.139	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=2899 Ack=1523 Win=17482 Len=0	
+|	|(4270)	<------------------	-21	|		
+|55.449	|	ftp-data > roboeda		|TCP:	ftp-data > roboeda [SYN] Seq=0 Win=16384 Len=0 MSS=14	60
+|	|(2920)	<------------------	-20	|		
+|55.449	|	roboeda > ftp-data		|TCP:	"roboeda > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(2920)	------------------>	-20	|		
+|55.888	|	ftp-data > roboeda		|TCP:	ftp-data > roboeda [SYN] Seq=0 Win=16384 Len=0 MSS=14	60
+|	|(2920)	<------------------	-20	|		
+|55.888	|	roboeda > ftp-data		|TCP:	"roboeda > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(2920)	------------------>	-20	|		
+|55.889	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|55.889	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,14,230"	
+|	|(4270)	------------------>	-21	|		
+|55.890	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|55.890	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|55.892	|	ftp-data > neto-dcs		|TCP:	ftp-data > neto-dcs [SYN] Seq=0 Win=16384 Len=0 MSS=1	460
+|	|(3814)	<------------------	-20	|		
+|55.892	|	neto-dcs > ftp-data		|TCP:	"neto-dcs > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len="	0
+|	|(3814)	------------------>	-20	|		
+|56.106	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=2958 Ack=1555 Win=17450 Len=0	
+|	|(4270)	<------------------	-21	|		
+|56.435	|	ftp-data > neto-dcs		|TCP:	ftp-data > neto-dcs [SYN] Seq=0 Win=16384 Len=0 MSS=1	460
+|	|(3814)	<------------------	-20	|		
+|56.435	|	neto-dcs > ftp-data		|TCP:	"neto-dcs > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len="	0
+|	|(3814)	------------------>	-20	|		
+|56.888	|	ftp-data > neto-dcs		|TCP:	ftp-data > neto-dcs [SYN] Seq=0 Win=16384 Len=0 MSS=1	460
+|	|(3814)	<------------------	-20	|		
+|56.888	|	neto-dcs > ftp-data		|TCP:	"neto-dcs > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len="	0
+|	|(3814)	------------------>	-20	|		
+|56.889	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|56.889	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,12,188"	
+|	|(4270)	------------------>	-21	|		
+|56.890	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|56.891	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|56.892	|	ftp-data > iscsi-ta		|TCP:	ftp-data > iscsi-target [SYN] Seq=0 Win=16384 Len=0 M	SS=1460
+|	|(3260)	<------------------	-20	|		
+|56.892	|	iscsi-target > ftp-		|TCP:	"iscsi-target > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0"	Len=0
+|	|(3260)	------------------>	-20	|		
+|57.107	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=3017 Ack=1587 Win=17418 Len=0	
+|	|(4270)	<------------------	-21	|		
+|57.437	|	ftp-data > iscsi-ta		|TCP:	ftp-data > iscsi-target [SYN] Seq=0 Win=16384 Len=0 M	SS=1460
+|	|(3260)	<------------------	-20	|		
+|57.437	|	iscsi-target > ftp-		|TCP:	"iscsi-target > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0"	Len=0
+|	|(3260)	------------------>	-20	|		
+|57.983	|	ftp-data > iscsi-ta		|TCP:	ftp-data > iscsi-target [SYN] Seq=0 Win=16384 Len=0 M	SS=1460
+|	|(3260)	<------------------	-20	|		
+|57.983	|	iscsi-target > ftp-		|TCP:	"iscsi-target > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0"	Len=0
+|	|(3260)	------------------>	-20	|		
+|57.985	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|57.985	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,192,0"	
+|	|(4270)	------------------>	-21	|		
+|57.986	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|57.986	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|57.987	|	ftp-data > 49152 [S		|TCP:	ftp-data > 49152 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(49152)	<------------------	-20	|		
+|57.987	|	49152 > ftp-data [R		|TCP:	"49152 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(49152)	------------------>	-20	|		
+|58.092	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=3076 Ack=1618 Win=17387 Len=0	
+|	|(4270)	<------------------	-21	|		
+|58.421	|	ftp-data > 49152 [S		|TCP:	ftp-data > 49152 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(49152)	<------------------	-20	|		
+|58.421	|	49152 > ftp-data [R		|TCP:	"49152 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(49152)	------------------>	-20	|		
+|59.772	|	ftp-data > 49152 [S		|TCP:	ftp-data > 49152 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(49152)	<------------------	-20	|		
+|59.772	|	49152 > ftp-data [R		|TCP:	"49152 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(49152)	------------------>	-20	|		
+|59.773	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|59.773	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,11,190"	
+|	|(4270)	------------------>	-21	|		
+|59.774	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|59.774	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|59.776	|	ftp-data > ii-admin		|TCP:	ftp-data > ii-admin [SYN] Seq=0 Win=16384 Len=0 MSS=1	460
+|	|(3006)	<------------------	-20	|		
+|59.776	|	ii-admin > ftp-data		|TCP:	"ii-admin > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len="	0
+|	|(3006)	------------------>	-20	|		
+|59.858	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=3135 Ack=1650 Win=17355 Len=0	
+|	|(4270)	<------------------	-21	|		
+|59.943	|	ftp-data > ii-admin		|TCP:	ftp-data > ii-admin [SYN] Seq=0 Win=16384 Len=0 MSS=1	460
+|	|(3006)	<------------------	-20	|		
+|59.943	|	ii-admin > ftp-data		|TCP:	"ii-admin > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len="	0
+|	|(3006)	------------------>	-20	|		
+|60.157	|	ftp-data > ii-admin		|TCP:	ftp-data > ii-admin [SYN] Seq=0 Win=16384 Len=0 MSS=1	460
+|	|(3006)	<------------------	-20	|		
+|60.157	|	ii-admin > ftp-data		|TCP:	"ii-admin > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len="	0
+|	|(3006)	------------------>	-20	|		
+|60.158	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|60.158	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,14,106"	
+|	|(4270)	------------------>	-21	|		
+|60.159	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|60.159	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|60.160	|	ftp-data > svn [SYN		|TCP:	ftp-data > svn [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(3690)	<------------------	-20	|		
+|60.160	|	svn > ftp-data [RST		|TCP:	"svn > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(3690)	------------------>	-20	|		
+|60.245	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=3194 Ack=1682 Win=17323 Len=0	
+|	|(4270)	<------------------	-21	|		
+|60.379	|	ftp-data > svn [SYN		|TCP:	ftp-data > svn [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(3690)	<------------------	-20	|		
+|60.379	|	svn > ftp-data [RST		|TCP:	"svn > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(3690)	------------------>	-20	|		
+|60.929	|	ftp-data > svn [SYN		|TCP:	ftp-data > svn [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(3690)	<------------------	-20	|		
+|60.929	|	svn > ftp-data [RST		|TCP:	"svn > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(3690)	------------------>	-20	|		
+|60.930	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|60.930	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,32,141"	
+|	|(4270)	------------------>	-21	|		
+|60.931	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|60.931	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|60.932	|	ftp-data > 8333 [SY		|TCP:	ftp-data > 8333 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(8333)	<------------------	-20	|		
+|60.932	|	8333 > ftp-data [RS		|TCP:	"8333 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(8333)	------------------>	-20	|		
+|61.148	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=3253 Ack=1714 Win=17291 Len=0	
+|	|(4270)	<------------------	-21	|		
+|61.476	|	ftp-data > 8333 [SY		|TCP:	ftp-data > 8333 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(8333)	<------------------	-20	|		
+|61.476	|	8333 > ftp-data [RS		|TCP:	"8333 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(8333)	------------------>	-20	|		
+|61.981	|	ftp-data > 8333 [SY		|TCP:	ftp-data > 8333 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(8333)	<------------------	-20	|		
+|61.981	|	8333 > ftp-data [RS		|TCP:	"8333 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(8333)	------------------>	-20	|		
+|61.981	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|61.982	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,7,83"	
+|	|(4270)	------------------>	-21	|		
+|61.982	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|61.982	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|61.983	|	ftp-data > westell-		|TCP:	ftp-data > westell-stats [SYN] Seq=0 Win=16384 Len=0	MSS=1460
+|	|(1875)	<------------------	-20	|		
+|61.983	|	westell-stats > ftp		|TCP:	"westell-stats > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0"	Len=0
+|	|(1875)	------------------>	-20	|		
+|62.153	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=3312 Ack=1744 Win=17261 Len=0	
+|	|(4270)	<------------------	-21	|		
+|62.483	|	ftp-data > westell-		|TCP:	ftp-data > westell-stats [SYN] Seq=0 Win=16384 Len=0	MSS=1460
+|	|(1875)	<------------------	-20	|		
+|62.483	|	westell-stats > ftp		|TCP:	"westell-stats > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0"	Len=0
+|	|(1875)	------------------>	-20	|		
+|62.921	|	ftp-data > westell-		|TCP:	ftp-data > westell-stats [SYN] Seq=0 Win=16384 Len=0	MSS=1460
+|	|(1875)	<------------------	-20	|		
+|62.921	|	westell-stats > ftp		|TCP:	"westell-stats > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0"	Len=0
+|	|(1875)	------------------>	-20	|		
+|62.922	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|62.922	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,31,74"	
+|	|(4270)	------------------>	-21	|		
+|62.923	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|62.923	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|62.924	|	ftp-data > 8010 [SY		|TCP:	ftp-data > 8010 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(8010)	<------------------	-20	|		
+|62.924	|	8010 > ftp-data [RS		|TCP:	"8010 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(8010)	------------------>	-20	|		
+|63.140	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=3371 Ack=1775 Win=17230 Len=0	
+|	|(4270)	<------------------	-21	|		
+|63.468	|	ftp-data > 8010 [SY		|TCP:	ftp-data > 8010 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(8010)	<------------------	-20	|		
+|63.468	|	8010 > ftp-data [RS		|TCP:	"8010 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(8010)	------------------>	-20	|		
+|64.828	|	ftp-data > 8010 [SY		|TCP:	ftp-data > 8010 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(8010)	<------------------	-20	|		
+|64.828	|	8010 > ftp-data [RS		|TCP:	"8010 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(8010)	------------------>	-20	|		
+|64.830	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|64.830	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,3,144"	
+|	|(4270)	------------------>	-21	|		
+|64.831	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|64.832	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|64.833	|	ftp-data > apex-mes		|TCP:	ftp-data > apex-mesh [SYN] Seq=0 Win=16384 Len=0 MSS=	1460
+|	|(912)	<------------------	-20	|		
+|64.833	|	apex-mesh > ftp-dat		|TCP:	"apex-mesh > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len"	0
+|	|(912)	------------------>	-20	|		
+|64.913	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=3430 Ack=1806 Win=17199 Len=0	
+|	|(4270)	<------------------	-21	|		
+|65.041	|	ftp-data > apex-mes		|TCP:	ftp-data > apex-mesh [SYN] Seq=0 Win=16384 Len=0 MSS=	1460
+|	|(912)	<------------------	-20	|		
+|65.041	|	apex-mesh > ftp-dat		|TCP:	"apex-mesh > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len"	0
+|	|(912)	------------------>	-20	|		
+|65.221	|	ftp-data > apex-mes		|TCP:	ftp-data > apex-mesh [SYN] Seq=0 Win=16384 Len=0 MSS=	1460
+|	|(912)	<------------------	-20	|		
+|65.221	|	apex-mesh > ftp-dat		|TCP:	"apex-mesh > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len"	0
+|	|(912)	------------------>	-20	|		
+|65.222	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|65.222	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,31,154"	
+|	|(4270)	------------------>	-21	|		
+|65.223	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|65.223	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|65.225	|	ftp-data > 8090 [SY		|TCP:	ftp-data > 8090 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(8090)	<------------------	-20	|		
+|65.225	|	8090 > ftp-data [RS		|TCP:	"8090 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(8090)	------------------>	-20	|		
+|65.305	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=3489 Ack=1838 Win=17167 Len=0	
+|	|(4270)	<------------------	-21	|		
+|65.439	|	ftp-data > 8090 [SY		|TCP:	ftp-data > 8090 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(8090)	<------------------	-20	|		
+|65.439	|	8090 > ftp-data [RS		|TCP:	"8090 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(8090)	------------------>	-20	|		
+|65.881	|	ftp-data > 8090 [SY		|TCP:	ftp-data > 8090 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(8090)	<------------------	-20	|		
+|65.881	|	8090 > ftp-data [RS		|TCP:	"8090 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(8090)	------------------>	-20	|		
+|65.882	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|65.883	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,3,33"	
+|	|(4270)	------------------>	-21	|		
+|65.884	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|65.884	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|65.886	|	ftp-data > device [		|TCP:	ftp-data > device [SYN] Seq=0 Win=16384 Len=0 MSS=146	0
+|	|(801)	<------------------	-20	|		
+|65.886	|	device > ftp-data [		|TCP:	"device > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(801)	------------------>	-20	|		
+|66.101	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=3548 Ack=1868 Win=17137 Len=0	
+|	|(4270)	<------------------	-21	|		
+|66.429	|	ftp-data > device [		|TCP:	ftp-data > device [SYN] Seq=0 Win=16384 Len=0 MSS=146	0
+|	|(801)	<------------------	-20	|		
+|66.429	|	device > ftp-data [		|TCP:	"device > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(801)	------------------>	-20	|		
+|67.080	|	ftp-data > device [		|TCP:	ftp-data > device [SYN] Seq=0 Win=16384 Len=0 MSS=146	0
+|	|(801)	<------------------	-20	|		
+|67.080	|	device > ftp-data [		|TCP:	"device > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(801)	------------------>	-20	|		
+|67.081	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|67.082	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,2,31"	
+|	|(4270)	------------------>	-21	|		
+|67.083	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|67.083	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|67.084	|	ftp-data > klogin [		|TCP:	ftp-data > klogin [SYN] Seq=0 Win=16384 Len=0 MSS=146	0
+|	|(543)	<------------------	-20	|		
+|67.084	|	klogin > ftp-data [		|TCP:	"klogin > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(543)	------------------>	-20	|		
+|67.121	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=3607 Ack=1898 Win=17107 Len=0	
+|	|(4270)	<------------------	-21	|		
+|67.412	|	ftp-data > klogin [		|TCP:	ftp-data > klogin [SYN] Seq=0 Win=16384 Len=0 MSS=146	0
+|	|(543)	<------------------	-20	|		
+|67.412	|	klogin > ftp-data [		|TCP:	"klogin > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(543)	------------------>	-20	|		
+|67.964	|	ftp-data > klogin [		|TCP:	ftp-data > klogin [SYN] Seq=0 Win=16384 Len=0 MSS=146	0
+|	|(543)	<------------------	-20	|		
+|67.964	|	klogin > ftp-data [		|TCP:	"klogin > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(543)	------------------>	-20	|		
+|67.965	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|67.965	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,12,252"	
+|	|(4270)	------------------>	-21	|		
+|67.967	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|67.967	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|67.968	|	ftp-data > 3324 [SY		|TCP:	ftp-data > 3324 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(3324)	<------------------	-20	|		
+|67.968	|	3324 > ftp-data [RS		|TCP:	"3324 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(3324)	------------------>	-20	|		
+|68.184	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=3666 Ack=1930 Win=17075 Len=0	
+|	|(4270)	<------------------	-21	|		
+|68.403	|	ftp-data > 3324 [SY		|TCP:	ftp-data > 3324 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(3324)	<------------------	-20	|		
+|68.403	|	3324 > ftp-data [RS		|TCP:	"3324 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(3324)	------------------>	-20	|		
+|68.949	|	ftp-data > 3324 [SY		|TCP:	ftp-data > 3324 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(3324)	<------------------	-20	|		
+|68.949	|	3324 > ftp-data [RS		|TCP:	"3324 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(3324)	------------------>	-20	|		
+|68.950	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|68.950	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,78,253"	
+|	|(4270)	------------------>	-21	|		
+|68.951	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|68.951	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|68.953	|	ftp-data > 20221 [S		|TCP:	ftp-data > 20221 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(20221)	<------------------	-20	|		
+|68.953	|	20221 > ftp-data [R		|TCP:	"20221 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(20221)	------------------>	-20	|		
+|69.850	|	[TCP Retransmission		|FTP:	[TCP Retransmission] Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|69.984	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=3725 Ack=1962 Win=17043 Len=0	
+|	|(4270)	<------------------	-21	|		
+|70.111	|	ftp-data > 20221 [S		|TCP:	ftp-data > 20221 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(20221)	<------------------	-20	|		
+|70.111	|	20221 > ftp-data [R		|TCP:	"20221 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(20221)	------------------>	-20	|		
+|70.328	|	ftp-data > 20221 [S		|TCP:	ftp-data > 20221 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(20221)	<------------------	-20	|		
+|70.328	|	20221 > ftp-data [R		|TCP:	"20221 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(20221)	------------------>	-20	|		
+|70.330	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|70.330	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,39,17"	
+|	|(4270)	------------------>	-21	|		
+|70.331	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|70.331	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|70.333	|	ftp-data > scp-conf		|TCP:	ftp-data > scp-config [SYN] Seq=0 Win=16384 Len=0 MSS	1460
+|	|(10001)	<------------------	-20	|		
+|70.333	|	scp-config > ftp-da		|TCP:	"scp-config > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Le"	n=0
+|	|(10001)	------------------>	-20	|		
+|70.413	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=3784 Ack=1993 Win=17012 Len=0	
+|	|(4270)	<------------------	-21	|		
+|70.544	|	ftp-data > scp-conf		|TCP:	ftp-data > scp-config [SYN] Seq=0 Win=16384 Len=0 MSS	1460
+|	|(10001)	<------------------	-20	|		
+|70.544	|	scp-config > ftp-da		|TCP:	"scp-config > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Le"	n=0
+|	|(10001)	------------------>	-20	|		
+|70.906	|	ftp-data > scp-conf		|TCP:	ftp-data > scp-config [SYN] Seq=0 Win=16384 Len=0 MSS	1460
+|	|(10001)	<------------------	-20	|		
+|70.906	|	scp-config > ftp-da		|TCP:	"scp-config > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Le"	n=0
+|	|(10001)	------------------>	-20	|		
+|70.907	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|70.907	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,4,209"	
+|	|(4270)	------------------>	-21	|		
+|70.908	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|70.908	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|70.910	|	ftp-data > univ-app		|TCP:	ftp-data > univ-appserver [SYN] Seq=0 Win=16384 Len=0	MSS=1460
+|	|(1233)	<------------------	-20	|		
+|70.910	|	univ-appserver > ft		|TCP:	"univ-appserver > ftp-data [RST, ACK] Seq=1 Ack=1 Win="	0 Len=0
+|	|(1233)	------------------>	-20	|		
+|71.127	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=3843 Ack=2024 Win=16981 Len=0	
+|	|(4270)	<------------------	-21	|		
+|71.459	|	ftp-data > univ-app		|TCP:	ftp-data > univ-appserver [SYN] Seq=0 Win=16384 Len=0	MSS=1460
+|	|(1233)	<------------------	-20	|		
+|71.459	|	univ-appserver > ft		|TCP:	"univ-appserver > ftp-data [RST, ACK] Seq=1 Ack=1 Win="	0 Len=0
+|	|(1233)	------------------>	-20	|		
+|71.897	|	ftp-data > univ-app		|TCP:	ftp-data > univ-appserver [SYN] Seq=0 Win=16384 Len=0	MSS=1460
+|	|(1233)	<------------------	-20	|		
+|71.897	|	univ-appserver > ft		|TCP:	"univ-appserver > ftp-data [RST, ACK] Seq=1 Ack=1 Win="	0 Len=0
+|	|(1233)	------------------>	-20	|		
+|71.898	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|71.898	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,4,253"	
+|	|(4270)	------------------>	-21	|		
+|71.900	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|71.900	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|71.901	|	ftp-data > miva-mqs		|TCP:	ftp-data > miva-mqs [SYN] Seq=0 Win=16384 Len=0 MSS=1	460
+|	|(1277)	<------------------	-20	|		
+|71.902	|	miva-mqs > ftp-data		|TCP:	"miva-mqs > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len="	0
+|	|(1277)	------------------>	-20	|		
+|72.229	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=3902 Ack=2055 Win=16950 Len=0	
+|	|(4270)	<------------------	-21	|		
+|72.443	|	ftp-data > miva-mqs		|TCP:	ftp-data > miva-mqs [SYN] Seq=0 Win=16384 Len=0 MSS=1	460
+|	|(1277)	<------------------	-20	|		
+|72.443	|	miva-mqs > ftp-data		|TCP:	"miva-mqs > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len="	0
+|	|(1277)	------------------>	-20	|		
+|72.881	|	ftp-data > miva-mqs		|TCP:	ftp-data > miva-mqs [SYN] Seq=0 Win=16384 Len=0 MSS=1	460
+|	|(1277)	<------------------	-20	|		
+|72.881	|	miva-mqs > ftp-data		|TCP:	"miva-mqs > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len="	0
+|	|(1277)	------------------>	-20	|		
+|72.883	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|72.883	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,2,105"	
+|	|(4270)	------------------>	-21	|		
+|72.885	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|72.885	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|72.887	|	ftp-data > sco-dtmg		|TCP:	ftp-data > sco-dtmgr [SYN] Seq=0 Win=16384 Len=0 MSS=	1460
+|	|(617)	<------------------	-20	|		
+|72.887	|	sco-dtmgr > ftp-dat		|TCP:	"sco-dtmgr > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len"	0
+|	|(617)	------------------>	-20	|		
+|73.101	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=3961 Ack=2086 Win=16919 Len=0	
+|	|(4270)	<------------------	-21	|		
+|73.432	|	ftp-data > sco-dtmg		|TCP:	ftp-data > sco-dtmgr [SYN] Seq=0 Win=16384 Len=0 MSS=	1460
+|	|(617)	<------------------	-20	|		
+|73.432	|	sco-dtmgr > ftp-dat		|TCP:	"sco-dtmgr > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len"	0
+|	|(617)	------------------>	-20	|		
+|73.979	|	ftp-data > sco-dtmg		|TCP:	ftp-data > sco-dtmgr [SYN] Seq=0 Win=16384 Len=0 MSS=	1460
+|	|(617)	<------------------	-20	|		
+|73.979	|	sco-dtmgr > ftp-dat		|TCP:	"sco-dtmgr > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len"	0
+|	|(617)	------------------>	-20	|		
+|73.980	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|73.980	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,27,158"	
+|	|(4270)	------------------>	-21	|		
+|73.981	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|73.981	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|73.983	|	ftp-data > arcp [SY		|TCP:	ftp-data > arcp [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(7070)	<------------------	-20	|		
+|73.983	|	arcp > ftp-data [RS		|TCP:	"arcp > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(7070)	------------------>	-20	|		
+|74.096	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=4020 Ack=2118 Win=16887 Len=0	
+|	|(4270)	<------------------	-21	|		
+|75.224	|	ftp-data > arcp [SY		|TCP:	ftp-data > arcp [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(7070)	<------------------	-20	|		
+|75.224	|	arcp > ftp-data [RS		|TCP:	"arcp > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(7070)	------------------>	-20	|		
+|75.443	|	ftp-data > arcp [SY		|TCP:	ftp-data > arcp [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(7070)	<------------------	-20	|		
+|75.443	|	arcp > ftp-data [RS		|TCP:	"arcp > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(7070)	------------------>	-20	|		
+|75.444	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|75.444	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,14,153"	
+|	|(4270)	------------------>	-21	|		
+|75.445	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|75.445	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|75.447	|	ftp-data > 3737 [SY		|TCP:	ftp-data > 3737 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(3737)	<------------------	-20	|		
+|75.447	|	3737 > ftp-data [RS		|TCP:	"3737 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(3737)	------------------>	-20	|		
+|75.485	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=4079 Ack=2150 Win=16855 Len=0	
+|	|(4270)	<------------------	-21	|		
+|75.614	|	ftp-data > 3737 [SY		|TCP:	ftp-data > 3737 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(3737)	<------------------	-20	|		
+|75.614	|	3737 > ftp-data [RS		|TCP:	"3737 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(3737)	------------------>	-20	|		
+|75.953	|	ftp-data > 3737 [SY		|TCP:	ftp-data > 3737 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(3737)	<------------------	-20	|		
+|75.953	|	3737 > ftp-data [RS		|TCP:	"3737 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(3737)	------------------>	-20	|		
+|75.954	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|75.954	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,26,11"	
+|	|(4270)	------------------>	-21	|		
+|75.955	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|75.955	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|75.956	|	ftp-data > 6667 [SY		|TCP:	ftp-data > 6667 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(6667)	<------------------	-20	|		
+|75.956	|	6667 > ftp-data [RS		|TCP:	"6667 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(6667)	------------------>	-20	|		
+|76.171	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=4138 Ack=2181 Win=16824 Len=0	
+|	|(4270)	<------------------	-21	|		
+|76.391	|	ftp-data > 6667 [SY		|TCP:	ftp-data > 6667 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(6667)	<------------------	-20	|		
+|76.391	|	6667 > ftp-data [RS		|TCP:	"6667 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(6667)	------------------>	-20	|		
+|76.941	|	ftp-data > 6667 [SY		|TCP:	ftp-data > 6667 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(6667)	<------------------	-20	|		
+|76.941	|	6667 > ftp-data [RS		|TCP:	"6667 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(6667)	------------------>	-20	|		
+|76.942	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|76.943	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,37,122"	
+|	|(4270)	------------------>	-21	|		
+|76.944	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|76.944	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|76.946	|	ftp-data > msgsys [		|TCP:	ftp-data > msgsys [SYN] Seq=0 Win=16384 Len=0 MSS=146	0
+|	|(9594)	<------------------	-20	|		
+|76.946	|	msgsys > ftp-data [		|TCP:	"msgsys > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(9594)	------------------>	-20	|		
+|77.348	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=4197 Ack=2213 Win=16792 Len=0	
+|	|(4270)	<------------------	-21	|		
+|77.435	|	ftp-data > msgsys [		|TCP:	ftp-data > msgsys [SYN] Seq=0 Win=16384 Len=0 MSS=146	0
+|	|(9594)	<------------------	-20	|		
+|77.435	|	msgsys > ftp-data [		|TCP:	"msgsys > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(9594)	------------------>	-20	|		
+|77.923	|	ftp-data > msgsys [		|TCP:	ftp-data > msgsys [SYN] Seq=0 Win=16384 Len=0 MSS=146	0
+|	|(9594)	<------------------	-20	|		
+|77.923	|	msgsys > ftp-data [		|TCP:	"msgsys > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(9594)	------------------>	-20	|		
+|77.924	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|77.925	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,117,48"	
+|	|(4270)	------------------>	-21	|		
+|77.926	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|77.926	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|77.927	|	ftp-data > 30000 [S		|TCP:	ftp-data > 30000 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(30000)	<------------------	-20	|		
+|77.927	|	30000 > ftp-data [R		|TCP:	"30000 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(30000)	------------------>	-20	|		
+|78.141	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=4256 Ack=2245 Win=16760 Len=0	
+|	|(4270)	<------------------	-21	|		
+|78.472	|	ftp-data > 30000 [S		|TCP:	ftp-data > 30000 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(30000)	<------------------	-20	|		
+|78.472	|	30000 > ftp-data [R		|TCP:	"30000 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(30000)	------------------>	-20	|		
+|78.913	|	ftp-data > 30000 [S		|TCP:	ftp-data > 30000 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(30000)	<------------------	-20	|		
+|78.913	|	30000 > ftp-data [R		|TCP:	"30000 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(30000)	------------------>	-20	|		
+|78.914	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|78.914	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,39,20"	
+|	|(4270)	------------------>	-21	|		
+|78.915	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|78.915	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|78.917	|	ftp-data > emcrmirc		|TCP:	ftp-data > emcrmirccd [SYN] Seq=0 Win=16384 Len=0 MSS	1460
+|	|(10004)	<------------------	-20	|		
+|78.917	|	emcrmirccd > ftp-da		|TCP:	"emcrmirccd > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Le"	n=0
+|	|(10004)	------------------>	-20	|		
+|79.131	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=4315 Ack=2276 Win=16729 Len=0	
+|	|(4270)	<------------------	-21	|		
+|80.337	|	ftp-data > emcrmirc		|TCP:	ftp-data > emcrmirccd [SYN] Seq=0 Win=16384 Len=0 MSS	1460
+|	|(10004)	<------------------	-20	|		
+|80.337	|	emcrmirccd > ftp-da		|TCP:	"emcrmirccd > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Le"	n=0
+|	|(10004)	------------------>	-20	|		
+|80.508	|	ftp-data > emcrmirc		|TCP:	ftp-data > emcrmirccd [SYN] Seq=0 Win=16384 Len=0 MSS	1460
+|	|(10004)	<------------------	-20	|		
+|80.508	|	emcrmirccd > ftp-da		|TCP:	"emcrmirccd > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Le"	n=0
+|	|(10004)	------------------>	-20	|		
+|80.509	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|80.509	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,12,196"	
+|	|(4270)	------------------>	-21	|		
+|80.511	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|80.511	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|80.512	|	ftp-data > msft-gc		|TCP:	ftp-data > msft-gc [SYN] Seq=0 Win=16384 Len=0 MSS=14	60
+|	|(3268)	<------------------	-20	|		
+|80.512	|	msft-gc > ftp-data		|TCP:	"msft-gc > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(3268)	------------------>	-20	|		
+|80.593	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=4374 Ack=2308 Win=16697 Len=0	
+|	|(4270)	<------------------	-21	|		
+|80.725	|	ftp-data > msft-gc		|TCP:	ftp-data > msft-gc [SYN] Seq=0 Win=16384 Len=0 MSS=14	60
+|	|(3268)	<------------------	-20	|		
+|80.725	|	msft-gc > ftp-data		|TCP:	"msft-gc > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(3268)	------------------>	-20	|		
+|80.878	|	kiosk > netbios-ssn		|TCP:	kiosk > netbios-ssn [SYN] Seq=0 Win=16384 Len=0 MSS=1	460
+|	|(139)	<------------------	-1061	|		
+|80.878	|	netbios-ssn > kiosk		|TCP:	"netbios-ssn > kiosk [SYN, ACK] Seq=0 Ack=1 Win=65535"	Len=0 MSS=1460
+|	|(139)	------------------>	-1061	|		
+|80.879	|	"Session request, to"		|NBSS	": Session request, to CCAS_ATTEAM<20> from VIRTUAL<00>"	
+|	|(139)	<------------------	-1061	|		
+|80.879	|	Positive session re		|NBSS	: Positive session response	
+|	|(139)	------------------>	-1061	|		
+|80.893	|	Negotiate Protocol		|SMB:	Negotiate Protocol Request	
+|	|(139)	<------------------	-1061	|		
+|80.904	|	Negotiate Protocol		|SMB:	Negotiate Protocol Response	
+|	|(139)	------------------>	-1061	|		
+|80.905	|	ftp-data > msft-gc		|TCP:	ftp-data > msft-gc [SYN] Seq=0 Win=16384 Len=0 MSS=14	60
+|	|(3268)	<------------------	-20	|		
+|80.905	|	msft-gc > ftp-data		|TCP:	"msft-gc > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(3268)	------------------>	-20	|		
+|80.906	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|80.908	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,4,42"	
+|	|(4270)	------------------>	-21	|		
+|80.909	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|80.910	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|80.911	|	ftp-data > fpo-fns		|TCP:	ftp-data > fpo-fns [SYN] Seq=0 Win=16384 Len=0 MSS=14	60
+|	|(1066)	<------------------	-20	|		
+|80.911	|	fpo-fns > ftp-data		|TCP:	"fpo-fns > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(1066)	------------------>	-20	|		
+|80.921	|	Session Setup AndX		|SMB:	"Session Setup AndX Request, NTLMSSP_NEGOTIATE"	
+|	|(139)	<------------------	-1061	|		
+|80.921	|	Session Setup AndX		|SMB:	"Session Setup AndX Response, NTLMSSP_CHALLENGE, Error"	: STATUS_MORE_PROCESSING_REQUIRED
+|	|(139)	------------------>	-1061	|		
+|80.927	|	Session Setup AndX		|SMB:	"Session Setup AndX Request, NTLMSSP_AUTH, User: \"	
+|	|(139)	<------------------	-1061	|		
+|80.946	|	Session Setup AndX		|SMB:	Session Setup AndX Response	
+|	|(139)	------------------>	-1061	|		
+|80.950	|	Tree Connect AndX R		|SMB:	"Tree Connect AndX Request, Path: \\CCAS_ATTEAM\IPC$"	
+|	|(139)	<------------------	-1061	|		
+|80.950	|	Tree Connect AndX R		|SMB:	Tree Connect AndX Response	
+|	|(139)	------------------>	-1061	|		
+|80.956	|	NetServerEnum2 Requ		|LANM	"AN: NetServerEnum2 Request, Print Queue Server"	
+|	|(139)	<------------------	-1061	|		
+|80.985	|	NetServerEnum2 Resp		|LANM	AN: NetServerEnum2 Response	
+|	|(139)	------------------>	-1061	|		
+|80.989	|	Logoff AndX Request		|SMB:	Logoff AndX Request	
+|	|(139)	<------------------	-1061	|		
+|80.989	|	Logoff AndX Respons		|SMB:	Logoff AndX Response	
+|	|(139)	------------------>	-1061	|		
+|80.990	|	Tree Disconnect Req		|SMB:	Tree Disconnect Request	
+|	|(139)	<------------------	-1061	|		
+|80.990	|	Tree Disconnect Res		|SMB:	Tree Disconnect Response	
+|	|(139)	------------------>	-1061	|		
+|80.994	|	kiosk > netbios-ssn		|TCP:	"kiosk > netbios-ssn [FIN, ACK] Seq=916 Ack=767 Win=16"	754 Len=0
+|	|(139)	<------------------	-1061	|		
+|80.994	|	netbios-ssn > kiosk		|TCP:	"netbios-ssn > kiosk [FIN, ACK] Seq=767 Ack=917 Win=64"	620 [TCP CHECKSUM INCORRECT] Len=0
+|	|(139)	------------------>	-1061	|		
+|80.995	|	kiosk > netbios-ssn		|TCP:	kiosk > netbios-ssn [ACK] Seq=917 Ack=768 Win=16754 L	en=0
+|	|(139)	<------------------	-1061	|		
+|81.104	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=4433 Ack=2338 Win=16667 Len=0	
+|	|(4270)	<------------------	-21	|		
+|81.432	|	ftp-data > fpo-fns		|TCP:	ftp-data > fpo-fns [SYN] Seq=0 Win=16384 Len=0 MSS=14	60
+|	|(1066)	<------------------	-20	|		
+|81.432	|	fpo-fns > ftp-data		|TCP:	"fpo-fns > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(1066)	------------------>	-20	|		
+|81.870	|	ftp-data > fpo-fns		|TCP:	ftp-data > fpo-fns [SYN] Seq=0 Win=16384 Len=0 MSS=14	60
+|	|(1066)	<------------------	-20	|		
+|81.870	|	fpo-fns > ftp-data		|TCP:	"fpo-fns > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(1066)	------------------>	-20	|		
+|81.871	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|81.872	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,78,37"	
+|	|(4270)	------------------>	-21	|		
+|81.873	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|81.873	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|81.875	|	ftp-data > openwebn		|TCP:	ftp-data > openwebnet [SYN] Seq=0 Win=16384 Len=0 MSS	1460
+|	|(20005)	<------------------	-20	|		
+|81.875	|	openwebnet > ftp-da		|TCP:	"openwebnet > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Le"	n=0
+|	|(20005)	------------------>	-20	|		
+|82.089	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=4492 Ack=2369 Win=16636 Len=0	
+|	|(4270)	<------------------	-21	|		
+|82.541	|	ftp-data > openwebn		|TCP:	ftp-data > openwebnet [SYN] Seq=0 Win=16384 Len=0 MSS	1460
+|	|(20005)	<------------------	-20	|		
+|82.542	|	openwebnet > ftp-da		|TCP:	"openwebnet > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Le"	n=0
+|	|(20005)	------------------>	-20	|		
+|82.874	|	ftp-data > openwebn		|TCP:	ftp-data > openwebnet [SYN] Seq=0 Win=16384 Len=0 MSS	1460
+|	|(20005)	<------------------	-20	|		
+|82.874	|	openwebnet > ftp-da		|TCP:	"openwebnet > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Le"	n=0
+|	|(20005)	------------------>	-20	|		
+|82.875	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|82.875	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,3,19"	
+|	|(4270)	------------------>	-21	|		
+|82.876	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|82.876	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|82.878	|	ftp-data > 787 [SYN		|TCP:	ftp-data > 787 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(787)	<------------------	-20	|		
+|82.878	|	787 > ftp-data [RST		|TCP:	"787 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(787)	------------------>	-20	|		
+|83.092	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=4551 Ack=2399 Win=16606 Len=0	
+|	|(4270)	<------------------	-21	|		
+|83.419	|	ftp-data > 787 [SYN		|TCP:	ftp-data > 787 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(787)	<------------------	-20	|		
+|83.419	|	787 > ftp-data [RST		|TCP:	"787 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(787)	------------------>	-20	|		
+|83.969	|	ftp-data > 787 [SYN		|TCP:	ftp-data > 787 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(787)	<------------------	-20	|		
+|83.969	|	787 > ftp-data [RST		|TCP:	"787 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(787)	------------------>	-20	|		
+|83.971	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|83.971	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,6,247"	
+|	|(4270)	------------------>	-21	|		
+|83.972	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|83.972	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|83.973	|	ftp-data > 1783 [SY		|TCP:	ftp-data > 1783 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(1783)	<------------------	-20	|		
+|83.973	|	1783 > ftp-data [RS		|TCP:	"1783 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(1783)	------------------>	-20	|		
+|84.080	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=4610 Ack=2430 Win=16575 Len=0	
+|	|(4270)	<------------------	-21	|		
+|84.410	|	ftp-data > 1783 [SY		|TCP:	ftp-data > 1783 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(1783)	<------------------	-20	|		
+|84.410	|	1783 > ftp-data [RS		|TCP:	"1783 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(1783)	------------------>	-20	|		
+|85.622	|	ftp-data > 1783 [SY		|TCP:	ftp-data > 1783 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(1783)	<------------------	-20	|		
+|85.622	|	1783 > ftp-data [RS		|TCP:	"1783 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(1783)	------------------>	-20	|		
+|85.623	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|85.623	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,4,78"	
+|	|(4270)	------------------>	-21	|		
+|85.624	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|85.624	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|85.626	|	ftp-data > adobeser		|TCP:	ftp-data > adobeserver-1 [SYN] Seq=0 Win=16384 Len=0	MSS=1460
+|	|(1102)	<------------------	-20	|		
+|85.626	|	adobeserver-1 > ftp		|TCP:	"adobeserver-1 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0"	Len=0
+|	|(1102)	------------------>	-20	|		
+|85.665	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=4669 Ack=2460 Win=16545 Len=0	
+|	|(4270)	<------------------	-21	|		
+|85.793	|	ftp-data > adobeser		|TCP:	ftp-data > adobeserver-1 [SYN] Seq=0 Win=16384 Len=0	MSS=1460
+|	|(1102)	<------------------	-20	|		
+|85.794	|	adobeserver-1 > ftp		|TCP:	"adobeserver-1 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0"	Len=0
+|	|(1102)	------------------>	-20	|		
+|86.013	|	ftp-data > adobeser		|TCP:	ftp-data > adobeserver-1 [SYN] Seq=0 Win=16384 Len=0	MSS=1460
+|	|(1102)	<------------------	-20	|		
+|86.013	|	adobeserver-1 > ftp		|TCP:	"adobeserver-1 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0"	Len=0
+|	|(1102)	------------------>	-20	|		
+|86.014	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|86.015	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,2,134"	
+|	|(4270)	------------------>	-21	|		
+|86.016	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|86.016	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|86.017	|	ftp-data > ldp [SYN		|TCP:	ftp-data > ldp [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(646)	<------------------	-20	|		
+|86.017	|	ldp > ftp-data [RST		|TCP:	"ldp > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(646)	------------------>	-20	|		
+|86.166	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=4728 Ack=2491 Win=16514 Len=0	
+|	|(4270)	<------------------	-21	|		
+|86.385	|	ftp-data > ldp [SYN		|TCP:	ftp-data > ldp [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(646)	<------------------	-20	|		
+|86.385	|	ldp > ftp-data [RST		|TCP:	"ldp > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(646)	------------------>	-20	|		
+|86.932	|	ftp-data > ldp [SYN		|TCP:	ftp-data > ldp [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(646)	<------------------	-20	|		
+|86.932	|	ldp > ftp-data [RST		|TCP:	"ldp > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(646)	------------------>	-20	|		
+|86.933	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|86.934	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,13,23"	
+|	|(4270)	------------------>	-21	|		
+|86.935	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|86.935	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|86.936	|	ftp-data > btrieve		|TCP:	ftp-data > btrieve [SYN] Seq=0 Win=16384 Len=0 MSS=14	60
+|	|(3351)	<------------------	-20	|		
+|86.936	|	btrieve > ftp-data		|TCP:	"btrieve > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(3351)	------------------>	-20	|		
+|87.151	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=4787 Ack=2522 Win=16483 Len=0	
+|	|(4270)	<------------------	-21	|		
+|87.370	|	ftp-data > btrieve		|TCP:	ftp-data > btrieve [SYN] Seq=0 Win=16384 Len=0 MSS=14	60
+|	|(3351)	<------------------	-20	|		
+|87.370	|	btrieve > ftp-data		|TCP:	"btrieve > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(3351)	------------------>	-20	|		
+|87.917	|	ftp-data > btrieve		|TCP:	ftp-data > btrieve [SYN] Seq=0 Win=16384 Len=0 MSS=14	60
+|	|(3351)	<------------------	-20	|		
+|87.917	|	btrieve > ftp-data		|TCP:	"btrieve > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(3351)	------------------>	-20	|		
+|87.918	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|87.918	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,16,15"	
+|	|(4270)	------------------>	-21	|		
+|87.919	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|87.919	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|87.921	|	ftp-data > xgrid [S		|TCP:	ftp-data > xgrid [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(4111)	<------------------	-20	|		
+|87.921	|	xgrid > ftp-data [R		|TCP:	"xgrid > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(4111)	------------------>	-20	|		
+|88.135	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=4846 Ack=2553 Win=16452 Len=0	
+|	|(4270)	<------------------	-21	|		
+|88.463	|	ftp-data > xgrid [S		|TCP:	ftp-data > xgrid [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(4111)	<------------------	-20	|		
+|88.463	|	xgrid > ftp-data [R		|TCP:	"xgrid > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(4111)	------------------>	-20	|		
+|88.901	|	ftp-data > xgrid [S		|TCP:	ftp-data > xgrid [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(4111)	<------------------	-20	|		
+|88.901	|	xgrid > ftp-data [R		|TCP:	"xgrid > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(4111)	------------------>	-20	|		
+|88.902	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|88.903	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,66,97"	
+|	|(4270)	------------------>	-21	|		
+|88.904	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|88.904	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|88.905	|	ftp-data > amt-soap		|TCP:	ftp-data > amt-soap-https [SYN] Seq=0 Win=16384 Len=0	MSS=1460
+|	|(16993)	<------------------	-20	|		
+|88.906	|	amt-soap-https > ft		|TCP:	"amt-soap-https > ftp-data [RST, ACK] Seq=1 Ack=1 Win="	0 Len=0
+|	|(16993)	------------------>	-20	|		
+|89.120	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=4905 Ack=2584 Win=16421 Len=0	
+|	|(4270)	<------------------	-21	|		
+|89.452	|	ftp-data > amt-soap		|TCP:	ftp-data > amt-soap-https [SYN] Seq=0 Win=16384 Len=0	MSS=1460
+|	|(16993)	<------------------	-20	|		
+|89.452	|	amt-soap-https > ft		|TCP:	"amt-soap-https > ftp-data [RST, ACK] Seq=1 Ack=1 Win="	0 Len=0
+|	|(16993)	------------------>	-20	|		
+|90.704	|	ftp-data > amt-soap		|TCP:	ftp-data > amt-soap-https [SYN] Seq=0 Win=16384 Len=0	MSS=1460
+|	|(16993)	<------------------	-20	|		
+|90.704	|	amt-soap-https > ft		|TCP:	"amt-soap-https > ftp-data [RST, ACK] Seq=1 Ack=1 Win="	0 Len=0
+|	|(16993)	------------------>	-20	|		
+|90.705	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|90.705	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,8,142"	
+|	|(4270)	------------------>	-21	|		
+|90.706	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|90.706	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|90.708	|	ftp-data > tivoconn		|TCP:	ftp-data > tivoconnect [SYN] Seq=0 Win=16384 Len=0 MS	S=1460
+|	|(2190)	<------------------	-20	|		
+|90.708	|	tivoconnect > ftp-d		|TCP:	"tivoconnect > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 L"	en=0
+|	|(2190)	------------------>	-20	|		
+|90.790	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=4964 Ack=2615 Win=16390 Len=0	
+|	|(4270)	<------------------	-21	|		
+|90.920	|	ftp-data > tivoconn		|TCP:	ftp-data > tivoconnect [SYN] Seq=0 Win=16384 Len=0 MS	S=1460
+|	|(2190)	<------------------	-20	|		
+|90.920	|	tivoconnect > ftp-d		|TCP:	"tivoconnect > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 L"	en=0
+|	|(2190)	------------------>	-20	|		
+|91.093	|	ftp-data > tivoconn		|TCP:	ftp-data > tivoconnect [SYN] Seq=0 Win=16384 Len=0 MS	S=1460
+|	|(2190)	<------------------	-20	|		
+|91.093	|	tivoconnect > ftp-d		|TCP:	"tivoconnect > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 L"	en=0
+|	|(2190)	------------------>	-20	|		
+|91.095	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|91.095	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,12,250"	
+|	|(4270)	------------------>	-21	|		
+|91.096	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|91.096	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|91.098	|	ftp-data > 3322 [SY		|TCP:	ftp-data > 3322 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(3322)	<------------------	-20	|		
+|91.098	|	3322 > ftp-data [RS		|TCP:	"3322 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(3322)	------------------>	-20	|		
+|91.181	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=5023 Ack=2647 Win=16358 Len=0	
+|	|(4270)	<------------------	-21	|		
+|91.414	|	ftp-data > 3322 [SY		|TCP:	ftp-data > 3322 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(3322)	<------------------	-20	|		
+|91.414	|	3322 > ftp-data [RS		|TCP:	"3322 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(3322)	------------------>	-20	|		
+|91.962	|	ftp-data > 3322 [SY		|TCP:	ftp-data > 3322 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(3322)	<------------------	-20	|		
+|91.962	|	3322 > ftp-data [RS		|TCP:	"3322 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(3322)	------------------>	-20	|		
+|91.963	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|91.963	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,37,121"	
+|	|(4270)	------------------>	-21	|		
+|91.964	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|91.964	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|91.966	|	ftp-data > cba8 [SY		|TCP:	ftp-data > cba8 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(9593)	<------------------	-20	|		
+|91.966	|	cba8 > ftp-data [RS		|TCP:	"cba8 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(9593)	------------------>	-20	|		
+|92.070	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=5082 Ack=2679 Win=16326 Len=0	
+|	|(4270)	<------------------	-21	|		
+|92.399	|	ftp-data > cba8 [SY		|TCP:	ftp-data > cba8 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(9593)	<------------------	-20	|		
+|92.399	|	cba8 > ftp-data [RS		|TCP:	"cba8 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(9593)	------------------>	-20	|		
+|92.967	|	ftp-data > cba8 [SY		|TCP:	ftp-data > cba8 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(9593)	<------------------	-20	|		
+|92.967	|	cba8 > ftp-data [RS		|TCP:	"cba8 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(9593)	------------------>	-20	|		
+|92.969	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|92.969	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,23,115"	
+|	|(4270)	------------------>	-21	|		
+|92.970	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|92.970	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|92.972	|	ftp-data > 6003 [SY		|TCP:	ftp-data > 6003 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(6003)	<------------------	-20	|		
+|92.972	|	6003 > ftp-data [RS		|TCP:	"6003 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(6003)	------------------>	-20	|		
+|93.077	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=5141 Ack=2711 Win=16294 Len=0	
+|	|(4270)	<------------------	-21	|		
+|93.406	|	ftp-data > 6003 [SY		|TCP:	ftp-data > 6003 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(6003)	<------------------	-20	|		
+|93.406	|	6003 > ftp-data [RS		|TCP:	"6003 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(6003)	------------------>	-20	|		
+|93.953	|	ftp-data > 6003 [SY		|TCP:	ftp-data > 6003 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(6003)	<------------------	-20	|		
+|93.953	|	6003 > ftp-data [RS		|TCP:	"6003 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(6003)	------------------>	-20	|		
+|93.954	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|93.954	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,31,106"	
+|	|(4270)	------------------>	-21	|		
+|93.956	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|93.956	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|93.957	|	ftp-data > 8042 [SY		|TCP:	ftp-data > 8042 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(8042)	<------------------	-20	|		
+|93.957	|	8042 > ftp-data [RS		|TCP:	"8042 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(8042)	------------------>	-20	|		
+|94.172	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=5200 Ack=2743 Win=16262 Len=0	
+|	|(4270)	<------------------	-21	|		
+|94.389	|	ftp-data > 8042 [SY		|TCP:	ftp-data > 8042 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(8042)	<------------------	-20	|		
+|94.389	|	8042 > ftp-data [RS		|TCP:	"8042 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(8042)	------------------>	-20	|		
+|95.815	|	ftp-data > 8042 [SY		|TCP:	ftp-data > 8042 [SYN] Seq=0 Win=16384 Len=0 MSS=1460	
+|	|(8042)	<------------------	-20	|		
+|95.815	|	8042 > ftp-data [RS		|TCP:	"8042 > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len=0"	
+|	|(8042)	------------------>	-20	|		
+|95.816	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|95.816	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,4,102"	
+|	|(4270)	------------------>	-21	|		
+|95.818	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|95.818	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|95.819	|	ftp-data > hpvmmdat		|TCP:	ftp-data > hpvmmdata [SYN] Seq=0 Win=16384 Len=0 MSS=	1460
+|	|(1126)	<------------------	-20	|		
+|95.819	|	hpvmmdata > ftp-dat		|TCP:	"hpvmmdata > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len"	0
+|	|(1126)	------------------>	-20	|		
+|95.901	|	ftp > 4270 [ACK] Se		|TCP:	ftp > 4270 [ACK] Seq=5259 Ack=2774 Win=16231 Len=0	
+|	|(4270)	<------------------	-21	|		
+|95.985	|	ftp-data > hpvmmdat		|TCP:	ftp-data > hpvmmdata [SYN] Seq=0 Win=16384 Len=0 MSS=	1460
+|	|(1126)	<------------------	-20	|		
+|95.985	|	hpvmmdata > ftp-dat		|TCP:	"hpvmmdata > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len"	0
+|	|(1126)	------------------>	-20	|		
+|96.202	|	ftp-data > hpvmmdat		|TCP:	ftp-data > hpvmmdata [SYN] Seq=0 Win=16384 Len=0 MSS=	1460
+|	|(1126)	<------------------	-20	|		
+|96.202	|	hpvmmdata > ftp-dat		|TCP:	"hpvmmdata > ftp-data [RST, ACK] Seq=1 Ack=1 Win=0 Len"	0
+|	|(1126)	------------------>	-20	|		
+|96.203	|	Response: 226 Closi		|FTP:	Response: 226 Closing data connection	
+|	|(4270)	<------------------	-21	|		
+|96.203	|	"Request: PORT 192,1"		|FTP:	"Request: PORT 192,168,1,15,4,87"	
+|	|(4270)	------------------>	-21	|		
+|96.204	|	Response: 200 PORT		|FTP:	Response: 200 PORT command successful.	
+|	|(4270)	<------------------	-21	|		
+|96.205	|	Request: LIST			|FTP:	Request: LIST	
+|	|(4270)	------------------>	-21	|		
+|96.206	|	ftp-data > lmsocial		|TCP:	ftp-data > lmsocialserver [SYN] Seq=0 Win=16384 Len=0	MSS=1460
+|	|(1111)	<------------------	-20	|		
