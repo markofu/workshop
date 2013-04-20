@@ -1,9 +1,7 @@
-Packet Captures for BSides Workshop
------------------------------------
-
-
 Instructions for BSides London 2013
 -----------------------------------
+
+This document contains some instructions regarding what you need to do or have sorted for the Seucirty Onion workshop as BSides London 2013.
 
 Short Intro
 -----------
