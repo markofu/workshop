@@ -12,7 +12,7 @@ NSM provides you, the defender, with visibility like never before:
 
 - it combines traditional IDS alerts with additional data to give you a more complete picture of what's really happening on your network.
 
-- "_it is so broad that it encompasses both traditional IDS/IPS and other network information gathering techniques, all focused on providing an intrusion analyst with the best possible information in the shortest amount of tim_" (Source : http://nsmwiki.org/Main_Page).
+- _it is so broad that it encompasses both traditional IDS/IPS and other network information gathering techniques, all focused on providing an intrusion analyst with the best possible information in the shortest amount of time_ (Source : http://nsmwiki.org/Main_Page).
 
 *N.B.:*I believe that there will be no Internet access :( Therefore, you need to get a few things sorted before you turn up to play with Security Onion.
 
