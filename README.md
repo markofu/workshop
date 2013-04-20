@@ -10,7 +10,7 @@ Tasks
 
 *Before BSides*
 
-- Please read the `INSTRUCTIONS.MD` file at the top directory of thie repository.
+- Please read the `INSTRUCTIONS.MD` file in the same directory (as this file) of thie repository.
 
 
 *At BSides*
