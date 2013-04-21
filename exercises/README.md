@@ -1,7 +1,7 @@
 Exercises for BSides Workshop.
 ------------------------------
 
-*Before BSides London*
+# Before BSides London
 
 ### Install Security Onion to latest version onto a VM on your laptop and bring to BSides :) 
 
