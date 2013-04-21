@@ -1,17 +1,12 @@
-Packet Captures for BSides Workshop
------------------------------------
+# BSides London 2013 Workshop
 
-It is important to note that the packet captures have not all been created by me but are free-to-use and so I plan to use them occasionally for workshops (though have not yet).
+The intention of this workshop is to introduce the ``Security Onion`` Linux distro to workshop attendees and show how it can be used to greatly facilitate incident and attack analysis, by enhancing the visiblity into your network.
 
-Like the pcaps being free to use, this repo is free to clone and no notification is required. I hope to use this repo to showcase the beauty of Security Onion and it's smaller in size than my "pcaps" and so quicker to download.
-
-Tasks
------
+## What you have to do :)
 
 *Before BSides*
 
-- Please read the `INSTRUCTIONS.MD` file in the same directory (as this file) of thie repository.
-
+- Please read the `INSTRUCTIONS.MD` file in the same directory (as this file) of this repository.
 
 *At BSides*
 
@@ -25,7 +20,7 @@ Tasks
 
 - The workshop will involve:
 
--- Short history of the history and goals of the Security Onion Project
+-- Short history of the history and goals of the `Security Onion` Project
 
 -- Quick description of a sample infrastructure
 
@@ -33,11 +28,12 @@ Tasks
 
 -- Practical usage of the tools, primarily due to replaying the packet captures in this github repository with tcpreplay
 
+-- I'd like to use a DVWA installation on the same VM as `Security Onion` to show some alerts happening in real-time but I'm not sure if we'll have time.
+
 *After Bsides* 
 
-- Spread the word about Security Onion
+- Spread the word about `Security Onion`
 
-- Continue playing with Security Onion
+- Continue playing with `Security Onion`
 
-- Give thanks to Doug Burks, Scott Runnels and the various folk who help with Security Onion!
-
+- Give thanks to Doug Burks, Scott Runnels and the many other various folk who help with `Security Onion`!
