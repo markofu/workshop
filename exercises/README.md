@@ -1,11 +1,13 @@
-Exercises for BSides Workshop.
-------------------------------
+#Exercises for BSides Workshop.
 
-# Before BSides London
+
+## Before BSides London
 
 ### Install Security Onion to latest version onto a VM on your laptop and bring to BSides :) 
 
 The `INSTRUCTIONS.MD` and `README.MD` files at the top of this repo have more detailed instructions.
+
+## At BSides London
 
 Review any issues that any of the attendees have had.
 
