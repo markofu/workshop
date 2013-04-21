@@ -27,13 +27,13 @@ Due to the lack of time, this will be done very quickly.
 
 In the `pcaps` directory of this repo, I've placed a bunched of packet captures that you can play with using `tcpreplay`.
 
-*tcpreplay usage*
+####tcpreplay usage
 
 For example, use tcpreplay to replay bad.pcap onto your eth1 interface (you may need to use a different interface, just ensure it's being monitored by Sguil):
 
     sudo tcpreplay -i eth1 -t bad.pcap
 
-*tcpreplay script*
+####tcpreplay script
 
 This script will automatically replay all of those packet captures.
 
