@@ -24,7 +24,7 @@ to clone this repository onto you system.
 
 - Install `Security Onion` as per [here] (https://code.google.com/p/security-onion/wiki/Installation).You will see there are two ways:
   * Default `Security Onion` ISO
-  * On your preferred version of Ubuntu 12.04 (32-bit or 64-bit), install the various aptitude packages as per the instructions above. In case you're _lazy_, I have written a simple bash script that will install Security Onion on your Ubuntu VM. It can be found at https://github.com/markofu/scripts/tree/master/so/install.sh.)
+  * On your preferred version of Ubuntu 12.04 (32-bit or 64-bit), install the various aptitude packages as per the instructions above. In case you're _lazy_, I have written a simple bash script that will install Security Onion on your Ubuntu VM. It can be found at https://github.com/markofu/scripts/tree/master/so/install.sh.
 
 ### At BSides
 
