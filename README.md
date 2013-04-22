@@ -14,9 +14,9 @@ I believe that there will be no Internet access :( Therefore, you need to get a 
 
 - Clone this repository onto your VM.
   * If `git` is not on you system, install it with
-                           sudo apt-get -y install git
+                           `sudo apt-get -y install git`
   * Then with `git`, run
-                           git clone https://github.com/markofu/workshop.git
+                           `git clone https://github.com/markofu/workshop.git`
 
 to clone this repository onto you system.
 
