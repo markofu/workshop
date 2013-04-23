@@ -8,6 +8,29 @@
 #
 # And then watch the packets hit Sgui, Snorby etc.
 
+# Global Variables
+VERSION="0.1"
+
+# Creating some functions
+
+# Parsing the CLI arguments
+
+parse_args () {
+    for i in $@
+    do
+        case $i in
+            -h|--help)
+                usage
+                exit 0;
+                ;;
+            -v|--version)
+                echo -e "\nVersion $VERSION of $0\n"
+                exit 0;
+                ;;
+        esac
+    done
+}
+
 param_args () {
     echo "What interface do you want to run tcpreplay against?"
     read interface
@@ -29,6 +52,16 @@ replay () {
             echo -e "\nThere was a problem of some sort running tcpreplay against $file on the $interface interface"
     fi
 }
+
+usage () {
+    echo "Usage:
+    -h|--help      : print this message
+    -v|--version   : print the version of this script
+
+    Sample Usage #1: bash $0"
+}
+
+parse_args $@
 
 param_args
 
