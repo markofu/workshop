@@ -2,6 +2,12 @@
 
 The intention of this workshop is to introduce the ``Security Onion`` Linux distro to workshop attendees and show how it can be used to greatly facilitate incident and attack analysis, by enhancing the visiblity into your network.
 
+## Who am I?
+
+My name is Mark Hillick (@markofu), from Kybeire, and I've far too many years of experience in Info Sec. 
+
+This workshop will hopefully introduce folks to the benefits of using Security Onion for NSM.
+
 ## What you have to do :)
 
 ### Before BSides
