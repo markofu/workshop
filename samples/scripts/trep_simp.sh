@@ -10,7 +10,7 @@
 
 # Global Variables
 VERSION="0.2"
-SAMPLES="/opt/samples"
+SAMPLES="/opt/samples/markofu"
 
 # Creating some functions
 
@@ -36,7 +36,7 @@ param_args () {
     echo "What interface do you want to run tcpreplay against?"
     read interface
 
-    echo "What is the name of the pcap file (the path is assumed to be '/opt/samples'!)"
+    echo "What is the name of the pcap file (the path is assumed to be '/opt/samples/markofu'!)"
     read file
 }
 

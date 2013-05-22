@@ -8,7 +8,7 @@
 
 # Global Variables
 VERSION="0.2"
-SAMPLES="/opt/samples"
+SAMPLES="/opt/samples/markofu"
 ARG=$#
 
 # Checking for installed tools
