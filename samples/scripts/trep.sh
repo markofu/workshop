@@ -2,11 +2,13 @@
 #
 # TCPreplay script for replaying packet captures through an interface
 #
+# Version 0.1: March 2013: Created for BSides London
+# Version 0.2: May 2013: Modified for Security Onion
+#
 
 # Global Variables
-VERSION="0.1"
-HOME="$(pwd)"
-cd ../pcaps && PCAPS="$(pwd)"
+VERSION="0.2"
+SAMPLES="/opt/samples"
 ARG=$#
 
 # Checking for installed tools
@@ -68,12 +70,9 @@ run_tcpreplay_all () {
     else
         echo -e "\nJust about to run the packet capture $file against interface $interfacei. You will be prompted for you 'sudo' password shortly.\n"
     fi
-    for dir in $(ls ../pcaps | grep -v README)
-    do 
-        for file in $PCAPS/$dir/*pcap
-        do
-            sudo $t -q -i $INTERFACE -t $file
-        done
+    for file in $SAMPLES/*pcap
+    do
+        sudo $t -q -i $INTERFACE -t $file
     done
 }
 

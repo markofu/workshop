@@ -1,15 +1,16 @@
 #!/bin/bash
 # File Detailing Usage for `tcpreplay` during this Workshop.
 #
-# Use `tcpreplay` to replay newdat3.log (pcap from HN1, one of the Honeynet Captures) onto your "eth0/eth1/eth2"" interface (you may 
-# need/want to use a different interface, just make sure it's one that's being monitored by Sguil).
+# Sample:    `sudo tcpreplay -i eth0 -t attack_trace.pcap`
 #
-# Sample:    `sudo tcpreplay -i eth0 -t newdat3.log`
+# and then watch the packets hit Sguil, Snorby etc :)
 #
-# And then watch the packets hit Sguil, Snorby etc.
+# Version 0.1: March 2013: Created for BSides London
+# Version 0.2: May 2013: Modified for Security Onion
 
 # Global Variables
-VERSION="0.1"
+VERSION="0.2"
+SAMPLES="/opt/samples"
 
 # Creating some functions
 
@@ -35,7 +36,7 @@ param_args () {
     echo "What interface do you want to run tcpreplay against?"
     read interface
 
-    echo "What is the name of the pcap file (include the full path please!)"
+    echo "What is the name of the pcap file (the path is assumed to be '/opt/samples'!)"
     read file
 }
 
@@ -43,7 +44,7 @@ replay () {
 
     echo -e "\nJust about to run the packet capture $file against interface $interface.\n\nYou may be prompted for you 'sudo' password shortly.\n"
 
-    sudo tcpreplay -q -i $interface -t $file
+    sudo tcpreplay -q -i $interface -t $SAMPLES/$file
 
     if [ $? -eq 0 ]
         then
